@@ -1,0 +1,496 @@
+% PTE Core 模考 3B —— 听力 错题与详解·整理卷  版本 000（自包含）
+% 编译: xelatex 本文件.tex   （需 Noto CJK + TeX Gyre Heros 字体）
+% 本版本无外部图片，单文件即可复现。
+\documentclass[11pt]{article}
+
+% --------- 样式（原 ptestyle.sty，已内联）---------
+% ============================================================
+%  ptestyle.sty  —  PTE 模考错题整理卷 共享样式
+%  编译引擎: XeLaTeX  (中英混排, 需要 Noto CJK 字体)
+% ============================================================
+
+\usepackage[a4paper,margin=2cm,headsep=4mm]{geometry}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\usepackage[table]{xcolor}
+\usepackage[normalem]{ulem}        % \sout 删除线
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{pifont}                % \ding{51}=✓ \ding{55}=✗（阅读对错标注）
+\usepackage{needspace}
+\usepackage{tikz}
+
+% ---------- 字体 ----------
+\setmainfont{TeX Gyre Heros}            % 拉丁: Helvetica 风格(纤细清晰)
+\setCJKmainfont{Noto Sans CJK SC}
+\setCJKsansfont{Noto Sans CJK SC}
+\newfontfamily\cjkserif{Noto Serif CJK SC}
+\linespread{1.18}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+
+% ---------- 配色 ----------
+\definecolor{cWrong}{HTML}{D32F2F}     % 红  = 修改 / 错误
+\definecolor{cFix}{HTML}{1B7F3B}       % 绿  = 正确建议
+\definecolor{cDelete}{HTML}{1565C0}    % 蓝  = 删除
+\definecolor{cInsert}{HTML}{7B1FA2}    % 紫  = 插入
+\definecolor{cPartial}{HTML}{E07B00}   % 橙  = 部分得分
+\definecolor{cNote}{HTML}{0277BD}      % 蓝  = 注解
+\definecolor{cAccent}{HTML}{16A085}    % 主题青绿(平台主色)
+\definecolor{cWrongBg}{HTML}{FBE0E0}
+\definecolor{cDelBg}{HTML}{DCE8FB}
+\definecolor{cInsBg}{HTML}{EEE0F5}
+\definecolor{cHead}{HTML}{20303A}
+\definecolor{cGrayBox}{HTML}{F4F6F7}
+\definecolor{cModelBg}{HTML}{EAF7EF}
+\definecolor{cYouBg}{HTML}{FFF7F5}
+\definecolor{cNoteBg}{HTML}{EAF3FA}
+\definecolor{cRule}{HTML}{D7DEE2}
+
+% ---------- 行内批改宏 (复刻平台标注) ----------
+% \fix{原词}{正确}  红色删除线 + 绿色上标改正  (修改/拼写/空格)
+\newcommand{\fix}[2]{%
+  \colorbox{cWrongBg}{\textcolor{cWrong}{\sout{#1}}}%
+  \,\textsuperscript{\textcolor{cFix}{\footnotesize #2}}}
+% \del{原词}  蓝色删除线  (应删除)
+\newcommand{\del}[1]{%
+  \colorbox{cDelBg}{\textcolor{cDelete}{\sout{#1}}}%
+  \,\textsuperscript{\textcolor{cDelete}{\footnotesize 删}}}
+% \ins{词}  紫色下划线  (应插入)
+\newcommand{\ins}[1]{%
+  \textsuperscript{\textcolor{cInsert}{\footnotesize $\wedge$}}%
+  \colorbox{cInsBg}{\textcolor{cInsert}{#1}}}
+% \miss{词}  灰色删除线  (口语漏读 / 未作答)
+\newcommand{\miss}[1]{\textcolor{gray}{\sout{#1}}}
+% \add{原词}{改正}  橙色波浪线 + "补"标签  (平台漏标、本卷补标的错误)
+\definecolor{cAdd}{HTML}{E65100}
+\newcommand{\add}[2]{%
+  \textcolor{cAdd}{\uwave{#1}}%
+  \,\textsuperscript{\textcolor{cAdd}{\footnotesize 补：#2}}}
+% 高亮(口语发音): 好/中/差
+\newcommand{\spk}[2]{\textcolor{#1}{#2}}
+
+% ---------- 评分单元格着色 ----------
+\newcommand{\sfull}[1]{\textcolor{cFix}{\bfseries #1}}     % 满分
+\newcommand{\spart}[1]{\textcolor{cPartial}{\bfseries #1}} % 部分
+\newcommand{\szero}[1]{\textcolor{cWrong}{\bfseries #1}}   % 零/低分
+
+% ---------- 分数小标签 ----------
+\newtcbox{\chip}[1][cAccent]{on line, boxsep=2pt, left=4pt, right=4pt, top=1pt,
+  bottom=1pt, arc=3pt, colback=#1, colframe=#1, coltext=white, nobeforeafter,
+  fontupper=\bfseries\footnotesize}
+
+% ---------- 题块小标题 ----------
+\newcommand{\ptesub}[1]{%
+  \par\needspace{2\baselineskip}\smallskip
+  {\color{cAccent}\rule[-0.2ex]{3pt}{1.05em}}\hspace{6pt}%
+  {\bfseries\color{cHead}#1}\par\nopagebreak\smallskip}
+
+% ---------- 题块外框 ----------
+% \begin{qblock}{标号·题型}{右上信息(得分/用时)} ... \end{qblock}
+\newtcolorbox{qblock}[2]{
+  breakable, enhanced, arc=2.5pt,
+  colback=white, colframe=cRule, boxrule=0.6pt,
+  left=11pt, right=11pt, top=8pt, bottom=10pt,
+  toptitle=3pt, bottomtitle=3pt, lefttitle=11pt, righttitle=11pt,
+  colbacktitle=cHead, coltitle=white, fonttitle=\bfseries,
+  title={#1\hfill\normalfont\bfseries\small #2}}
+
+% ---------- 文本块: 题干 / 范文 / 你的作答 / 建议 ----------
+\newtcolorbox{promptbox}{enhanced, breakable, colback=cGrayBox, colframe=cGrayBox,
+  arc=2pt, left=8pt, right=8pt, top=6pt, bottom=6pt, boxrule=0pt}
+\newtcolorbox{modelbox}{enhanced, breakable, colback=cModelBg, colframe=cModelBg,
+  borderline west={3pt}{0pt}{cFix}, arc=1pt, left=8pt, right=8pt, top=6pt, bottom=6pt, boxrule=0pt}
+\newtcolorbox{youbox}{enhanced, breakable, colback=cYouBg, colframe=cYouBg,
+  borderline west={3pt}{0pt}{cWrong}, arc=1pt, left=8pt, right=8pt, top=6pt, bottom=6pt, boxrule=0pt}
+\newtcolorbox{notebox}{enhanced, breakable, colback=cNoteBg, colframe=cNoteBg,
+  borderline west={3pt}{0pt}{cNote}, arc=1pt, left=8pt, right=8pt, top=6pt, bottom=6pt, boxrule=0pt}
+
+% ---------- 评分表 ----------
+% 用法见正文; 这里给表头宏
+\newcommand{\scorehead}{%
+  \rowcolors{2}{cGrayBox}{white}
+  \arrayrulecolor{cRule}}
+
+% ---------- 章节大标题 ----------
+\newcommand{\ptesection}[3]{% #1=中文名 #2=英文名 #3=该项分数
+  \addcontentsline{toc}{section}{#1}%
+  \needspace{6\baselineskip}
+  \begin{tcolorbox}[enhanced, colback=cAccent, colframe=cAccent, sharp corners,
+     left=14pt, right=14pt, top=10pt, bottom=10pt, boxrule=0pt]
+    {\fontsize{20}{24}\selectfont\bfseries\color{white} #1\ \ }%
+    {\large\color{white!85} #2}\hfill
+    {\large\color{white}本项得分\ \ }{\fontsize{22}{24}\selectfont\bfseries\color{white} #3}%
+    \ {\color{white!85}/ 90}
+  \end{tcolorbox}}
+
+% ---------- 题型小节分隔 (口语 RA/RS/DI/RTS/ASQ 等) ----------
+\newcommand{\ptetask}[2]{%
+  \addcontentsline{toc}{subsection}{#1\ #2}%
+  \needspace{4\baselineskip}\medskip
+  \begin{tcolorbox}[enhanced, colback=cHead, colframe=cHead, sharp corners,
+     left=12pt, right=12pt, top=5pt, bottom=5pt, boxrule=0pt]
+    {\large\bfseries\color{white} #1}\ \ {\color{white!80} #2}
+  \end{tcolorbox}\smallskip}
+
+% ---------- 口语 AI 语音识别着色 (复刻平台: 优/良/差 + 停顿) ----------
+\definecolor{cSpkGood}{HTML}{2E9E5B}   % 优 绿
+\definecolor{cSpkOk}{HTML}{C77F00}     % 良 黄/琥珀
+\definecolor{cSpkBad}{HTML}{E0352B}    % 差 红
+\newcommand{\sg}[1]{\textcolor{cSpkGood}{#1}}   % 优
+\newcommand{\sy}[1]{\textcolor{cSpkOk}{#1}}     % 良
+\newcommand{\sr}[1]{\textcolor{cSpkBad}{#1}}    % 差
+\newcommand{\smiss}[1]{\textcolor{cSpkBad}{\sout{#1}}}  % 漏读 (红删除线)
+\newcommand{\pse}{{\color{gray}\,/\,}}          % 停顿
+\newcommand{\asrlegend}{{\footnotesize\color{gray}AI 语音识别\quad
+  {\color{cSpkGood}\textbullet}\,优\ \ {\color{cSpkOk}\textbullet}\,良\ \
+  {\color{cSpkBad}\textbullet}\,差\ \ {\color{gray}/}\,停顿\ \
+  {\color{cSpkBad}\sout{词}}\,漏读}}
+\newtcolorbox{asrbox}{enhanced, breakable, colback=white, colframe=cRule,
+  boxrule=0.6pt, arc=1pt, left=8pt, right=8pt, top=6pt, bottom=6pt}
+
+% ---------- 中文翻译行 ----------
+\newcommand{\zh}[1]{{\footnotesize\textcolor{cNote}{\textbf{译}}\ \textcolor{gray}{#1}}}
+
+% ---------- 阅读填空 / 选择 对错标注 ----------
+\newcommand{\rok}[1]{{\color{cFix}\ding{51}\,#1}}                 % 选对(绿勾 + 词)
+\newcommand{\rno}[2]{{\color{cWrong}\ding{55}\,\sout{#1}}\,{\footnotesize\color{cFix}(答案:\,#2)}}  % 选错: 你的(红删) + (答案:正确)
+\newcommand{\rblank}[1]{{\color{cFix}\underline{\,#1\,}}}         % 直接给空的正确答案(无你的作答时)
+
+% ---------- 听力专用 ----------
+\newcommand{\hiw}[2]{{\color{cWrong}\uline{#1}}\,{\footnotesize\color{cFix}(听:#2)}} % HIW: 屏幕错词(红下划线)+ 实际读音
+\newcommand{\lhit}[1]{{\color{cFix}#1}}                           % WFD: 命中的词(绿)
+\newcommand{\lmiss}[1]{{\color{cWrong}\sout{#1}}}                 % WFD: 多余/错误的词(红删, 1B 配色)
+% ---- WFD 逐词批改 · 本套 2B 平台配色（与 1B 相反）：绿=命中 / 红括号=漏写 / 灰删除线=多写或听错 ----
+% 说明: 2B 平台把"漏写"标红(加括号)、"多写/听错"标灰删除线; 本卷忠于原图按此复刻。
+\newcommand{\womit}[1]{{\color{cWrong}(#1)}}                      % WFD: 漏写(正确答案有、你没写)——红色括号
+\newcommand{\wbad}[1]{{\color{gray}\sout{#1}}}                    % WFD: 多写/听错(你写了但错)——灰删除线
+\newcommand{\wfdlegend}{{\footnotesize\color{gray}WFD 配色：\
+  {\color{cFix}命中}\ \ {\color{cWrong}(漏写)}\ \ {\color{gray}\sout{多写/听错}}}}
+
+% ---------- 颜色图例 ----------
+\newcommand{\ptelegend}{%
+  \begin{tcolorbox}[enhanced, colback=cGrayBox, colframe=cRule, boxrule=0.5pt,
+    arc=2pt, left=10pt, right=10pt, top=6pt, bottom=6pt]
+  {\bfseries\color{cHead}颜色说明\quad}
+  \fix{改}{正}~修改/拼写\quad
+  \del{删}~应删除\quad
+  \ins{插}~应插入\quad
+  \add{补}{改正}~平台漏标(本卷补标)\quad
+  {\color{cFix}\rule{1em}{0.6em}}~范文/正确\quad
+  {\color{cNote}\rule{1em}{0.6em}}~AI 建议
+  \end{tcolorbox}}
+
+% ---------- 页眉页脚 ----------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyhead[L]{\footnotesize\color{cHead}\bfseries PTE Core 模考 3B}
+\fancyhead[R]{\footnotesize\color{gray} 错题与详解整理卷}
+\fancyfoot[C]{\footnotesize\color{gray}\thepage}
+
+\begin{document}
+
+% --------- 封面（原 cover.tex）---------
+% ---------- 封面 / 成绩总览 ----------
+\definecolor{mListen}{HTML}{1F3A5F}
+\definecolor{mRead}{HTML}{C2D70B}
+\definecolor{mSpeak}{HTML}{4D4D4D}
+\definecolor{mWrite}{HTML}{A01B7D}
+
+\begin{titlepage}
+\thispagestyle{empty}
+\centering
+\vspace*{1.4cm}
+
+{\fontsize{30}{36}\selectfont\bfseries\color{cHead} PTE Core 模考 3B}\\[4mm]
+{\fontsize{17}{20}\selectfont\color{cAccent}\bfseries 错题与详解 · 整理卷}\\[3mm]
+{\color{gray} APEUni / 猩际 PTE 模考　·　提交时间 2026-07-05 13:36}\\[1.2cm]
+
+% ---- 总分 ----
+\begin{tcolorbox}[width=0.62\textwidth, halign=center, enhanced,
+  colback=cAccent, colframe=cAccent, arc=6pt, boxrule=0pt, top=10pt, bottom=10pt]
+  {\color{white}\large 总分 Overall}\\[2pt]
+  {\fontsize{46}{50}\selectfont\bfseries\color{white} 53}
+\end{tcolorbox}
+
+\vspace{1.0cm}
+
+% ---- 四项分数条形图 ----
+\begin{tcolorbox}[width=0.84\textwidth, enhanced, colback=white, colframe=cRule,
+  boxrule=0.8pt, arc=4pt, left=18pt, right=18pt, top=14pt, bottom=14pt]
+\setlength{\tabcolsep}{6pt}\renewcommand{\arraystretch}{1.7}
+\sffamily
+\begin{tabular}{@{}r@{\hskip 8pt}l@{\hskip 10pt}l@{}}
+ \bfseries Listening 听力 & {\color{mListen}\rule{6.11cm}{0.42cm}} & {\bfseries\large 55}\\
+ \bfseries Reading 阅读   & {\color{mRead}\rule{4.67cm}{0.42cm}}   & {\bfseries\large 42}\\
+ \bfseries Speaking 口语  & {\color{mSpeak}\rule{4.67cm}{0.42cm}}  & {\bfseries\large 42}\\
+ \bfseries Writing 写作   & {\color{mWrite}\rule{8.11cm}{0.42cm}}  & {\bfseries\large 73}\\
+\end{tabular}\\[2mm]
+{\footnotesize\color{gray} 满分 90　|　刻度: 条长 = 得分 / 90}
+\end{tcolorbox}
+
+\vfill
+\begin{flushleft}\small\color{gray}
+\textbf{说明:}本卷由本次模考的题目与"详解"截图逐题誊写、重新排版而成,完整保留每道题的
+\emph{题干 / 原文、范文、你的作答、逐项评分、彩色批改与 AI 中文建议}。\\
+所有错误按平台标注用颜色标出(见下方图例)。原始"详解"PDF 不可复制、仅截图,本卷内容均为人工对照誊录,若与原图有出入以原图为准。
+\end{flushleft}
+\vspace{4mm}
+\ptelegend
+\end{titlepage}
+
+% --------- 听力正文（原 sec_listening_body.tex）---------
+% ===================== 听力 Listening =====================
+\ptesection{听力}{Listening · 7 题型}{55}
+
+\vspace{1mm}
+{\small\color{gray} 本部分共 \textbf{15 题}：\textbf{SST 概述口语}Q1、\textbf{MCM-L 多选}Q2、\textbf{FIB-L 听力填空（打字）}Q3--5、\textbf{MCS-L 单选}Q6、\textbf{SMW 选词}Q7--8、\textbf{HIW 找错词}Q9--11、\textbf{WFD 听写句子}Q12--15。每题保留\textbf{录音原文}（听力口语稿，含口误照原样誊录）、你的作答与平台评分，并附\textbf{中文翻译}。
+标注约定：FIB-L 空处 \rok{绿勾}=对、{\color{cWrong}\ding{55}}\,红叉=错并给答案；HIW 屏幕错词用{\color{cWrong}\uline{红下划线}}标出并括注\,{\footnotesize\color{cFix}(听:实际读音)}；WFD 逐词批改本套配色为 \wfdlegend 。
+本套听力总分 \textbf{55 / 90}。}
+\vspace{1mm}
+
+{\small\color{gray}\textbf{说明：}SST 的\textbf{录音原文}复盘截图未提供（需在平台「查看原题」复制），本版本（000）暂缺并标注；其余题型的录音 Transcript 复盘页均直接给出，已照抄。}
+\vspace{2mm}
+
+\newcolumntype{Z}{>{\RaggedRight\arraybackslash}X}
+
+% ---------------- Q1 ----------------
+\begin{qblock}{Q1\quad SST (C) \#6\ \ Democracy}{概述口语 · 评分 \textcolor{cAccent}{\bfseries 7.9 / 10}}
+\ptesub{录音原文 Transcript}
+\begin{promptbox}
+{\color{cWrong}（录音原文：复盘截图未提供，需在平台点本题「查看原题」复制后补入；本版本（000）暂缺。）}
+\end{promptbox}
+\ptesub{你的概述 Your Summary}
+\begin{youbox}
+The lecture mentioned the power of the people, and the free individuals' \del{how} to face the protection of \fix{foundamental}{fundamental} challenges, and the \fix{goverments}{governments}' \fix{desicions}{decisions} making, and the diverse societies.
+\end{youbox}
+\zh{这场讲座提到了人民的力量、自由个体应如何应对基本挑战方面的保障，以及政府的各项决策，还有多元化的社会。}
+{\footnotesize\color{gray}（平台彩色标注：foundamental/goverments/desicions —— 拼写错误；how —— 冗余词，应删除。）}
+\ptesub{AI 评分明细（满分 10）}
+\begin{notebox}
+{\renewcommand{\arraystretch}{1.35}
+\begin{tabularx}{\linewidth}{@{}l c Z@{}}
+\textbf{单项} & \textbf{得分} & \textbf{AI 建议}\\[2pt]
+Content（内容）& \sfull{2 / 2} & 内容很棒。\\
+Form（形式）& \sfull{2 / 2} & Form 很棒，这是必拿分数。\\
+Grammar（语法）& \spart{1.5 / 2} & 点击有颜色标注的文字查看语法错误细节。\\
+Spelling（拼写）& \spart{1 / 2} & 你犯了 3 个拼写错误。\\
+Vocabulary（词汇）& \spart{1.4 / 2} & PTE 对词汇不要求很难，但需要恰当。\\
+\end{tabularx}}
+\smallskip
+\textbf{本题分值}\ 10 分\qquad\textbf{你的总得分}\ \textcolor{cAccent}{\bfseries 7.9 / 10}
+\end{notebox}
+\smallskip
+{\footnotesize\color{gray}（答题用时 06:01；失分主要在 Spelling 与 Vocabulary。）}
+\end{qblock}
+
+% ---------------- Q2 ----------------
+\begin{qblock}{Q2\quad MCM-L \#118\ \ Attraction}{多选 · 评分 \textcolor{cAccent}{\bfseries 0 / 3}}
+\ptesub{录音原文 Transcript}
+\begin{promptbox}
+Researchers report that women find a man they see with an attractive woman more desirable than unattached men. That's according to a study in the journal Evolutionary Psychology. Researchers had two groups of female college students rate photos of men, all of whom had first been rated as being of average attractiveness. The first group of 148 women was shown pictures of those men with an attractive female. The subjects were told that the women in the photos were either a girlfriend, ex-girlfriend, cousin or adopted sister. And the subjects rated the men with the girlfriends as more desirable than the men shown with partners described as being exes or relatives. The second study group of 97 students were shown average looking men with an attractive woman who was described as definitely a girlfriend. And again the women rated the men with the good-looking gals as more desirable than the single guys. Plus, the attached men were thought more likely to be more intelligent, trustworthy, humorous, wealthy and attentive.
+\end{promptbox}
+\zh{研究人员报告称，比起单身男性，女性认为与有魅力女性在一起的男性更具吸引力。这是《进化心理学》期刊一项研究的结论。研究人员让两组女大学生给男性照片评分，这些男性此前都被评为中等外貌水平。第一组148名女性看到的照片中，男性身旁配有一位有魅力的女性；受试者被告知照片中的女性分别是女友、前女友、表姐妹或养妹。结果受试者认为身旁是女友的男性，比身旁是前任或亲属的男性更有吸引力。第二组97名学生看到的是外貌普通的男性，身旁的有魅力女性被明确说明是女友。同样，女性认为身旁有漂亮女伴的男性比单身男性更有吸引力。此外，"有伴"的男性还被认为更可能聪明、可靠、幽默、多金且体贴。}
+\ptesub{题目 Question}
+\begin{notebox}In the research, how do women think of men in different photos?\end{notebox}
+\ptesub{选项 Choices（正确项绿色加粗）}
+{\small
+{\color{cFix}\textbf{A) Single men are less attractive than men with pretty girls.}}\\
+B) Women tend to prefer men who are older than they are.\\
+{\color{cFix}\textbf{C) Men with girlfriends are more desirable than those with relatives.}}\\
+{\color{cFix}\textbf{D) Men with partners are thought to be more reliable than single men.}}\\
+E) Women prefer men who are mature and financially secure.}
+\par\smallskip
+\textbf{正确答案}\ \textcolor{cFix}{\bfseries A, C, D}\qquad\textbf{你的答案}\ {\color{cWrong}\bfseries E}\qquad\textbf{本题得分：}\ {\color{cAccent}\bfseries 0 / 3}\quad{\footnotesize\color{gray}（用时 01:13，全错）}
+\end{qblock}
+
+% ---------------- Q3 ----------------
+\begin{qblock}{Q3\quad FIB-L \#206\ \ Vaping Products}{听力填空（打字）· 评分 \textcolor{cAccent}{\bfseries 1 / 4}}
+\ptesub{录音原文 Transcript（含填空作答）}
+\begin{promptbox}
+President Trump has warned Turkey's President Erdogan that foreign interference is \rno{compacting}{complicating} the situation in Libya. It comes after Turkey MPs approved a bill, allowing the \rno{ministrate}{military} to be deployed to interfere in Libya's civil war in support of the UN-backed government in Tripoli. The United States is to ban a number of popular e-cigarette flavors to \rno{curve}{curb, kerb} the rising use of vaping products among teenagers. However, menthol and tobacco flavors will be allowed to remain on the market and large refillable vaping \rok{devices} are completely exempt from the ban.
+\end{promptbox}
+\zh{特朗普总统警告土耳其总统埃尔多安，外部干预正在使利比亚局势复杂化。此前土耳其议会通过一项法案，允许军队部署介入利比亚内战，以支持得到联合国支持的的黎波里政府。美国将禁售多款受欢迎的电子烟口味，以遏制青少年中电子烟使用量的上升。不过薄荷和烟草口味仍将被允许留在市场上，大型可加注式电子烟设备则完全不在禁令范围内。}
+\par\smallskip
+\textbf{你的作答：}\ {\color{cWrong}compacting, ministrate, curve}, devices\qquad\textbf{本题得分：}\ {\color{cAccent}\bfseries 1 / 4}\quad{\footnotesize\color{gray}（用时 02:08；仅第 4 空 devices 正确，正确应为 complicating / military / curb,kerb / devices）}
+\end{qblock}
+
+% ---------------- Q4 ----------------
+\begin{qblock}{Q4\quad FIB-L \#205\ \ Edible Insects}{听力填空（打字）· 评分 \textcolor{cAccent}{\bfseries 4 / 4}}
+\ptesub{录音原文 Transcript（含填空作答）}
+\begin{promptbox}
+First it was pets, then fish. Now it's poultry and pigs. The \rok{list} of animals allowed to feed on insects is growing. A new EU law authorizing the use of \rok{insect} protein in poultry and pig feed came into force earlier this month, a \rok{significant} milestone for an industry keen to worm its way into the animal-feed business. Since a ban on processed animal protein was \rok{imposed} in 2001 in the wake of the ``mad cow'' crisis, soy and fish meal have become the bedrock of animal feed in Europe.
+\end{promptbox}
+\zh{先是宠物，然后是鱼类，现在轮到了家禽和猪。允许以昆虫为饲料的动物名单正在增加。一项授权在家禽和猪饲料中使用昆虫蛋白的欧盟新法规本月早些时候生效，这对一个渴望打入动物饲料行业的产业而言是一个重要里程碑。自2001年"疯牛病"危机后加工动物蛋白被禁用以来，大豆和鱼粉一直是欧洲动物饲料的基础。}
+\par\smallskip
+\textbf{你的作答：}\ list, insect, significant, imposed\qquad\textbf{本题得分：}\ {\color{cAccent}\bfseries 4 / 4}\quad{\footnotesize\color{gray}（用时 01:26，四空全对）}
+\end{qblock}
+
+% ---------------- Q5 ----------------
+\begin{qblock}{Q5\quad FIB-L \#204\ \ Energy Price}{听力填空（打字）· 评分 \textcolor{cAccent}{\bfseries 2 / 5}}
+\ptesub{录音原文 Transcript（含填空作答）}
+\begin{promptbox}
+It was another roller-coaster week for energy prices. After OPEC and its allies \rno{races}{resisted} calls to increase output, the price of Brent crude surpassed \$80 per barrel and reached its highest level in three years. The cartel said it would \rok{stick} to the gradual increases in output it agreed to over the summer. The energy \rok{shortage} rattled other financial markets too, as \rno{invest}{investors} worried about the fallout. In America and Europe government bond \rno{yiels}{yields} climbed. In Britain the yield on ten-year gilts jumped to its highest since May 2019.
+\end{promptbox}
+\zh{能源价格又经历了跌宕起伏的一周。在欧佩克及其盟友顶住了增产呼声之后，布伦特原油价格突破每桶80美元，达到三年来的最高水平。该组织表示将坚持夏季已商定的渐进增产计划。能源短缺也扰动了其他金融市场，投资者担忧其后续影响。美国和欧洲的政府债券收益率随之攀升，英国十年期国债收益率跳涨至2019年5月以来的最高点。}
+\par\smallskip
+\textbf{你的作答：}\ {\color{cWrong}races}, stick, shortage, {\color{cWrong}invest, yiels}\qquad\textbf{本题得分：}\ {\color{cAccent}\bfseries 2 / 5}\quad{\footnotesize\color{gray}（用时 02:06；stick、shortage 正确，races→resisted、invest→investors、yiels→yields 错）}
+\end{qblock}
+
+% ---------------- Q6 ----------------
+\begin{qblock}{Q6\quad MCS-L \#125\ \ Jobs}{单选 · 评分 \textcolor{cAccent}{\bfseries 1 / 1}}
+\ptesub{录音原文 Transcript}
+\begin{promptbox}
+Since the coronavirus pandemic hit the U.S, over 40 millions of Americans have filed unemployment claims, but some benefited from the crisis already in mid-march. The largest online retailer Amazon announced its plans to hire an additional a hundred thousand people. A lot of other places are looking for delivery drivers and grocery stores are in constant need of employees. We have gone to a mobile world. We all are shopping online, will buy online, and I think that's probably going to continue. I don't think people are going to be anxious to get out to the stores anytime soon. They've learned the convenience for that. So I think e-commerce is really going to continue to grow and that means more jobs are in industry.
+\end{promptbox}
+\zh{自新冠疫情冲击美国以来，已有超过4000万美国人申请了失业救济，但也有一些行业早在三月中旬就从这场危机中获益。最大的在线零售商亚马逊宣布计划再招聘十万名员工。许多其他地方也在寻找配送司机，杂货店也一直缺人手。我们已经进入了移动化的世界，大家都在网上购物、还会继续网购，我认为这一趋势很可能会持续下去。我不认为人们短期内会急于重新走进实体店——他们已经体会到了网购的便利。所以我认为电子商务会持续增长，这也意味着这个行业会有更多工作岗位。}
+\ptesub{题目 Question}
+\begin{notebox}The woman believes that e-commerce is going to continue to grow because \_\_\_\end{notebox}
+\ptesub{选项 Choices（正确项绿色加粗）}
+{\small
+A) products online are more affordable for those who have lost their jobs.\\
+B) the brick-and-mortar stores have yet opened due to the pandemic.\\
+{\color{cFix}\textbf{C) consumers have learned how convenient it is to shop online.}}\\
+D) there are more and more cellphones equipped with shopping apps.}
+\par\smallskip
+\textbf{正确答案}\ \textcolor{cFix}{\bfseries C}\qquad\textbf{你的答案}\ \textcolor{cFix}{\bfseries C}\qquad\textbf{本题得分：}\ {\color{cAccent}\bfseries 1 / 1}\quad{\footnotesize\color{gray}（用时 01:01，正确）}
+\end{qblock}
+
+% ---------------- Q7 ----------------
+\begin{qblock}{Q7\quad SMW \#119\ \ Forgiving}{选词（结尾被哔替换）· 评分 \textcolor{cAccent}{\bfseries 0 / 1}}
+\ptesub{录音原文 Transcript（结尾词被「哔」替换）}
+\begin{promptbox}
+Nature's instruments for survival can be a Godsent until they begin to affect us in destructive ways. Someone's negative characteristics can cloud their favorable traits to such an extent that we cannot see the positive anymore. In our biased minds, this person has become purely evil. It's pretty difficult not to feel repulsed by someone who doesn't have any positive traits -- let alone forgive them. So, we might want to look beyond the vast specter of negativity and see that the people we resent are also carrying good within them and that it's human to possess both evil and \rule[0.3ex]{1.2cm}{0.4pt}\ \textit{[beep]}.
+\end{promptbox}
+\zh{大自然赋予的生存本能可以是一种恩赐，直到它们开始以破坏性的方式影响我们。一个人的负面特质有时会掩盖其优点，以至于我们再也看不到其积极的一面。在我们带有偏见的认知里，这个人变成了纯粹的恶。很难不对一个毫无优点的人感到厌恶——更别说原谅他们了。所以，我们或许应该越过那片巨大的消极阴影，看到我们所怨恨的人身上也存有善意，认识到人性本就兼具恶与＿＿＿（善）。}
+\ptesub{选项 Choices（正确项绿色加粗）}
+{\small
+A) negativity\\
+{\color{cFix}\textbf{B) good}}\\
+C) positivity\\
+D) purity}
+\par\smallskip
+\textbf{正确答案}\ \textcolor{cFix}{\bfseries B}\qquad\textbf{你的答案}\ {\color{cWrong}\bfseries D}\qquad\textbf{本题得分：}\ {\color{cAccent}\bfseries 0 / 1}\quad{\footnotesize\color{gray}（用时 00:54；句末应为 good）}
+\end{qblock}
+
+% ---------------- Q8 ----------------
+\begin{qblock}{Q8\quad SMW \#113\ \ Great Conversation}{选词（结尾被哔替换）· 评分 \textcolor{cAccent}{\bfseries 0 / 1}}
+\ptesub{录音原文 Transcript（结尾词被「哔」替换）}
+\begin{promptbox}
+What are the essential elements that make a conversation truly a great conversation? And humility would be one basic design principle that we should all start from. The kind of humility I'm talking about is the kind that you can't set aside. Because the world is an incredibly complicated place. None of us can ever have the full lock on truth. We can only see the world from a particular vantage point. And that means that our knowledge is going to be going to have special insight because of our vantage point but it's also going to be limited because of our vantage point. And so that sort of like limited knowledge that we can have about the world means that we must enter into any conversation with a deep sense of \rule[0.3ex]{1.2cm}{0.4pt}\ \textit{[beep]}.
+\end{promptbox}
+\zh{究竟是什么要素能让一场对话真正成为一场精彩的对话？谦逊应当是我们都应从中出发的一项基本原则。我所说的这种谦逊，是那种你无法搁置一旁的谦逊。因为这个世界极其复杂，没有人能完全掌握真理，我们只能从某个特定的视角去看待世界。这意味着我们的认知会因为这个视角而拥有独到的见解，但同时也会因为这个视角而受到局限。正是这种我们对世界所能拥有的有限认知，意味着我们必须带着深深的＿＿＿（谦逊）之感去进行任何一场对话。}
+\ptesub{选项 Choices（正确项绿色加粗）}
+{\small
+A) curiosity\\
+{\color{cFix}\textbf{B) humility}}\\
+C) exploration\\
+D) presence}
+\par\smallskip
+\textbf{正确答案}\ \textcolor{cFix}{\bfseries B}\qquad\textbf{你的答案}\ {\color{cWrong}\bfseries C}\qquad\textbf{本题得分：}\ {\color{cAccent}\bfseries 0 / 1}\quad{\footnotesize\color{gray}（用时 01:02；句末应为 humility）}
+\end{qblock}
+
+% ---------------- Q9 ----------------
+\begin{qblock}{Q9\quad HIW \#313\ \ Solar Wind}{找错词 · 评分 \textcolor{cAccent}{\bfseries 5 / 6}}
+\ptesub{录音原文 Transcript（屏幕错词\,{\color{cWrong}\uline{红下划线}}\,，括注实际读音）}
+\begin{promptbox}
+If you've ever \hiw{tattered}{wondered} where the Earth came from, the answer, it seems, is blowin' in the wind---the solar wind. Or so say \hiw{rightfulness}{scientists} who, after examining solar wind samples collected by the Genesis spacecraft, conclude that the inner planets of our solar system formed a little \hiw{bigotry}{differently} than we'd thought. The work appears in the journal Science. Our solar system arose from a large, rotating cloud of interstellar debris called the solar nebula. The sun came first and the planets \hiw{basswood}{followed} not long after. But the new study shows that the ratio of oxygen and \hiw{biotin}{nitrogen} isotopes found in the solar wind is different from the ratio here on earth, or on the moon or Mars. We've got more of the heavier \hiw{tubercles}{versions} of these atoms than our Sun does. Now we just have to figure out why. Scientists say the excess heavy nitrogen could have come from a comet. And the heavier oxygen from a natural process that left more of the light isotope in the part of the nebula that made the sun. So we are made of star stuff. But when it comes to our elemental composition, we're not a carbon copy.
+\end{promptbox}
+\zh{如果你曾想过地球从何而来，答案似乎就"随风飘荡"——也就是在太阳风中。至少科学家们是这么说的：他们在分析了"起源号"飞船采集的太阳风样本后得出结论，太阳系内行星的形成过程与我们此前设想的略有不同。这项研究发表在《科学》杂志上。太阳系诞生于一大团旋转的星际尘埃云，称为太阳星云。太阳最先形成，行星紧随其后不久也形成了。但这项新研究显示，太阳风中氧同位素与氮同位素的比例，与地球、月球或火星上的比例不同——我们（地球）拥有的这些原子的较重版本比太阳还多。现在我们只需弄清原因：科学家说，过量的重氮可能来自彗星；而较重的氧则可能来自某种自然过程，该过程使孕育太阳的星云区域残留了更多较轻的同位素。所以我们确实是"星尘"所造，但论元素构成，我们和太阳并非一个模子刻出来的。}
+\par\smallskip
+\textbf{答案：}\ 实际读音（Pronounced words）\ {\color{cFix}wondered, scientists, differently, followed, nitrogen, versions}\\
+\textbf{应点错词}\ 共 \textbf{6} 个（已红下划线标出）\qquad\textbf{你点中}\ \textbf{5} 个：tattered, rightfulness, bigotry, biotin, tubercles（均正确）\\[2pt]\textbf{本题得分：}\ {\color{cAccent}\bfseries 5 / 6}\quad{\footnotesize\color{gray}（用时 01:20；漏点 basswood）}
+\end{qblock}
+
+% ---------------- Q10 ----------------
+\begin{qblock}{Q10\quad HIW \#312\ \ Human and Chimp}{找错词 · 评分 \textcolor{cAccent}{\bfseries 5 / 5}}
+\ptesub{录音原文 Transcript（屏幕错词\,{\color{cWrong}\uline{红下划线}}\,，括注实际读音）}
+\begin{promptbox}
+When you hear things like: human DNA differs from chimp DNA by only a couple percent, you can't help but wonder, how can that be? How can so few changes make such a big difference? \hiw{freelances}{Researchers} working with fruit bats and mice think they have an answer. And it lies less in the animals' genes than in the short snippets of DNA that control when and where and how \hiw{inveteracy}{vigorously} genes are turned on. If you've ever thought that a bat is basically just a rodent with wings, you're not too far from the mark. One of the most obvious \hiw{alliterative}{differences} between bats and mice is their forearms. Mice have these stubby little legs, and bats have these large leathery wings. But even those differences are not as major as you might imagine. Mice and bats both have a gene called Prx1, which regulates limb development. But the gene is more active in the budding wings of bats. So the researchers took the piece of DNA that \hiw{coasts}{controls} Prx1 activity from a bat and stuck it into a mouse. The result \hiw{rewarmed}{pictured} in the January 15 issue of Genes and Development: mice that have longer front legs. Ok, they didn't sprout wings, but the study shows that even small changes can have big consequences.
+\end{promptbox}
+\zh{当你听到"人类DNA与黑猩猩DNA只相差百分之几"这样的说法时，你不禁会想：这怎么可能？这么小的变化怎么会造成这么大的差异？研究水果蝙蝠和老鼠的研究人员认为他们找到了答案：关键不在于动物的基因本身，而在于那些控制基因"何时、何地、以多大力度"被激活的一小段DNA。如果你曾以为蝙蝠基本上就是长了翅膀的啮齿动物，那你的想法离真相并不远。蝙蝠和老鼠之间最明显的区别之一就是它们的前肢：老鼠有短小的腿，蝙蝠则有巨大的革质翅膀。但即便是这些差异，也没有你想象得那么大。老鼠和蝙蝠都有一个叫Prx1的基因，负责调控肢体发育，但这个基因在蝙蝠正在发育的翅膀中更为活跃。于是研究人员把控制蝙蝠Prx1活性的那段DNA取出，植入了一只老鼠体内。结果发表在1月15日的《基因与发育》期刊上：老鼠长出了更长的前腿。虽然它们没有长出翅膀，但这项研究表明，即便是微小的变化也可能带来巨大的后果。}
+\par\smallskip
+\textbf{答案：}\ 实际读音（Pronounced words）\ {\color{cFix}Researchers, vigorously, differences, controls, pictured}\\
+\textbf{应点错词}\ 共 \textbf{5} 个（已红下划线标出）\qquad\textbf{你点中}\ \textbf{5} 个：freelances, inveteracy, alliterative, coasts, rewarmed（均正确）\\[2pt]\textbf{本题得分：}\ {\color{cAccent}\bfseries 5 / 5}\quad{\footnotesize\color{gray}（用时 01:18，全部点中）}
+\end{qblock}
+
+% ---------------- Q11 ----------------
+\begin{qblock}{Q11\quad HIW \#310\ \ Female Ticks}{找错词 · 评分 \textcolor{cAccent}{\bfseries 2 / 5}}
+\ptesub{录音原文 Transcript（屏幕错词\,{\color{cWrong}\uline{红下划线}}\,，括注实际读音）}
+\begin{promptbox}
+We've all heard the old saw about women who let themselves go after getting married. Well, female ticks take this post honeymoon weight-gain to extremes. After mating, female ticks in the family Ixodes increase their mass an astonishing 100 times, ballooning from the size of a sand grain to that of a kidney bean. This \hiw{retaliatory}{post-copulatory} growth spurt is actually an \hiw{reexported}{important} part of the tick's whole blood-sucking lifestyle. Female ticks need to fully engorge before they can lay eggs. But virgins are better off staying small so that they'll have more time to find a mate. Not that male ticks have \hiw{anyone}{anything} against full-bodied females. It's just that ticks meet their matches while they're hanging around on their host. And if unwed females become too \hiw{seedy}{unwieldy} they're more likely to get knocked off during a good grooming. As to what spurs the females to really bulk up, Ruben Kaufman of the \hiw{universe}{University} of Alberta finds that male ticks' semen contains proteins that trigger engorgement. Vaccines against these proteins could keep ticks from reproducing and transmitting infections such as Lyme disease. That would be good news for people, but bad news for female ticks who dream of being engorgeous.
+\end{promptbox}
+\zh{我们都听过那句老话，说女人结婚后就会"放飞自我"。而雌蜱把这种婚后发福发挥到了极致。交配后，硬蜱科的雌蜱体重会惊人地增加100倍，从沙粒大小膨胀成肾豆大小。这种交配后的猛长其实是蜱虫整个吸血生活方式的重要组成部分：雌蜱必须先充分吸血膨胀，才能产卵；但未交配的雌蜱最好保持体型小巧，这样才有更多时间寻找配偶。这并不是说雄蜱排斥体型丰满的雌蜱——只是蜱虫是在寄主身上"偶遇"配偶的，而如果未婚的雌蜱体型过于臃肿笨重，在寄主梳理毛发时就更容易被"清理掉"。至于是什么促使雌性大量增重，阿尔伯塔大学的鲁本·考夫曼发现，雄蜱的精液中含有能触发充血膨胀的蛋白质。针对这些蛋白质的疫苗，或许能阻止蜱虫繁殖，并阻断莱姆病等感染的传播。这对人类是好消息，但对梦想"膨胀得美美的"雌蜱来说，可就是坏消息了。}
+\par\smallskip
+\textbf{答案：}\ 实际读音（Pronounced words）\ {\color{cFix}post-copulatory, important, anything, unwieldy, University}\\
+\textbf{应点错词}\ 共 \textbf{5} 个（已红下划线标出）\qquad\textbf{你点中}\ \textbf{2} 个：retaliatory, seedy（均正确）\\[2pt]\textbf{本题得分：}\ {\color{cAccent}\bfseries 2 / 5}\quad{\footnotesize\color{gray}（用时 01:20；漏点 reexported、anyone、universe）}
+\end{qblock}
+
+% ---------------- Q12 ----------------
+\begin{qblock}{Q12\quad WFD \#1933}{听写句子 · 评分 \textcolor{cAccent}{\bfseries 8 / 11}}
+\ptesub{正确句子 Sentence}
+\begin{promptbox}
+You need to be able to concentrate when working or studying.
+\end{promptbox}
+\zh{你需要能够在工作或学习时集中注意力。}
+\ptesub{你的作答（逐词批改）\quad{\normalfont\wfdlegend}}
+\begin{youbox}
+\lhit{You need to be} \womit{able to concentrate} \wbad{concentrated concentrating} \lhit{when working or studying} \wbad{in}
+\end{youbox}
+\smallskip
+\textbf{本题得分：}\ {\color{cAccent}\bfseries 8 / 11}\quad{\footnotesize\color{gray}（用时 01:33；命中 You need to be / when working or studying，漏写 able to concentrate，多写 concentrated concentrating、in）}
+\end{qblock}
+
+% ---------------- Q13 ----------------
+\begin{qblock}{Q13\quad WFD \#1932}{听写句子 · 评分 \textcolor{cAccent}{\bfseries 8 / 10}}
+\ptesub{正确句子 Sentence}
+\begin{promptbox}
+His lectures tend to range over a number of topics.
+\end{promptbox}
+\zh{他的讲座往往涉及多个主题。}
+\ptesub{你的作答（逐词批改）\quad{\normalfont\wfdlegend}}
+\begin{youbox}
+\lhit{His} \wbad{lecture} \lhit{lectures tend} \wbad{tends} \lhit{to} \womit{range over} \wbad{contains the} \lhit{a number} \wbad{numbers numberous} \lhit{of} \wbad{the} \lhit{topics}
+\end{youbox}
+\smallskip
+\textbf{本题得分：}\ {\color{cAccent}\bfseries 8 / 10}\quad{\footnotesize\color{gray}（用时 01:27；漏写 range over，多写 lecture、tends、contains the、numbers numberous、the）}
+\end{qblock}
+
+% ---------------- Q14 ----------------
+\begin{qblock}{Q14\quad WFD \#1929}{听写句子 · 评分 \textcolor{cAccent}{\bfseries 7 / 9}}
+\ptesub{正确句子 Sentence}
+\begin{promptbox}
+Several major companies and organizations are supporting this project.
+\end{promptbox}
+\zh{有几家大型企业和机构正在支持这个项目。}
+\ptesub{你的作答（逐词批改）\quad{\normalfont\wfdlegend}}
+\begin{youbox}
+\lhit{Several companies} \womit{and organizations} \wbad{of the} \lhit{major} \wbad{majority majors majorities} \lhit{are supporting} \wbad{for} \lhit{this project} \wbad{projects}
+\end{youbox}
+\smallskip
+\textbf{本题得分：}\ {\color{cAccent}\bfseries 7 / 9}\quad{\footnotesize\color{gray}（用时 02:00；漏写 and organizations，多写 of the、majority majors majorities、for、projects）}
+\end{qblock}
+
+% ---------------- Q15 ----------------
+\begin{qblock}{Q15\quad WFD \#1926}{听写句子 · 评分 \textcolor{cAccent}{\bfseries 7 / 11}}
+\ptesub{正确句子 Sentence}
+\begin{promptbox}
+Graduates have to fight for jobs in the highly competitive market.
+\end{promptbox}
+\zh{毕业生们必须在竞争激烈的市场中争抢工作岗位。}
+\ptesub{你的作答（逐词批改）\quad{\normalfont\wfdlegend}}
+\begin{youbox}
+\lhit{Graduates} \womit{have} \wbad{need} \lhit{to} \womit{fight} \wbad{seek} \lhit{for} \wbad{a} \lhit{the} \womit{highly} \wbad{job} \lhit{jobs} \womit{in} \wbad{for from the high} \lhit{competitive market}
+\end{youbox}
+\smallskip
+\textbf{本题得分：}\ {\color{cAccent}\bfseries 7 / 11}\quad{\footnotesize\color{gray}（用时 01:42；漏写 have、fight、highly、in，多写 need、seek、a、job、for from the high）}
+\end{qblock}
+
+\end{document}

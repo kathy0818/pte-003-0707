@@ -1,0 +1,15 @@
+# LaTeX 编译中间产物
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+
+# build/paper = 可重新生成的工作台：预览 PDF 与临时图片目录不入库
+build/paper/preview_*.pdf
+build/paper/img/
+
+# build/zoom = 读图时从裁剪素材再裁切的临时放大图，可随时重生成，不入库
+build/zoom/
+
+# 成品 PDF（整理卷/）要入库，不在此忽略

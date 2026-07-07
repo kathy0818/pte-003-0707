@@ -7,6 +7,13 @@ This repo slices the full-page PTE **Academic** mock-exam screenshots into **one
 > **本次范围 / Scope of this round：** 这是**完整一套模考**（Listening + Reading + Speaking + Writing 全部题目），**听力、阅读、口语、写作的每一道题都裁剪了**（口语不再只保留 DI，写作也第一次纳入）。上一套模考（`pte-002-1-0704` 仓库）只裁了听力/阅读全部 + 口语仅 DI，写作没有做。
 > This round covers a **complete** mock exam — **every question** in Listening, Reading, Speaking, and Writing was cropped (Speaking is no longer DI-only, and Writing is included for the first time). The previous mock (`pte-002-1-0704` repo) only did Listening/Reading in full plus Speaking-DI-only, with no Writing.
 
+> 🆕 **第二阶段：错题与详解·整理卷排版 / Stage 2 — typeset "answers & explanations" booklet.**
+> 在上面这批逐题裁剪素材的基础上，本仓库正在把它们排版成干净可打印的 **PTE Core 模考 3B · 错题与详解整理卷**
+> （做法与 [`pte-002-0628`](https://github.com/kathy0818/pte-002-0628) 仓库相同）。
+> 成品在 **`整理卷/`**，交接文档在 **`交接文档/`**——新会话请从
+> [`交接文档/00_总交接文档·从这里开始.md`](交接文档/00_总交接文档·从这里开始.md) 读起。
+> **当前进度：✅ 听力（`整理卷/PTE模考3B_听力_整理卷.pdf`，15 题，55/90）；⬜ 阅读、⬜ 口语、⬜ 写作、⬜ 合订本 待做。**
+
 ---
 
 ## 📁 目录结构 / Folder structure
