@@ -9,6 +9,9 @@
 build/paper/preview_*.pdf
 build/paper/img/
 
+# build/paper/frag_*.tex = workflow 并行起草用的临时片段，组装进 sec_<part>_body.tex 后即删除，不入库
+build/paper/frag_*.tex
+
 # build/zoom = 读图时从裁剪素材再裁切的临时放大图，可随时重生成，不入库
 build/zoom/
 
