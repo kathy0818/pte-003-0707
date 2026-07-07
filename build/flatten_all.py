@@ -38,13 +38,13 @@ toc_overview = r"""\clearpage
 {\small
 \begin{tabularx}{\linewidth}{@{}l c >{\RaggedRight\arraybackslash}X r@{}}
 \rowcolor{cHead}\textcolor{white}{\bfseries 部分} & \textcolor{white}{\bfseries 题量} & \textcolor{white}{\bfseries 题型构成} & \textcolor{white}{\bfseries 本项得分}\\
-听力 Listening & 15 & SST · MCM-L · FIB-L\,$\times$3 · MCS-L · SMW\,$\times$2 · HIW\,$\times$3 · WFD\,$\times$4 & 47 / 90\\
-口语 Speaking & 30 & RA\,$\times$7 · RS\,$\times$11 · DI\,$\times$3 · RTS\,$\times$3 · ASQ\,$\times$6 & 36 / 90\\
-阅读 Reading & 16 & FIB\,$\times$5 · MCM\,$\times$2 · RO\,$\times$2 · FIB(R)\,$\times$5 · MCS\,$\times$2 & 46 / 90\\
-写作 Writing & \phantom{0}4 & SWT\,$\times$2 · WE\,$\times$2 & 71 / 90\\
+听力 Listening & 15 & SST · MCM-L · FIB-L\,$\times$3 · MCS-L · SMW\,$\times$2 · HIW\,$\times$3 · WFD\,$\times$4 & 55 / 90\\
+口语 Speaking & 30 & RA\,$\times$7 · RS\,$\times$11 · DI\,$\times$3 · RTS\,$\times$3 · ASQ\,$\times$6 & 42 / 90\\
+阅读 Reading & 16 & FIB\,$\times$5 · MCM\,$\times$2 · RO\,$\times$2 · FIB(R)\,$\times$5 · MCS\,$\times$2 & 42 / 90\\
+写作 Writing & \phantom{0}4 & SWT\,$\times$2 · WE\,$\times$2 & 73 / 90\\
 \end{tabularx}}
 \par\smallskip
-{\footnotesize\color{gray}总分 50（听力 47 / 阅读 46 / 口语 36 / 写作 71）。颜色与标注沿用各部分；本合订本顺序为「听·说·读·写」。}"""
+{\footnotesize\color{gray}总分 53（听力 55 / 阅读 42 / 口语 42 / 写作 73）。颜色与标注沿用各部分；本合订本顺序为「听·说·读·写」。}"""
 
 out = (
     f"% PTE Core 模考 {EXAM} —— 总整理卷（听·说·读·写 合订，自包含）\n"
