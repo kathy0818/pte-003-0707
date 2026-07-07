@@ -1,0 +1,463 @@
+% PTE Core 模考 3B —— 写作 错题与详解·整理卷  版本 000（自包含）
+% 编译: xelatex 本文件.tex   （需 Noto CJK + TeX Gyre Heros 字体）
+% 本版本无外部图片，单文件即可复现。
+\documentclass[11pt]{article}
+
+% --------- 样式（原 ptestyle.sty，已内联）---------
+% ============================================================
+%  ptestyle.sty  —  PTE 模考错题整理卷 共享样式
+%  编译引擎: XeLaTeX  (中英混排, 需要 Noto CJK 字体)
+% ============================================================
+
+\usepackage[a4paper,margin=2cm,headsep=4mm]{geometry}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\usepackage[table]{xcolor}
+\usepackage[normalem]{ulem}        % \sout 删除线
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{pifont}                % \ding{51}=✓ \ding{55}=✗（阅读对错标注）
+\usepackage{needspace}
+\usepackage{tikz}
+
+% ---------- 字体 ----------
+\setmainfont{TeX Gyre Heros}            % 拉丁: Helvetica 风格(纤细清晰)
+\setCJKmainfont{Noto Sans CJK SC}
+\setCJKsansfont{Noto Sans CJK SC}
+\newfontfamily\cjkserif{Noto Serif CJK SC}
+\linespread{1.18}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+
+% ---------- 配色 ----------
+\definecolor{cWrong}{HTML}{D32F2F}     % 红  = 修改 / 错误
+\definecolor{cFix}{HTML}{1B7F3B}       % 绿  = 正确建议
+\definecolor{cDelete}{HTML}{1565C0}    % 蓝  = 删除
+\definecolor{cInsert}{HTML}{7B1FA2}    % 紫  = 插入
+\definecolor{cPartial}{HTML}{E07B00}   % 橙  = 部分得分
+\definecolor{cNote}{HTML}{0277BD}      % 蓝  = 注解
+\definecolor{cAccent}{HTML}{16A085}    % 主题青绿(平台主色)
+\definecolor{cWrongBg}{HTML}{FBE0E0}
+\definecolor{cDelBg}{HTML}{DCE8FB}
+\definecolor{cInsBg}{HTML}{EEE0F5}
+\definecolor{cHead}{HTML}{20303A}
+\definecolor{cGrayBox}{HTML}{F4F6F7}
+\definecolor{cModelBg}{HTML}{EAF7EF}
+\definecolor{cYouBg}{HTML}{FFF7F5}
+\definecolor{cNoteBg}{HTML}{EAF3FA}
+\definecolor{cRule}{HTML}{D7DEE2}
+
+% ---------- 行内批改宏 (复刻平台标注) ----------
+% \fix{原词}{正确}  红色删除线 + 绿色上标改正  (修改/拼写/空格)
+\newcommand{\fix}[2]{%
+  \colorbox{cWrongBg}{\textcolor{cWrong}{\sout{#1}}}%
+  \,\textsuperscript{\textcolor{cFix}{\footnotesize #2}}}
+% \del{原词}  蓝色删除线  (应删除)
+\newcommand{\del}[1]{%
+  \colorbox{cDelBg}{\textcolor{cDelete}{\sout{#1}}}%
+  \,\textsuperscript{\textcolor{cDelete}{\footnotesize 删}}}
+% \ins{词}  紫色下划线  (应插入)
+\newcommand{\ins}[1]{%
+  \textsuperscript{\textcolor{cInsert}{\footnotesize $\wedge$}}%
+  \colorbox{cInsBg}{\textcolor{cInsert}{#1}}}
+% \miss{词}  灰色删除线  (口语漏读 / 未作答)
+\newcommand{\miss}[1]{\textcolor{gray}{\sout{#1}}}
+% \add{原词}{改正}  橙色波浪线 + "补"标签  (平台漏标、本卷补标的错误)
+\definecolor{cAdd}{HTML}{E65100}
+\newcommand{\add}[2]{%
+  \textcolor{cAdd}{\uwave{#1}}%
+  \,\textsuperscript{\textcolor{cAdd}{\footnotesize 补：#2}}}
+% 高亮(口语发音): 好/中/差
+\newcommand{\spk}[2]{\textcolor{#1}{#2}}
+
+% ---------- 评分单元格着色 ----------
+\newcommand{\sfull}[1]{\textcolor{cFix}{\bfseries #1}}     % 满分
+\newcommand{\spart}[1]{\textcolor{cPartial}{\bfseries #1}} % 部分
+\newcommand{\szero}[1]{\textcolor{cWrong}{\bfseries #1}}   % 零/低分
+
+% ---------- 分数小标签 ----------
+\newtcbox{\chip}[1][cAccent]{on line, boxsep=2pt, left=4pt, right=4pt, top=1pt,
+  bottom=1pt, arc=3pt, colback=#1, colframe=#1, coltext=white, nobeforeafter,
+  fontupper=\bfseries\footnotesize}
+
+% ---------- 题块小标题 ----------
+\newcommand{\ptesub}[1]{%
+  \par\needspace{2\baselineskip}\smallskip
+  {\color{cAccent}\rule[-0.2ex]{3pt}{1.05em}}\hspace{6pt}%
+  {\bfseries\color{cHead}#1}\par\nopagebreak\smallskip}
+
+% ---------- 题块外框 ----------
+% \begin{qblock}{标号·题型}{右上信息(得分/用时)} ... \end{qblock}
+\newtcolorbox{qblock}[2]{
+  breakable, enhanced, arc=2.5pt,
+  colback=white, colframe=cRule, boxrule=0.6pt,
+  left=11pt, right=11pt, top=8pt, bottom=10pt,
+  toptitle=3pt, bottomtitle=3pt, lefttitle=11pt, righttitle=11pt,
+  colbacktitle=cHead, coltitle=white, fonttitle=\bfseries,
+  title={#1\hfill\normalfont\bfseries\small #2}}
+
+% ---------- 文本块: 题干 / 范文 / 你的作答 / 建议 ----------
+\newtcolorbox{promptbox}{enhanced, breakable, colback=cGrayBox, colframe=cGrayBox,
+  arc=2pt, left=8pt, right=8pt, top=6pt, bottom=6pt, boxrule=0pt}
+\newtcolorbox{modelbox}{enhanced, breakable, colback=cModelBg, colframe=cModelBg,
+  borderline west={3pt}{0pt}{cFix}, arc=1pt, left=8pt, right=8pt, top=6pt, bottom=6pt, boxrule=0pt}
+\newtcolorbox{youbox}{enhanced, breakable, colback=cYouBg, colframe=cYouBg,
+  borderline west={3pt}{0pt}{cWrong}, arc=1pt, left=8pt, right=8pt, top=6pt, bottom=6pt, boxrule=0pt}
+\newtcolorbox{notebox}{enhanced, breakable, colback=cNoteBg, colframe=cNoteBg,
+  borderline west={3pt}{0pt}{cNote}, arc=1pt, left=8pt, right=8pt, top=6pt, bottom=6pt, boxrule=0pt}
+
+% ---------- 评分表 ----------
+% 用法见正文; 这里给表头宏
+\newcommand{\scorehead}{%
+  \rowcolors{2}{cGrayBox}{white}
+  \arrayrulecolor{cRule}}
+
+% ---------- 章节大标题 ----------
+\newcommand{\ptesection}[3]{% #1=中文名 #2=英文名 #3=该项分数
+  \addcontentsline{toc}{section}{#1}%
+  \needspace{6\baselineskip}
+  \begin{tcolorbox}[enhanced, colback=cAccent, colframe=cAccent, sharp corners,
+     left=14pt, right=14pt, top=10pt, bottom=10pt, boxrule=0pt]
+    {\fontsize{20}{24}\selectfont\bfseries\color{white} #1\ \ }%
+    {\large\color{white!85} #2}\hfill
+    {\large\color{white}本项得分\ \ }{\fontsize{22}{24}\selectfont\bfseries\color{white} #3}%
+    \ {\color{white!85}/ 90}
+  \end{tcolorbox}}
+
+% ---------- 题型小节分隔 (口语 RA/RS/DI/RTS/ASQ 等) ----------
+\newcommand{\ptetask}[2]{%
+  \addcontentsline{toc}{subsection}{#1\ #2}%
+  \needspace{4\baselineskip}\medskip
+  \begin{tcolorbox}[enhanced, colback=cHead, colframe=cHead, sharp corners,
+     left=12pt, right=12pt, top=5pt, bottom=5pt, boxrule=0pt]
+    {\large\bfseries\color{white} #1}\ \ {\color{white!80} #2}
+  \end{tcolorbox}\smallskip}
+
+% ---------- 口语 AI 语音识别着色 (复刻平台: 优/良/差 + 停顿) ----------
+\definecolor{cSpkGood}{HTML}{2E9E5B}   % 优 绿
+\definecolor{cSpkOk}{HTML}{C77F00}     % 良 黄/琥珀
+\definecolor{cSpkBad}{HTML}{E0352B}    % 差 红
+\newcommand{\sg}[1]{\textcolor{cSpkGood}{#1}}   % 优
+\newcommand{\sy}[1]{\textcolor{cSpkOk}{#1}}     % 良
+\newcommand{\sr}[1]{\textcolor{cSpkBad}{#1}}    % 差
+\newcommand{\smiss}[1]{\textcolor{cSpkBad}{\sout{#1}}}  % 漏读 (红删除线)
+\newcommand{\pse}{{\color{gray}\,/\,}}          % 停顿
+\newcommand{\asrlegend}{{\footnotesize\color{gray}AI 语音识别\quad
+  {\color{cSpkGood}\textbullet}\,优\ \ {\color{cSpkOk}\textbullet}\,良\ \
+  {\color{cSpkBad}\textbullet}\,差\ \ {\color{gray}/}\,停顿\ \
+  {\color{cSpkBad}\sout{词}}\,漏读}}
+\newtcolorbox{asrbox}{enhanced, breakable, colback=white, colframe=cRule,
+  boxrule=0.6pt, arc=1pt, left=8pt, right=8pt, top=6pt, bottom=6pt}
+
+% ---------- 中文翻译行 ----------
+\newcommand{\zh}[1]{{\footnotesize\textcolor{cNote}{\textbf{译}}\ \textcolor{gray}{#1}}}
+
+% ---------- 阅读填空 / 选择 对错标注 ----------
+\newcommand{\rok}[1]{{\color{cFix}\ding{51}\,#1}}                 % 选对(绿勾 + 词)
+\newcommand{\rno}[2]{{\color{cWrong}\ding{55}\,\sout{#1}}\,{\footnotesize\color{cFix}(答案:\,#2)}}  % 选错: 你的(红删) + (答案:正确)
+\newcommand{\rblank}[1]{{\color{cFix}\underline{\,#1\,}}}         % 直接给空的正确答案(无你的作答时)
+
+% ---------- 听力专用 ----------
+\newcommand{\hiw}[2]{{\color{cWrong}\uline{#1}}\,{\footnotesize\color{cFix}(听:#2)}} % HIW: 屏幕错词(红下划线)+ 实际读音
+\newcommand{\lhit}[1]{{\color{cFix}#1}}                           % WFD: 命中的词(绿)
+\newcommand{\lmiss}[1]{{\color{cWrong}\sout{#1}}}                 % WFD: 多余/错误的词(红删, 1B 配色)
+% ---- WFD 逐词批改 · 本套 2B 平台配色（与 1B 相反）：绿=命中 / 红括号=漏写 / 灰删除线=多写或听错 ----
+% 说明: 2B 平台把"漏写"标红(加括号)、"多写/听错"标灰删除线; 本卷忠于原图按此复刻。
+\newcommand{\womit}[1]{{\color{cWrong}(#1)}}                      % WFD: 漏写(正确答案有、你没写)——红色括号
+\newcommand{\wbad}[1]{{\color{gray}\sout{#1}}}                    % WFD: 多写/听错(你写了但错)——灰删除线
+\newcommand{\wfdlegend}{{\footnotesize\color{gray}WFD 配色：\
+  {\color{cFix}命中}\ \ {\color{cWrong}(漏写)}\ \ {\color{gray}\sout{多写/听错}}}}
+
+% ---------- 颜色图例 ----------
+\newcommand{\ptelegend}{%
+  \begin{tcolorbox}[enhanced, colback=cGrayBox, colframe=cRule, boxrule=0.5pt,
+    arc=2pt, left=10pt, right=10pt, top=6pt, bottom=6pt]
+  {\bfseries\color{cHead}颜色说明\quad}
+  \fix{改}{正}~修改/拼写\quad
+  \del{删}~应删除\quad
+  \ins{插}~应插入\quad
+  \add{补}{改正}~平台漏标(本卷补标)\quad
+  {\color{cFix}\rule{1em}{0.6em}}~范文/正确\quad
+  {\color{cNote}\rule{1em}{0.6em}}~AI 建议
+  \end{tcolorbox}}
+
+% ---------- 页眉页脚 ----------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyhead[L]{\footnotesize\color{cHead}\bfseries PTE Core 模考 3B}
+\fancyhead[R]{\footnotesize\color{gray} 错题与详解整理卷}
+\fancyfoot[C]{\footnotesize\color{gray}\thepage}
+
+\begin{document}
+
+% --------- 封面（原 cover.tex）---------
+% ---------- 封面 / 成绩总览 ----------
+\definecolor{mListen}{HTML}{1F3A5F}
+\definecolor{mRead}{HTML}{C2D70B}
+\definecolor{mSpeak}{HTML}{4D4D4D}
+\definecolor{mWrite}{HTML}{A01B7D}
+
+\begin{titlepage}
+\thispagestyle{empty}
+\centering
+\vspace*{1.4cm}
+
+{\fontsize{30}{36}\selectfont\bfseries\color{cHead} PTE Core 模考 3B}\\[4mm]
+{\fontsize{17}{20}\selectfont\color{cAccent}\bfseries 错题与详解 · 整理卷}\\[3mm]
+{\color{gray} APEUni / 猩际 PTE 模考　·　提交时间 2026-07-05 13:36}\\[1.2cm]
+
+% ---- 总分 ----
+\begin{tcolorbox}[width=0.62\textwidth, halign=center, enhanced,
+  colback=cAccent, colframe=cAccent, arc=6pt, boxrule=0pt, top=10pt, bottom=10pt]
+  {\color{white}\large 总分 Overall}\\[2pt]
+  {\fontsize{46}{50}\selectfont\bfseries\color{white} 53}
+\end{tcolorbox}
+
+\vspace{1.0cm}
+
+% ---- 四项分数条形图 ----
+\begin{tcolorbox}[width=0.84\textwidth, enhanced, colback=white, colframe=cRule,
+  boxrule=0.8pt, arc=4pt, left=18pt, right=18pt, top=14pt, bottom=14pt]
+\setlength{\tabcolsep}{6pt}\renewcommand{\arraystretch}{1.7}
+\sffamily
+\begin{tabular}{@{}r@{\hskip 8pt}l@{\hskip 10pt}l@{}}
+ \bfseries Listening 听力 & {\color{mListen}\rule{6.11cm}{0.42cm}} & {\bfseries\large 55}\\
+ \bfseries Reading 阅读   & {\color{mRead}\rule{4.67cm}{0.42cm}}   & {\bfseries\large 42}\\
+ \bfseries Speaking 口语  & {\color{mSpeak}\rule{4.67cm}{0.42cm}}  & {\bfseries\large 42}\\
+ \bfseries Writing 写作   & {\color{mWrite}\rule{8.11cm}{0.42cm}}  & {\bfseries\large 73}\\
+\end{tabular}\\[2mm]
+{\footnotesize\color{gray} 满分 90　|　刻度: 条长 = 得分 / 90}
+\end{tcolorbox}
+
+\vfill
+\begin{flushleft}\small\color{gray}
+\textbf{说明:}本卷由本次模考的题目与"详解"截图逐题誊写、重新排版而成,完整保留每道题的
+\emph{题干 / 原文、范文、你的作答、逐项评分、彩色批改与 AI 中文建议}。\\
+所有错误按平台标注用颜色标出(见下方图例)。原始"详解"PDF 不可复制、仅截图,本卷内容均为人工对照誊录,若与原图有出入以原图为准。
+\end{flushleft}
+\vspace{4mm}
+\ptelegend
+\end{titlepage}
+
+% --------- 写作正文（原 sec_writing_body.tex）---------
+% ===================== 写作 Writing =====================
+\ptesection{写作}{Writing · Summarize Written Text + Write Email}{73}
+
+\vspace{1mm}
+{\small\color{gray} 本部分含 \textbf{SWT 概括写作} 2 题（满分各 8）与 \textbf{WE 邮件写作} 2 题（满分各 15）。
+SWT 仅展示"你的作答 + 批改"；WE 另含平台"范文"。下方每题保留逐项评分与 AI 中文建议，并为原文 / 题干 / 范文附\textbf{中文翻译}。SWT 两题均满分、无批改；WE 两题失分点集中在语法(缺空格/动词形式)与词汇。本套写作总分 \textbf{73 / 90}。}
+\vspace{2mm}
+
+% ================= 概括写作 Summarize Written Text =================
+\newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
+
+% ---------------- Q1 ----------------
+\begin{qblock}{Q1\quad SWT \#61\ \ Psychotherapy}{8 / 8\quad·\quad 用时 05:18}
+
+\ptesub{原文 Source Text}
+\begin{promptbox}
+Psychotherapy, sometimes called talk therapy, is a treatment that involves a talking relationship between a therapist and patient. It can be used to treat a broad variety of mental disorders and emotional difficulties. The goal of psychotherapy is to eliminate or control disabling or troubling symptoms so the patient can function better. Depending on the extent of the problem, treatment may take just a few sessions over a week or two or may take many sessions over a period of years. Psychotherapy can be done individually, as a couple, with a family, or in a group.
+
+There are many forms of psychotherapy. There are psychotherapies that help patients change behaviors or thought patterns, psychotherapies that help patients explore the effect of past relationships and experiences on present behaviors, and psychotherapies that are tailored to help solve other problems in specific ways. Cognitive behavior therapy is a goal-oriented therapy focusing on problem solving. Psychoanalysis is an intensive form of individual psychotherapy which requires frequent sessions over several years.
+\end{promptbox}
+\zh{心理治疗，有时也称为谈话疗法，是一种通过治疗师与患者之间的对话关系进行的治疗方式。它可用于治疗种类繁多的精神障碍和情绪困扰。心理治疗的目标是消除或控制致人身心失能或困扰的症状，使患者能够更好地正常生活。根据问题的严重程度，治疗可能只需一两周内的几次疗程，也可能需要持续数年的多次疗程。心理治疗可以以个人、夫妻、家庭或小组的形式进行。心理治疗有多种形式：有的帮助患者改变行为或思维模式，有的帮助患者探究过去的人际关系与经历对当下行为的影响，还有的则专门针对其他问题、以特定方式加以解决。认知行为疗法是一种以解决问题为导向、目标明确的疗法。精神分析是一种高强度的个体心理治疗形式，需要在数年间持续进行频繁的疗程。}
+
+\ptesub{你的作答 Your Response}
+\begin{youbox}
+Psychotherapy is a treatment that involves a talking relationship between a therapist and patient, and the goal of psychotherapy is to eliminate or control disabling or troubling symptoms, and there are many forms of psychotherapy, and psychoanalysis is an intensive form of individual psychotherapy.
+\end{youbox}
+
+\ptesub{评分明细 Score Breakdown}
+{\small\scorehead
+\begin{tabularx}{\linewidth}{l c Y}
+\rowcolor{cHead}\textcolor{white}{\bfseries 维度} & \textcolor{white}{\bfseries 得分} & \textcolor{white}{\bfseries AI 建议}\\
+Content 内容        & \sfull{2 / 2} & 内容很棒\\
+Form 格式          & \sfull{2 / 2} & Form 很棒，这是必拿分数\\
+Grammar 语法       & \sfull{2 / 2} & 很棒，AI 小猩几乎检查不出什么语法问题\\
+Vocabulary 词汇    & \sfull{2 / 2} & 很棒，再接再厉\\
+\end{tabularx}}
+\smallskip
+\textbf{本题得分：}\ {\color{cAccent}\bfseries 8 / 8}\quad{\footnotesize\color{gray}（满分，无批改）}
+
+\end{qblock}
+
+% ---------------- Q2 ----------------
+\begin{qblock}{Q2\quad SWT \#57\ \ Metaverse}{8 / 8\quad·\quad 用时 05:29}
+
+\ptesub{原文 Source Text}
+\begin{promptbox}
+The concept of the metaverse is rapidly gaining traction in the world of technology, promising to revolutionize the way we interact with digital spaces and each other. It represents a new era of connectivity and immersion, where physical and digital boundaries blur. In essence, the metaverse is a virtual, interconnected universe where users can engage in various activities, interact with others, and create their own digital presence. It encompasses virtual reality (VR), augmented reality (AR), and the internet, seamlessly blending these technologies into a unified experience.
+
+One of the most exciting aspects of the metaverse is its potential to transform the way we work, socialize, learn, and entertain ourselves. Imagine attending a virtual meeting in a lifelike conference room, exploring distant places in an immersive travel experience, or attending a concert with friends from around the world — all from the comfort of your home. Businesses are already exploring the possibilities of the metaverse, from virtual showrooms for products to interactive training simulations for employees. It has the potential to disrupt traditional industries and create new opportunities for innovation and entrepreneurship.
+\end{promptbox}
+\zh{元宇宙（metaverse）这一概念正在科技界迅速走红，有望彻底改变我们与数字空间以及彼此互动的方式。它代表着连接与沉浸的新时代，物理世界与数字世界的边界在此变得模糊。本质上，元宇宙是一个虚拟的、互联互通的宇宙，用户可以在其中参与各种活动、与他人互动，并塑造自己的数字身份。它涵盖虚拟现实（VR）、增强现实（AR）以及互联网，将这些技术无缝融合为统一的体验。元宇宙最令人兴奋的一点，是它有潜力改变我们工作、社交、学习和娱乐的方式。试想一下：足不出户便能在逼真的会议室中参加虚拟会议，在沉浸式的旅行体验中探索遥远的地方，或是与来自世界各地的朋友一同观看演唱会。企业已经在探索元宇宙的各种可能性，从产品的虚拟展厅到面向员工的互动培训模拟，不一而足。它有潜力颠覆传统行业，并为创新与创业创造新的机遇。}
+
+\ptesub{你的作答 Your Response}
+\begin{youbox}
+The concept of the metaverse is rapidly gaining traction in the world of technology, and the metaverse is a virtual and interconnected universe, and one of the most exciting aspects of the metaverse is its potential to transform the way we work, learn, and entertain ourselves.
+\end{youbox}
+
+\ptesub{评分明细 Score Breakdown}
+{\small\scorehead
+\begin{tabularx}{\linewidth}{l c Y}
+\rowcolor{cHead}\textcolor{white}{\bfseries 维度} & \textcolor{white}{\bfseries 得分} & \textcolor{white}{\bfseries AI 建议}\\
+Content 内容        & \sfull{2 / 2} & 内容很棒\\
+Form 格式          & \sfull{2 / 2} & Form 很棒，这是必拿分数\\
+Grammar 语法       & \sfull{2 / 2} & 很棒，AI 小猩几乎检查不出什么语法问题\\
+Vocabulary 词汇    & \sfull{2 / 2} & 很棒，再接再厉\\
+\end{tabularx}}
+\smallskip
+\textbf{本题得分：}\ {\color{cAccent}\bfseries 8 / 8}\quad{\footnotesize\color{gray}（满分，无批改）}
+
+\end{qblock}
+
+% ================= 邮件写作 Write Email =================
+
+% ---------------- Q3 ----------------
+\begin{qblock}{Q3\quad WE \#12\ \ Not to Miss This Year's Local Food Festival}{13.7 / 15\quad·\quad 用时 09:00}
+
+\ptesub{题干 Task Prompt}
+\begin{promptbox}
+You are the organizer of a local food festival and want to attract more attendees this year. Write an email to your subscriber list, explaining three reasons why they should not miss this year's event. You should write between 80 and 120 words.
+
+\smallskip Your suggestions should focus on the following three themes:
+\begin{itemize}[leftmargin=1.4em,topsep=2pt,itemsep=0pt]
+  \item Variety of Food;
+  \item Interactive Cooking Demonstrations;
+  \item Exclusive Discounts.
+\end{itemize}
+You should include all three themes. Provide supporting examples for your reasons.
+\end{promptbox}
+\zh{你是一场地方美食节的组织者，希望今年吸引更多参与者。请给你的订阅用户列表写一封邮件，说明他们不应错过今年活动的三个理由。字数应在 80 至 120 之间。你的建议应围绕以下三个主题：食物种类多样；互动烹饪演示；专属折扣优惠。三个主题都要涵盖，并为你的理由提供支撑性例子。}
+
+\ptesub{范文 Model Answer（平台参考）}
+\begin{modelbox}
+Dear Food Enthusiasts,
+
+Exciting flavors await at this year's local food festival! Here's why you should join us:
+
+Firstly, the festival will showcase a variety of food, offering dishes from around the globe to delight every palate.
+
+Secondly, our interactive cooking demonstrations will not only entertain but also educate, as renowned chefs demonstrate their culinary skills and share kitchen secrets.
+
+Finally, enjoy exclusive discounts on meals and products, making this gourmet experience both memorable and affordable.
+
+Mark your calendars for a day of delicious discovery!
+
+Warmest regards,\\ Peter Pan
+\end{modelbox}
+\zh{亲爱的美食爱好者们：今年的地方美食节上，令人兴奋的美味佳肴正等着大家！以下是您不应错过的理由：第一，本次美食节将展示种类繁多的美食，提供来自世界各地的菜肴，满足每一位食客的味蕾。第二，我们的互动烹饪演示不仅具有娱乐性，还兼具教育意义，知名大厨将现场展示烹饪技艺、分享厨房秘诀。最后，尽享餐食与商品的专属折扣，让这场美食盛宴既难忘又实惠。快在日历上标记这个满是美味发现的日子吧！最诚挚的问候，Peter Pan}
+
+\ptesub{你的作答 Your Response（含批改）}
+\begin{youbox}
+Dear Subscriber List,
+
+I hope this email finds you well. \fix{I'mwriting}{I'm writing（缺空格）} to \fix{explaining}{explain} three reasons why you should not miss this year's event.
+
+Firstly, the food \fix{festival prepare}{festival prepares a} variety of food so that you can eat delicious food.
+
+Secondly, the food festival has interactive cooking demonstrations so that you can cook dinner with your best friends,
+
+Lastly, the food festival has exclusive discounts so that you can have a good time during this festival with your family.
+
+Welcome to the food festival! Looking forward to your reply.
+
+Best regards,\\ Kathy
+\end{youbox}
+{\footnotesize\color{gray} 注：弹窗内共三处红色标注框，均为语法/缺词类问题——``I'm writing'' 缺空格、``explaining''$\to$``explain''、``festival prepare''$\to$``festival prepares a''；其余段落在弹窗中未见高亮，故未追加批注。}
+
+\ptesub{评分明细 Score Breakdown}
+{\small\scorehead
+\begin{tabularx}{\linewidth}{l c Y}
+\rowcolor{cHead}\textcolor{white}{\bfseries 维度} & \textcolor{white}{\bfseries 得分} & \textcolor{white}{\bfseries AI 建议}\\
+Content 内容              & \sfull{3 / 3}   & 内容很棒\\
+Form 格式                & \sfull{2 / 2}   & Form 很棒，这是必拿分数\\
+Email Conventions 邮件格式 & \sfull{2 / 2}   & 邮件书写格式很棒！\\
+Organization 结构         & \sfull{2 / 2}   & 段落分明，文章架构清晰明了，很棒\\
+Vocabulary 词汇           & \spart{1.5 / 2} & PTE 对词汇不要求很难，但需要恰当且拼写正确。点击彩色单词查看错误和修改建议\\
+Grammar 语法              & \spart{1.2 / 2} & 点击有颜色标注的文字查看语法错误细节哦~\\
+Spelling 拼写             & \sfull{2 / 2}   & 虽然你拼写拿了满分，但是你还是犯了 1 个拼写错误。下次注意避免哦\\
+\end{tabularx}}
+\smallskip
+\textbf{本题得分：}\ {\color{cAccent}\bfseries 13.7 / 15}\quad{\footnotesize\color{gray}（平台标注：I'm writing 缺空格、explaining$\to$explain、festival prepare$\to$festival prepares a）}
+
+\end{qblock}
+
+% ---------------- Q4 ----------------
+\begin{qblock}{Q4\quad WE \#13\ \ Engaging Children in Reading}{14.5 / 15\quad·\quad 用时 08:22}
+
+\ptesub{题干 Task Prompt}
+\begin{promptbox}
+The local community library is looking to promote literacy and a love of reading among the youth in your area. You are a volunteer at the library and have some ideas on how to engage the children more effectively. Write an email to Ms.\ Reed, the librarian in charge, offering three suggestions for initiatives that could make reading more exciting and accessible for the children in your area. You should write between 80 and 120 words.
+
+\smallskip Your ideas must come from the following three themes:
+\begin{itemize}[leftmargin=1.4em,topsep=2pt,itemsep=0pt]
+  \item A reading marathon event;
+  \item Collaborations with local authors;
+  \item Weekend reading clubs.
+\end{itemize}
+You should include all three themes. Provide supporting ideas for your suggestions.
+\end{promptbox}
+\zh{当地社区图书馆希望在你所在地区的青少年中推广读写能力和阅读热情。你是图书馆的一名志愿者，对如何更有效地吸引孩子们参与有一些想法。请给负责此事的图书管理员 Reed 女士写一封邮件，就如何让你所在地区的孩子们觉得阅读更有趣、更容易获取提出三条建议。字数应在 80 至 120 之间。你的想法必须来自以下三个主题：阅读马拉松活动；与本地作家的合作；周末读书俱乐部。三个主题都要涵盖，并为你的建议提供支撑性想法。}
+
+\ptesub{范文 Model Answer（平台参考）}
+\begin{modelbox}
+Dear Ms.\ Reed,
+
+I hope you're well. I'd like to suggest a few initiatives to foster a love of reading among our local youth.
+
+Firstly, hosting a reading marathon event could excite children about reading, with challenges and rewards for milestones reached.
+
+Secondly, collaborating with local authors for readings and Q\&A sessions can inspire children by connecting them with the creators of their favorite stories.
+
+Lastly, establishing weekend reading clubs would offer a regular, fun way for kids to explore new books and share their thoughts in a group setting.
+
+These initiatives could significantly enhance our library's engagement with young readers.
+
+Best,\\ Peter Pan
+\end{modelbox}
+\zh{亲爱的 Reed 女士：您好。我想提出几项举措，以培养本地青少年对阅读的热爱。第一，举办一场阅读马拉松活动，通过设置挑战和达成里程碑的奖励，可以激发孩子们对阅读的兴趣。第二，与本地作家合作举办朗读会和问答环节，能让孩子们与他们最喜爱故事的创作者建立联系，从而获得启发。最后，设立周末读书俱乐部，能为孩子们提供一种定期、有趣的方式，去探索新书并在小组环境中分享自己的想法。这些举措将大大提升我们图书馆与青少年读者之间的互动。此致，Peter Pan}
+
+\ptesub{你的作答 Your Response（含批改）}
+\begin{youbox}
+Dear Ms.\ Reed,
+
+I hope this email finds you well. \fix{I'mwriting}{I'm writing（缺空格）} to share my three suggestions for initiatives that could make reading more exciting and accessible for the children in our area.
+
+Firstly, we can hold a reading marathon event so that we can attract more children to come here.
+
+Secondly, we can make collaborations with local authors so that we can make reading more exciting and interesting.
+
+Lastly, we can hold weekend reading clubs, so we can make reading more accessible for everyone who loves books.
+
+I would appreciate it if you could consider my suggestions. Looking forward to your reply.
+
+Best regards,\\ Kathy
+\end{youbox}
+{\footnotesize\color{gray} 注：弹窗中\textbf{仅可见一处}红色标注框——``I'm writing'' 缺空格；全文其余部分未见任何彩色高亮。Vocabulary 一项仍被扣 0.5 分（1.5/2），但未见对应的高亮词，推测是平台对用词丰富度/搭配的整体性隐性扣分，未在文中标出具体位置，此处未强行补标，留待人工复核。}
+
+\ptesub{评分明细 Score Breakdown}
+{\small\scorehead
+\begin{tabularx}{\linewidth}{l c Y}
+\rowcolor{cHead}\textcolor{white}{\bfseries 维度} & \textcolor{white}{\bfseries 得分} & \textcolor{white}{\bfseries AI 建议}\\
+Content 内容              & \sfull{3 / 3}   & 内容很棒\\
+Form 格式                & \sfull{2 / 2}   & Form 很棒，这是必拿分数\\
+Email Conventions 邮件格式 & \sfull{2 / 2}   & 邮件书写格式很棒！\\
+Organization 结构         & \sfull{2 / 2}   & 段落分明，文章架构清晰明了，很棒\\
+Vocabulary 词汇           & \spart{1.5 / 2} & PTE 对词汇不要求很难，但需要恰当且拼写正确。点击彩色单词查看错误和修改建议\\
+Grammar 语法              & \sfull{2 / 2}   & 很棒，AI小猩几乎检查不出什么语法问题\\
+Spelling 拼写             & \sfull{2 / 2}   & 虽然你拼写拿了满分，但是你还是犯了 1 个拼写错误。下次注意避免哦\\
+\end{tabularx}}
+\smallskip
+\textbf{本题得分：}\ {\color{cAccent}\bfseries 14.5 / 15}\quad{\footnotesize\color{gray}（平台标注：I'm writing 缺空格；Vocabulary 0.5 分隐性扣分未见高亮，未补标）}
+
+\end{qblock}
+
+\end{document}
