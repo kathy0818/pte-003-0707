@@ -3,7 +3,7 @@
 > 对象：考生 Kathy。本套成绩 **总分 53**：听力 55 / 阅读 42 / 口语 42 / 写作 73。共 **65 题**（听 15 · 读 16 · 口 30 · 写 4）。
 > 体例：每题先结论后展开；**对的题讲透"为什么对/通法"，错的题写足"错因 + 防错清单"**，每题给 🧠 记忆点。来源＝四个正文 `.tex`（`build/paper/sec_*_body.tex`）的人工誊录与配色，一切以整理卷为准。
 > 配套交接：方法学抽成 `交接文档/逐题精讲_{听力,阅读,口语,写作}.md`，供下一套卷复用。
-> **📌 本文件按 part 逐步产出——目前已完成「一、听力」（15 题）。** 阅读/口语/写作三部分与最终的「0. 全卷大复盘」将在后续补齐（全卷大复盘需四部分讲完后统一提炼跨 part 病根）。
+> **📌 本文件按 part 逐步产出——目前已完成「一、听力」（15 题）、「二、阅读」（16 题）。** 口语/写作两部分与最终的「0. 全卷大复盘」将在后续补齐（全卷大复盘需四部分讲完后统一提炼跨 part 病根）。
 
 ---
 
@@ -486,5 +486,283 @@
 4. **HIW 大胆多点**——你零误点、纯输在漏点，风险是"不敢点"不是"点太多"；读着不通/只差词尾的音近词，看到就点。
 
 **听力目标：55 → 65+。** 补分战场很清楚：WFD/FIB-L 补漏词（能救 8–10 分）、MCM+SMW 守纪律（救 5 分）、HIW 多点（救 3 分）。拼写专项是贯穿始终的地基。
+
+---
+
+# 二、阅读 Reading（16 题，42/90）
+
+题型：FIB 下拉选词(Q1–5) · MCM-R 多选(Q6–7) · RO 段落重排(Q8–9) · FIBD&D 拖词(Q10–14) · MCS-R 单选(Q15–16)。
+
+## 0. 阅读大复盘（先看这张，和上一套 2B 纵向比）
+
+### 与 2B 的逐题型对比（进步✅ / 退步❌ / 顽固点⚠️）
+
+| 题型 | 2B 得分 | 3B 得分 | 走向 | 一句话 |
+|---|---|---|---|---|
+| **FIB 下拉** | **17/24** | **11/23** | ❌↓↓ | **本套最大退步**：2B 的强项这次崩了（−6），全栽在形近/义近词 + 搭配 + 没回读 |
+| **MCM-R 多选** | 2/4 | 1/4 | ❌↓ | Q7 选了和原文**直接相反**的 E，漏掉两个同义替换答案——同 2B Q6 的顽固点 |
+| **RO 段落重排** | 5/7 | 4/6 | ~ 持平 | **进步：Q8 首句判对了**（2B 栽在首句）；但中段"This task"回指没接上；Q9 满分 |
+| **FIBD&D 拖词** | 5/22 | **6/20** | ~ 老洼地 | 仍是**最差题型**；但 3B 多是"**词对了、放错位**"，比 2B"词性全错"更接近 |
+| **MCS-R 单选** | 2/2 ✅ | 2/2 ✅ | ✅稳 | 两题全对，稳定强项 |
+
+> **一句话总账**：阅读 **46→42（−4）**，是四个 part 里**唯一退步**的。跌分几乎全来自**FIB 下拉（17→11）**这个原本的强项；FIBD&D 仍是老洼地；MCS-R 稳、RO 首句还进步了。**好消息**：FIBD&D 的错大多是"词选对了、只是拖错格子"，离对只差最后一步"通读查错位"。
+
+### 阅读四条病根（跨 2B/3B 复现的，优先补）
+
+| 病根 | 表现（2B→3B） | 一招通治 |
+|---|---|---|
+| **① FIBD&D 两词放反/错位** 🔥 | 2B: make/use、center/end、availability 错位 → 3B: Q10/Q12/Q13/Q14 都是"词对了、拖错格" | **填完通读一遍，专查"两词放反"**——这是你 ROI 最高的一步 |
+| **② 形近/义近词混** | 2B: defer/differ、diversity/difference → 3B: **persecuted/executed、undertakes/undermines、relief/release、severe/distinctive** | 形近词逐个翻译再选，别靠"长得像/眼熟" |
+| **③ MCM 踩绝对/相反陷阱 + 漏同义替换** | 2B Q6 选带 all 的 D → 3B Q7 选和原文相反的 E、漏掉换皮的 A/B | 绝对词先怀疑；正确项常是"同义替换"；MCM 要选全 |
+| **④ 选完不回读** | 2B: palms/exponential 明显不通没换 → 3B: **feed** up（明显不通）、FIB 多空硬填 | FIB/FIBD&D 选完把整句默读一遍，读不通就换 |
+
+### 阅读防错总表（错因 → 对策）
+
+| 反复出现的错因 | 出现题 | 下次怎么防 |
+|---|---|---|
+| FIBD&D 两词放反/错位 | FIBD&D Q10/Q12/Q13/Q14 | 填完通读、逐格问"这词是不是该在别的空" |
+| 形近词混 | FIB Q2(persecuted)、Q3(undertakes)、Q4(relief) | 形近词先翻译中文再选 |
+| 义近/搭配没抓 | FIB Q1(severe)、Q4(driving/wealth/affordable)、Q5(concerned with) | 背固定搭配（a wealth of、concerned with、driving force） |
+| MCM 漏同义替换 / 踩相反陷阱 | MCM Q6(漏 C)、Q7(选相反的 E) | 绝对/相反选项先删；换皮的同义句多半是答案；选全 |
+| 没回读 | FIB Q1(feed)、FIBD&D 多题 | 选完整句默读，不通就换 |
+| RO 中段回指没接 | RO Q8(This task) | 找"this/these/it + 名词"回指前一句 |
+
+### 阅读提分路线图（性价比从高到低）
+
+1. **FIBD&D 加"通读查错位"这一步**（最快）：你的词基本选对了，就差最后 20 秒通读——能把 6/20 直接抬到 12+/20。
+2. **FIB 回到 2B 的三步铁律**：判词性看 a/an → 形近义近词翻译 → 回读。把这套捡回来，FIB 能从 11 回到 15+。
+3. **MCM 守纪律**：绝对/相反选项先删、找同义替换、选全 → 把 Q6/Q7 白丢的 3 分救回来。
+4. **RO 补回指**：首句已会判，补上"this/these 回指"就稳。**阅读目标 42→55+。**
+
+---
+
+## Q1 · FIB #384 Starvation —— 3/5 ❌（对 3 空：depleted / weakens / irritable）
+
+- **题目/材料**：读写填空（下拉 4 选 1，**只扣选错的空**）。讲**饥饿**对身体的影响：长期严重缺食=饥饿 → 储备耗尽 → 器官萎缩、免疫下降、人易怒难专注。
+- **逐空讲（每空 4 选项都点到）**：
+  - **空1 ❌ distinctive → severe**（你选的错）。原句 `A ___ lack of food for a prolonged period`（长期＿＿缺食）。正确 **severe**（严重的）——"严重缺食"。你选 distinctive（独特的）语义不通（"独特地缺食"？）。另两干扰：distinguishing（区分的）、proper（适当的）都接不上"缺食"。**这是义不搭：severe 修饰"缺乏"程度，distinctive 是"与众不同"。**
+  - **空2 ✅ depleted**（对）。`reserve resources are ___`（储备被＿＿）→ depleted（耗尽）。干扰：obsoleted（废弃）、pelleted（制成颗粒）、deleted（删除）代入都不通。你选对了，很好。
+  - **空3 ❌ feed → pick**（你选的错，且明显不通）。原句 `Energy levels are low but ___ up with a morning meal`（能量低，但早餐后＿＿up）。正确 **pick**（pick up=回升）。你选 feed——`feed up` 意思不对（feed up 是"喂肥"），而且**"能量 feed up" 读起来明显别扭**。干扰：come（come up 冒出，不搭 energy）、chill（变冷，相反）。**这空是典型"选完没回读"——feed up 一读就不通。**
+  - **空4 ✅ weakens**（对）。`the immune system ___`（免疫系统＿＿）→ weakens（减弱）。干扰：deepens（加深）、deafens（使聋）、surpasses（超越）都不搭免疫系统。对了。
+  - **空5 ✅ irritable**（对）。`People can become ___`（人变得＿＿）→ irritable（易怒）。干扰：commutable（可减刑/可通勤）、indisputable（无可争辩）、transportable（可运输）都不修饰人的情绪。对了。
+- **解题思路（FIB 三步）**：①判词性 + 看 a/an ②形近义近词逐个翻译 ③**选完整句默读**。你 5 空对 3，错的两空——severe 是"义近词没翻译清"（distinctive 眼熟就选），feed 是"没回读"（feed up 明显不通）。
+- **★ 错因 + 防错**：归类＝义近词混（severe/distinctive）+ 没回读（feed up）。防错：①拿不准的形容词，把 4 个中文都想一遍再选（"严重/独特/区分/适当"哪个配"缺食"）②选完把整句读一遍，"energy…feed up"不通就换。
+- 🧠 **"严重缺食"用 severe 不用 distinctive；feed up 一读就别扭——选完必回读。**
+
+## Q2 · FIB #380 Death Sentence —— 2/5 ❌（对 2 空：sentenced / determining）
+
+- **题目/材料**：讲**死刑**——少数群体、穷人更易被判死刑；受害者种族是最可靠因素；死囚中精神疾病常见。
+- **逐空讲**：
+  - **空1 ✅ sentenced**（对）。`likely to be ___ to death`（被判死刑）→ sentenced（判刑）。干扰：penalized（处罚，太轻）、blamed（责备）、complained（抱怨）。对了。
+  - **空2 ❌ appearance → bias**（你选的错）。`extensive evidence of racial ___`（种族＿＿的大量证据）→ **bias**（偏见）——"种族偏见"racial bias 是固定搭配。你选 appearance（外表）——"种族外表"语义不通、也不是这段主旨（讲的是不公，不是长相）。干扰：equality（平等，相反）、background（背景）。**义 + 搭配双重线索都指向 bias。**
+  - **空3 ✅ determining**（对）。`the single most reliable factor in ___`（决定……的最可靠因素）→ determining（决定）。干扰：adjoining（毗邻）、undermining（破坏）、examining（检查）。对了。
+  - **空4 ❌ persecuted → executed**（你选的错，**形近词混！**）。`prisoners ___ in the US between 1977 and 2007`（1977–2007 被＿＿的囚犯）→ **executed**（处决）。你选 **persecuted**（迫害）——**persecute 和 execute 形近音近，你混了**。语境是死囚被"处决"，不是"迫害"。干扰：electrocuted（电刑，太具体）、captured（俘获）。
+  - **空5 ❌ persuaded → alleged**（你选的错）。`the crime they were ___ to have committed`（他们被＿＿犯下的罪）→ **alleged**（被指控 `alleged to have committed`=被指控犯有）。你选 persuaded（被说服）——"被说服犯罪"语义不通。干扰：acclaimed（受赞誉）、claimed（声称）。**被动 `were ___ to have committed` 的固定搭配是 be alleged to。**
+- **★ 错因 + 防错**：归类＝**形近词混（persecuted/executed，顽固点——和听力的 invest/investors 同一类"形近不分"）** + 搭配没抓（racial bias、alleged to）+ 义近词（appearance）。防错：①遇 execute/persecute、alleged/persuaded 这类形近词，先翻中文再选②记搭配 racial bias、be alleged to have done。
+- 🧠 **persecute(迫害) ≠ execute(处决)，形近词先翻译；racial bias、alleged to 是固定搭配。**
+
+## Q3 · FIB #381 Deception —— 3/5 ❌（对 3 空：encouraging / subscribe / avoid）
+
+- **题目/材料**：讲**欺骗**——欺骗=让人信不实信息；连信奉诚实的人也会撒小谎；欺骗破坏信任；多数文化有社会制裁反对撒谎。
+- **逐空讲**：
+  - **空1 ✅ encouraging**（对）。`the act of ___ people to believe`（＿＿人们去相信）→ encouraging（促使）。干扰：discouraging（阻止，相反）、forbidding（禁止）、detecting（察觉）。对了。
+  - **空2 ✅ subscribe**（对，-scribe 家族选对了）。`those who ___ to honesty`（＿＿诚实的人）→ **subscribe**（subscribe to=信奉）。干扰：describe（描述）、prescribe（开处方）、inscribe（铭刻）——**四个都是 -scribe 形近词，你选对了很好**，只有 subscribe to 表"信奉"。
+  - **空3 ✅ avoid**（对）。`deployed to ___ uncomfortable situations`（用来＿＿尴尬处境）→ avoid（避免）。干扰：contest（争辩）、illuminate（照亮）、disguise（伪装）。对了。
+  - **空4 ❌ undertakes → undermines**（你选的错，**under- 家族形近混！**）。`Deception always ___ it`（欺骗总是＿＿信任）→ **undermines**（破坏）。你选 undertakes（承担）——"欺骗承担信任"语义不通。干扰：underscores（强调）、underwrites（承保）——**四个都是 under- 开头形近词，你混成了 undertakes**。语境是欺骗对信任的负面作用，只有 undermine（削弱/破坏）通。
+  - **空5 ❌ ejections → sanctions**（你选的错）。`powerful social ___ against lying`（反对撒谎的强力社会＿＿）→ **sanctions**（制裁）——"社会制裁"social sanctions 固定搭配。你选 ejections（驱逐）语义偏。干扰：fractions（碎片）、inductions（归纳/就职）。
+- **★ 错因 + 防错**：归类＝**形近词家族混（under- 家族 undermines/undertakes，顽固点）** + 搭配（social sanctions）。防错：①-scribe 你能对（说明有能力），把同样的"逐个翻译"用到 under- 家族上：undermine(破坏)/undertake(承担)/underscore(强调)/underwrite(承保)②记 social sanctions。
+- 🧠 **under- 家族逐个翻：undermine 才是"破坏"；social sanctions 是"社会制裁"。**
+
+## Q4 · FIB #373 Information Revolution —— 1/5 ❌（**本套 FIB 最差，5 空只对 1**）
+
+- **题目/材料**：讲**信息革命**——90 年代技术变革带来新选择；互联网是推动力；调制解调器连接海量信息；苹果 Lisa 因高价 + 更实惠的 Macintosh 而失败。
+- **逐空讲**：
+  - **空1 ✅ options**（对）。`dramatic new ___`（戏剧性的新＿＿）→ options（选择）。干扰：challenges（挑战）、puzzles（谜题）、confusion（困惑）——都偏负面，不搭"technological changes brought new"。对了。
+  - **空2 ❌ unremitting → driving**（你选的错）。`The ___ force behind much of this change`（这变化背后的＿＿力量）→ **driving**（driving force=推动力，固定搭配）。你选 unremitting（不懈的）——虽不算完全离谱，但 **driving force 是死搭配**，unremitting force 不地道。干扰：uninspiring（乏味的）、insinuating（暗示的）。
+  - **空3 ❌ volume → wealth**（你选的错）。`link their computer to a ___ of information`（连接到信息的＿＿）→ **wealth**（`a wealth of`=大量，固定搭配）。你选 volume（体积/量）——`a volume of information` 不地道。干扰：magnitude（量级）、bulk（大量/体积）。**`a wealth of + 不可数`是高频搭配。**
+  - **空4 ❌ relief → release**（你选的错，**形近词混！**）。`Upon its ___ in 1983`（1983 年＿＿之际）→ **release**（发布）——"Lisa 电脑发布"。你选 **relief**（缓解）——**release 和 relief 形近，你混了**。干扰：publication（出版，多用于书/文章）、emission（排放）。
+  - **空5 ❌ advanced → affordable**（你选的错）。`the much more ___ Macintosh`（更＿＿的 Macintosh）→ **affordable**（实惠的）——上文刚说 Lisa 近万美元太贵，Macintosh 是"更便宜"才抢了它生意。你选 advanced（先进的）——**被"新电脑更先进"的常识带跑了**，但原文逻辑是"价格"（$10,000 太贵 → 更 affordable），不是性能。干扰：convenient（方便）、formidable（强大）。**这空要顺原文的"价格"逻辑，不是套常识。**
+- **★ 错因 + 防错**：归类＝搭配没背（driving force、a wealth of）+ 形近词混（relief/release）+ **用常识猜代替顺原文（advanced vs affordable）**。防错：①背死搭配 driving force / a wealth of②形近词 release/relief 先翻译③**别用常识猜，顺着原文的因果逻辑选**（前面讲价格贵，后面就该是 affordable）。
+- 🧠 **driving force、a wealth of 背死；release≠relief；别用常识猜——上文讲价格，就选 affordable 不选 advanced。**
+
+## Q5 · FIB #372 Dentistry —— 2/4 ❌（对 2 空：practiced / replacement）
+
+- **题目/材料**：讲**牙科**——预防治疗口腔病；古代已有牙科；埃及头骨有钻孔引流脓肿；腓尼基用动物牙补牙。
+- **逐空讲**：
+  - **空1 ❌ dealt → concerned**（你选的错）。`a profession ___ with the prevention`（一门＿＿预防的专业）→ **concerned**（`a profession concerned with`=致力于……的专业，固定搭配）。你选 dealt——**dealt 要 `dealt with` 才对，但这里是 `profession ___ with`，用 concerned with 更准**；而且 dealt 作后置定语要用 `dealing with`，`dealt with` 是被动/完成，语法上也别扭。干扰：agreed（同意）、taken（拿）。
+  - **空2 ✅ practiced**（对）。`has been ___ since ancient times`（自古就被＿＿）→ practiced（practice=从事/实践，被动 has been practiced）。干扰：criticized（批评）、replaced（替换）、abandoned（放弃）。对了。
+  - **空3 ❌ laminated → drilled**（你选的错）。`holes are believed to have been ___ to drain abscesses`（小孔被＿＿以引流脓肿）→ **drilled**（钻孔）。你选 laminated（层压）——"层压小孔"完全不通。干扰：fluctuated（波动）、sealed（密封，相反——密封就没法引流了）。**语境是"钻孔引流"，drilled 才通。**
+  - **空4 ✅ replacement**（对）。`An early attempt at tooth ___`（早期补牙尝试）→ replacement（替换/镶牙）。干扰：reparation（赔偿）、sacrament（圣礼）、restitution（归还）——都不搭 tooth。对了。
+- **★ 错因 + 防错**：归类＝搭配（concerned with）+ 义不搭没回读（laminated 明显不通）。防错：①记 `a profession/field concerned with`②生僻词代入读一遍（"holes were laminated"不通就换 drilled）。
+- 🧠 **concerned with 是"致力于"；laminated(层压)/drilled(钻孔) 代入读一遍就知道选哪个。**
+
+## Q6 · MCM-R #118 Taste Sensitivity —— 1/2 ❌（漏选 C，只对 F）
+
+- **题目/材料**：果蝇研究——吃什么影响下一步想吃什么；果蝇用**味觉系统(gustatory system)**感知糖和氨基酸；实验三种饮食**总热量相近**、每天测一周；饮食影响脑内多巴胺/胰岛素信号。
+- **题目**：Which statements about the study are true?（多选）
+- **正确答案 C, F；你只选 F**（漏 C）。
+- **逐项讲（6 个选项全点）**：
+  - **A ❌**：`What you eat has little to do with what you want to eat next`（吃什么与下一步想吃**几乎无关**）——和原文**直接相反**（原文 "influences your taste for what you might want to eat next"）。
+  - **B ❌**：`An unbalanced intake … is essential`（不均衡摄入是**必需的**）——**偷换/相反**：原文说 balanced（均衡）是必需的，unbalanced 是 detrimental（有害）。
+  - **C ✅ 正确（你漏了）**：`The fly senses macronutrients through its taste system`（果蝇通过味觉系统感知宏量营养素）——原文 "They use the **gustatory system**… to sense these nutrients"。**这是同义替换：gustatory system = taste system**。你没认出这层换皮，漏选了。
+  - **D ❌**：`made sure the total calories in all three diets were **the same**`（确保三种饮食热量**完全相同**）——原文是 "similar in total calorie content"（**相近**）。**similar ≠ the same**，这是"夸大精确"的陷阱，所以 D 不算对。
+  - **E ❌**：`tested the flies **every two days**`（每**两天**测一次）——原文 "tested the flies **daily**"（每天）。every two days ≠ daily，数字/频率偷换。
+  - **F ✅ 正确（你对了）**：`Dopamine in the brain is closely related to diet`——原文 "diet affects dopamine… signaling in the brain"。对了。
+- **★ 错因 + 防错**：归类＝**漏选同义替换项（C：gustatory=taste）**。你能选出字面接近的 F，却漏了换皮的 C。防错：①MCM 每个选项回原文找定位句，"换了说法但意思一样"的（gustatory system→taste system）就是答案②别只选字面最像的，同义替换才是 MCM 的考点③D/E 这种"similar→same、daily→every two days"的细节偷换要警觉。
+- 🧠 **MCM 正确项常"换皮"——gustatory system = taste system，认出同义替换别漏选；similar≠same、daily≠每两天。**
+
+## Q7 · MCM-R #114 Persistent Back Pain —— 0/2 ❌（选了和原文相反的 E，全错）
+
+- **题目/材料**：华威大学研究——背痛/头痛患者同时患两病的概率**翻倍**；综述 14 项研究、46 万人，**量化(quantify)**两者关联；英国**约 1/100** 的人两病都有。
+- **题目**：What are the main findings?（多选）
+- **正确答案 A, B；你选 E**（全错）。
+- **逐项讲（5 个选项全点）**：
+  - **A ✅ 正确（你漏了）**：`In the UK, one in 100 people have both`——原文 "just over **one in 100** people… have **both**"。字面几乎照搬，是最该选的。
+  - **B ✅ 正确（你漏了）**：`There is a link between persistent back pain and persistent headache`——原文 "suggest an **association** between the two types"。**association = link，同义替换**。
+  - **C ❌**：`Headaches are the **only** cause of disability`——**绝对词 only + 相反**：原文说这两病是 "**leading** causes"（主要原因之一），不是"唯一"。
+  - **D ❌**：`half as likely to develop either`（患另一种的概率**减半**）——原文是 "**twice** as likely"（翻倍）。**twice↔half 直接相反**。
+  - **E ❌（你选的）**：`The relationship… is **not quantifiable**`（关联**无法量化**）——原文明说研究 "attempt to **quantify** the association"（试图量化），并给出 1/5、1/30、1/100 等具体数字。**你选的 E 和原文直接相反**——研究做的就是量化。
+- **★ 错因 + 防错**：归类＝**踩"相反"陷阱（E：原文量化了，E 说不可量化）+ 漏掉两个同义替换答案（A 数字、B association=link）**。这和 2B Q6（选了带 all 的绝对化 D）是**同一个顽固点**：被一个"看着有道理但和原文反"的选项勾走，漏掉换皮的正确项。防错：①每个选项回原文核对方向（quantify→E 说 not quantifiable，方向反，删）②绝对词（only/never）和"翻倍↔减半"这种反向词先怀疑③A/B 这种"和原文数字/说法对得上"的，就是答案，要选全。
+- 🧠 **MCM 先删"和原文相反"的（quantify vs not quantifiable、twice vs half）；association=link、1/100 照搬——换皮的才是答案，要选全。**
+
+## Q8 · RO #365 Joint Venture —— 1/3 ❌（首句对了，中段"This task"回指没接上）
+
+- **题目/材料**：4 句讲**合资企业(JV)**定义。正确顺序 **1→4→2→3**，你 **1→2→3→4**。
+- **逐句 + 相邻对讲**：
+  - **句1（首句 ✅ 你对了）**：`A joint venture is a business arrangement… to accomplish a specific task.`——**独立定义句、引入话题、无回指**，天然是首句。你判对了（比 2B 进步——2B Q8 你首句就错）。
+  - **1→4（你漏的关键衔接）**：句4 `**This task** can be a new project or any other business activity.`——**"This task" 回指句1 结尾的 "a specific task"**，必须**紧跟句1**。你把句4 放到了最后，就是没抓这个回指。
+  - **4→2**：句2 `In a JV, each participant is responsible for profits, losses, and costs`——讲完"任务是什么"，再讲"参与方的责任"。
+  - **2→3（收尾）**：句3 `**However**, the venture is its own entity, separate from…`——**However 转折**，补充"但 JV 是独立实体"，收尾。
+  - 你的 1→2→3→4：首句对，但把"This task"（句4）拖到末尾，导致中段全乱。**得分 1/3 是首句那一对给的分。**
+- **★ 错因 + 防错**：归类＝**回指没接（This task→a specific task）**。你首句判断进步了，栽在"代词回指串链"。防错：①排完先找每个"this/these/it + 名词"，把它接到前面出现该名词的句子后②"However/And"这种转折/追加词多半在中后段或收尾，不放开头。
+- 🧠 **"This task"必须紧跟提到"a specific task"的句子——RO 先连回指再排逻辑。**
+
+## Q9 · RO #369 Mutations —— 3/3 ✅ 满分（首句 + 回指链全对）
+
+- **题目/材料**：4 句讲**基因突变**。正确 **2→3→4→1**，你**完全一致**，满分。
+- **逐句 + 相邻对讲（讲透为什么这么接）**：
+  - **句2（首句 ✅）**：`Our genes serve as an operating manual for cells`——**独立总起句、下定义、无回指**，标准首句。你抓住了。
+  - **2→3**：句3 `Genes tell cells what to do… But copying errors—mutations—can change how cells operate.`——承接"操作手册"，引出"突变"。
+  - **3→4**：句4 `Scientists now know that some of those mutations can lead to disease.`——"**those** mutations" 回指句3 的 mutations，讲"有些致病"。
+  - **4→1（收尾）**：句1 `**Others** offer benefits, some can do both… sickle cell…`——"**Others**（另一些突变）"回指句4 的"some mutations"，与"致病"对举，收尾。
+- **★ 亮点（对题也复盘）**：①首句判对（独立总起）②全靠"those/Others"回指串链——**这正是 Q8 你缺的那一步，Q9 你做到了**。说明你**有回指意识，只是不稳定**（Q8 就没用上）。把 Q9 的做法固定下来，Q8 那种题也能拿满。
+- 🧠 **Q9 是你的 RO 满分范本：独立句开头，再用 those/Others 这类回指词一句句串——Q8 缺的就是这一步。**
+
+## Q10 · FIBD&D #554 Vegetative Propagation —— 0/4 ❌（词基本对、全拖错格）
+
+- **题目/材料**：拖词填空（**共享词库、有多余干扰词**）。讲**营养繁殖**（无性繁殖，基因克隆）：优点是优良性状可反复复制、可用人工技术保证优良性状；缺点是没有基因变异。
+- **词库**：variation✅ / favorable✅ / artificial✅ / **capabilities(干扰)** / **diversification(干扰)** / qualities✅ / **traditional(干扰)**。
+- **逐空讲**：
+  - **空1 ❌ artificial → favorable**。`plants with ___ traits`（有＿＿性状的植物）→ **favorable**（优良的）。你放了 **artificial**（人工的）——但"人工性状"不通，而且 **artificial 其实是空2 的答案**（你把它放错格了）。
+  - **空2 ❌ traditional → artificial**。`employ ___ vegetative propagation techniques`（采用＿＿营养繁殖技术）→ **artificial**（人工的）。你放 traditional（传统的，**干扰词**）。**artificial 本该在这，你却放到了空1。**
+  - **空3 ❌ capabilities → qualities**。`ensure advantageous ___`（确保优良的＿＿）→ **qualities**（性状/品质）。你放 capabilities（能力，**干扰词**）——但 **qualities 是空4 你放的那个词**（又错位了）。
+  - **空4 ❌ qualities → variation**。`genetic ___`（基因＿＿）→ **variation**（变异）。你放 qualities——但 qualities 本该在空3。干扰词 diversification（多样化）也在词库里迷惑。
+  - **一句话看穿**：你用对了 **artificial 和 qualities 两个正确词，但全拖错了格子**（artificial 该在空2 你放空1，qualities 该在空3 你放空4），又漏了 favorable/variation、错用了 traditional/capabilities。**这就是你的顽固病根"两词放反/错位"的极端案例。**
+- **★ 错因 + 防错**：归类＝**两词放反/错位 + 用干扰词**。防错：①先给每空判词性（空1 traits 前→形容词 favorable；空2 techniques 前→形容词 artificial；空3 advantageous 后→名词 qualities；空4 genetic 后→名词 variation）②**填完通读一遍**——"plants with artificial traits / ensure advantageous qualities"读一遍就知道 artificial 该往后挪。
+- 🧠 **artificial、qualities 你都选对了，只是拖错格——FIBD&D 填完必通读，专查"这词是不是该在别的空"。**
+
+## Q11 · FIBD&D #555 Push-pull Factors —— 3/4 ❌（只错空2：drag→determine）
+
+- **题目/材料**：讲**推拉因素**（push-pull）——把人推离一地、吸引到新地；帮助**决定**人群迁移；推力有强制性；拉力是鼓励移民的积极政策。
+- **词库**：immigrate✅ / forceful✅ / **drag(干扰)** / draw✅ / determine✅ / **formidable(干扰)** / **shift(干扰)**。
+- **逐空讲**：
+  - **空1 ✅ draw**（对）。`push factors drive people away and ___ people to a new location`（把人推开、＿＿人到新地）→ draw（吸引，draw…to）。对了。
+  - **空2 ❌ drag → determine**。`They help ___ migration`（有助于＿＿迁移）→ **determine**（决定）。你放 **drag**（拖，**干扰词**）——"拖迁移"不通；`help determine`（有助于决定）才是搭配。**drag 和 draw 形近，你可能受空1 的 draw 影响顺手拖了 drag。**
+  - **空3 ✅ forceful**（对）。`Push factors are often ___`（推力往往是＿＿的）→ forceful（强制的）。对了。
+  - **空4 ✅ immigrate**（对）。`encourage people to ___`（鼓励人们＿＿）→ immigrate（移民）。对了。
+- **★ 错因 + 防错**：归类＝干扰词（drag）+ 形近干扰（drag/draw）。防错：①`help + 动词原形`这里要"决定"→determine，drag(拖)义不搭②drag/draw 形近，别顺手拖错。
+- 🧠 **help determine（有助于决定），drag(拖)≠draw(吸引)——形近词别顺手拖错。**
+
+## Q12 · FIBD&D #561 India —— 1/4 ❌（只对空1，还漏填了空2）
+
+- **题目/材料**：讲**印度电影**——1896 年卢米埃尔兄弟在孟买展示电影；印度电影以精心编排的歌舞著称；舞蹈/音乐/戏剧传统可追溯 2000 多年；古典舞取材神话文学。
+- **词库**：**detailed(干扰)** / demonstrate✅ / draw✅ / span✅ / **drive(干扰)** / elaborate✅ / **appraise(干扰)**。
+- **逐空讲**：
+  - **空1 ✅ demonstrate**（对）。`wanted to ___ the art of cinema`（想＿＿电影艺术）→ demonstrate（展示）。对了。
+  - **空2 ❌ 未填 → elaborate**（你**空着没作答**）。`their ___ singing and dancing`（其＿＿歌舞）→ **elaborate**（精心编排的，形容词）。你没填——但 **elaborate 这个词你其实用了，却拖到了空4**（见下）。干扰：detailed（详细的）也在词库迷惑。
+  - **空3 ❌ drive → span**。`traditions ___ back more than 2,000 years`（传统＿＿回 2000 多年）→ **span**（span back=追溯）。你放 drive（**干扰词**）——"drive back"义不对。
+  - **空4 ❌ elaborate → draw**。`dance traditions ___ on themes from mythology`（舞蹈传统＿＿神话主题）→ **draw**（draw on=取材于）。你放 elaborate——**但 elaborate 本该在空2**（又是错位！你把空2 的词拖到了空4，还把空2 空着）。
+  - **一句话看穿**：你**手里有 elaborate 这个对的词，却拖错了格（放空4 而非空2），导致空2 空着、空4 错**。同样是"错位"病根，叠加了漏填。
+- **★ 错因 + 防错**：归类＝**错位（elaborate 该空2 放了空4）+ 空着不填 + 干扰词（drive）**。防错：①先判词性（空2 在名词 singing 前→形容词 elaborate/detailed；空3 主干完整、`___ back`→动词 span；空4 `___ on themes`→动词 draw on）②`span back`（追溯）、`draw on`（取材）是死搭配③**每空都要填，空着=直接丢分**。
+- 🧠 **elaborate 该配空2 的"歌舞"，你拖到了空4——错位 + 漏填；span back、draw on 背死。**
+
+## Q13 · FIBD&D #102 Volcanoes —— 2/4 ❌（对空1/2，空3/4 又错位；本题平台给了完整解析）
+
+- **题目/材料**：讲**火山与二氧化碳**——每年喷发上亿吨 CO₂ 但通常无害；喷发时扩散、不聚集；但有时被困**地下**高压；若以浓密**云雾**逸出地表会挤走氧气、致命。
+- **词库**：cloud✅ / concentrated✅ / **dangerous(干扰)** / harmless✅ / underground✅ / **air(干扰)** / **atmosphere(干扰)** / **collected(干扰)** / **over(干扰)**。
+- **逐空讲（借平台解析扩写）**：
+  - **空1 ✅ harmless**（对）。`the gas is usually ___`（气体通常＿＿）→ harmless（无害）。**but 转折**：前面说大量喷发，转折后是"无害"。干扰：dangerous/harmful（相反）。对了。
+  - **空2 ✅ concentrated**（对）。`isn't ___ in one spot`（不＿＿在一个点）→ concentrated（聚集）。`isn't + 过去分词` 被动。对了。
+  - **空3 ❌ atmosphere → underground**。`the gas gets trapped ___ under enormous pressure`（气体被困在＿＿高压下）→ **underground**（在地下，副词作状语）。你放 atmosphere（大气，**名词，词性就不对**）——句子主干 `gets trapped` 已完整，这里要副词修饰"困在哪"，且"高压下"应是**地下**不是大气。**underground 本该在这。**
+  - **空4 ❌ underground → cloud**。`escapes to the surface in a dense ___`（以浓密的＿＿逸出）→ **cloud**（云雾，名词）。你放 underground——**但 underground 本该在空3**（又错位！）。**冠词线索**：`a dense ___` 前有 a，air/atmosphere 不可数排除，collection 义不通，只有 cloud（可数）通。
+  - **一句话看穿**：**underground 你选对了，但拖到了空4（该空3）**；空3 该 underground 你放了 atmosphere。**又是"两词放反/错位"** + 没用"a dense ___ 要可数名词"的冠词线索。
+- **★ 错因 + 防错**：归类＝**错位（underground 该空3 放了空4）+ 没用冠词/词性线索**。防错：①空3 主干完整→填**副词**（underground），别填名词 atmosphere②空4 `a dense ___`→**可数名词**（cloud），air/atmosphere 不可数先排③**填完通读**："trapped atmosphere under pressure / in a dense underground" 一读就别扭。
+- 🧠 **`a dense ___` 要可数名词 cloud；主干完整的空填副词 underground——你把这两个词拖反了，通读就能查出。**
+
+## Q14 · FIBD&D #556 Tiger Sharks —— 0/4 ❌（四个词全拖错位，最典型的"错位"）
+
+- **题目/材料**：讲**虎鲨**——因身体两侧像虎的**斑纹**得名；条纹随年龄**褪色**，不能作辨识**特征**；幼鲨的斑点最终**融合**成条纹。
+- **词库**：**transplant(干扰)** / merge✅ / **function(干扰)** / feature✅ / markings✅ / fade✅ / **detection(干扰)**。
+- **逐空讲**：
+  - **空1 ❌ feature → markings**。`reminiscent of a tiger's ___`（让人想起虎的＿＿）→ **markings**（斑纹）。你放 feature——**但 feature 是空3 的答案**（错位）。
+  - **空2 ❌ transplant → fade**。`stripes actually ___ as the shark ages`（条纹随年龄＿＿）→ **fade**（褪色，动词）。你放 transplant（移植，**干扰词**）——"条纹移植"完全不通。
+  - **空3 ❌ markings → feature**。`an identifying ___`（辨识的＿＿）→ **feature**（特征）。你放 markings——**但 markings 是空1 的答案**（又错位）。
+  - **空4 ❌ fade → merge**。`spots eventually ___ into stripes`（斑点最终＿＿成条纹）→ **merge**（融合，merge into）。你放 fade——**但 fade 是空2 的答案**（错位到底了）。
+  - **一句话看穿**：**markings、feature、fade 三个正确词你全选对了，但全拖到了错误的格子**（markings↔feature 对调、fade 从空2 挪到空4），只漏了 merge、错用了 transplant。**tex 原话"正好错位一个"——这是"两词放反"病根最纯粹的一次：词几乎全对，位置全乱。**
+- **★ 错因 + 防错**：归类＝**几乎全对却全错位（markings/feature/fade 放乱）**。你的词汇/理解其实到位了，**唯一的问题就是没做"填完通读查错位"这一步**。防错：①先判词性配对（空1 名词 markings、空2 动词 fade、空3 名词 feature、空4 动词 merge into）②**填完把整段读一遍**——"reminiscent of a tiger's feature / an identifying markings"一读就知道 markings 和 feature 反了。**这题是最能说明"通读一遍就能从 0 分变 3–4 分"的例子。**
+- 🧠 **你把 markings/feature/fade 全拖反了——FIBD&D 的命门就是"填完通读查错位"，这一步能把这题从 0 分救到满分。**
+
+### 📌 FIBD&D 五题专属诊断（Q10–Q14：本组 6/20，仍是最差题型）
+
+- **总账**：5 题共 20 空，命中 6（Q10 0/4、Q11 3/4、Q12 1/4、Q13 2/4、Q14 0/4）。**仍是阅读最差的题型**（和 2B 的 5/22 差不多，几乎没进步）。
+- **但错法和 2B 不一样了，藏着好消息**：2B 你的 FIBD&D 是"**词性完全填错**"（动词位填名词 productivity/availability）；**3B 你大量是"词选对了、拖错格子"**——Q10 的 artificial/qualities、Q12 的 elaborate、Q13 的 underground、Q14 的 markings/feature/fade，**都是正确词放错了空**。这说明你的**词汇和理解其实比 2B 到位了**，差的只是**最后一步"通读查错位"**。
+- **顽固点（2B 就点过、这次更集中）**：**"两词放反/错位"** —— 2B 是 make/use、center/end、availability 错位，3B 是 Q10/Q12/Q13/Q14 满屏错位。**跨两套卷复现，是你 FIBD&D 的头号病根。**
+- **最高 ROI 的一个动作**：**填完把整段默读一遍，逐空问"这个词是不是该在别的空"**。以 Q14 为例——你 markings/feature/fade 全选对了，只要读一遍"a tiger's feature"觉得别扭、换成"a tiger's markings"，这题就能从 0 分变 3–4 分。**FIBD&D 全组最少能靠"通读"多拿 5–6 分。**
+- **FIBD&D 五步法（贴墙上）**：①给每空判词性（traits 前→形容词、`___ back`→动词、`a dense ___`→可数名词…）②给词库每个词标词性③按词性配对④按搭配/逻辑选（draw on、span back、merge into）⑤**填完通读，专查"两词放反"**（你的命门就在第⑤步）。⑥词库有多余干扰词（traditional/capabilities/drag/drive/transplant…），**不硬凑**。
+- 🧠 **你的词大多选对了、只是拖错格——FIBD&D 每次填完必做第⑤步"通读查错位"，这一步是你从 6 分到 12 分的总开关。**
+
+## Q15 · MCS-R #160 Walking Stamina —— 1/1 ✅
+
+- **题目/材料**：讲**步行健身**——免费简单；久坐者一开始走不远；坚持每天多走一点、耐力渐增；**没耐心的话还有别的技巧更快达标**。
+- **题目**：最后一句提到的 "tricks" 指什么？
+- **正确 A，你选 A ✅**。
+- **逐项讲**：
+  - **A ✅**：`methods to improve your stamina **quickly**`——定位末句 "if you don't have the **patience**… reach your goals **faster**"（没耐心、更快达标）→ tricks=**快速**提升耐力的方法。quickly/faster 对应，选它。
+  - **B ❌**：`suggestions on how to keep fit`——太笼统，tricks 特指"更快"那部分，不是泛泛的健身建议。
+  - **C ❌**：`benefits of different styles of walking`——原文没讲"不同步行方式的好处"，无中生有。
+  - **D ❌**：`build up stamina over a **long period**`——**和 tricks 相反**：tricks 是"没耐心、想更快"的替代方案，D 说"长期"，方向反。
+- **解题思路**：MCS-R 定位句 + 同义替换（faster→quickly）+ 排除笼统(B)/无中生有(C)/相反(D)。你做对了。
+- 🧠 **tricks 承接"没耐心、想更快"——选 quickly 那个，排掉"长期(D)"和"笼统(B)"。**
+
+## Q16 · MCS-R #155 Tree of Life —— 1/1 ✅
+
+- **题目/材料**：讲**"生命之树"别墅群**——佛州水上、缓解压力焦虑；六栋独立别墅由步道相连、漂在池塘上；**有机造型、除斜屋顶外几乎没有锐利棱角**；灵感来自周围植被。
+- **题目**：以下哪项是**错误**的？（选 false）
+- **正确 B，你选 B ✅**。
+- **逐项讲**：
+  - **A ✅ 真（不选）**：`ideal place for stressful people`——原文 "alleviate visitors from stress and anxiety"（缓解压力），真。
+  - **B ❌ 假（正确答案）**：`**All** the buildings have **harsh edges**`——原文说 "lacking harsh edges **with the exception of** their angled roofs"（除斜屋顶外**没有**锐利棱角）。**B 说"全部都有锐利棱角"，与原文直接相反 + 绝对词 all**，正是要选的 false 项。
+  - **C ✅ 真（不选）**：`There are trees around`——原文 "inspired by the **vegetation** in the surrounding landscape"（周围植被），真。
+  - **D ✅ 真（不选）**：`feel calm`——原文缓解压力焦虑、宁静氛围，真。
+- **解题思路**：选 false 题——找和原文**相反/绝对化**的那项。B 用了绝对词 all + 把"没有锐利棱角"说成"都有"，双重信号。你抓住了。
+- 🧠 **选 false 题找"和原文相反 + 绝对词(all)"的——B 把"没有锐利棱角"说成"全都有"，就是它。**
+
+---
+
+### 阅读小结（16 题讲完）
+
+**这套的账**：阅读 **46→42（−4）**，是四个 part 里**唯一退步**的。归三堆：
+
+- **✅ 进步 / 稳（要保持）**：**MCS-R 两题满分**（定位 + 排相反/绝对，稳定强项）；**RO 首句判断进步**（Q8 首句对了、Q9 满分——2B 你还栽在首句）；**FIBD&D 出现"词对了只是放错位"**（比 2B"词性全错"更接近对，只差通读）。
+- **❌ 退步（重点纠）**：**FIB 下拉大跌（17/24→11/23，−6，是阅读掉分主因）**——2B 的强项这次崩了，栽在形近词（persecuted/executed、undermines/undertakes、release/relief）+ 搭配（a wealth of、concerned with、driving force）+ 没回读（feed up）；**MCM-R（2/4→1/4）**——Q7 选了和原文相反的 E、漏掉换皮的同义替换答案。
+- **⚠️ 顽固点（2B 就犯，又犯，必须点名）**：**FIBD&D 两词放反/错位**（Q10/Q12/Q13/Q14，2B 最大洼地，这套仍最差 6/20）；**MCM 踩相反/绝对陷阱 + 漏同义替换**（Q7 同 2B Q6）；**形近词不分**（persecuted/executed，和听力的 invest/investors 是**跨 part 同一个根**）。
+
+**四条针对性建议（按性价比）**：
+1. **FIBD&D 死磕"填完通读查错位"**——你的词大多选对了，就差这一步；光这一步就能把 6/20 抬到 12+。以 Q14 为标本（三个词全拖反，通读就能救）。
+2. **FIB 捡回 2B 的三步铁律**——判词性看 a/an → **形近义近词先翻中文再选**（persecute/execute、undermine/undertake、release/relief）→ 选完回读。把 3B 崩掉的 6 分抢回来。
+3. **MCM 守纪律**——每个选项回原文核方向，"和原文相反(quantify vs not quantifiable)、绝对词(only/all)"先删；"换皮的同义句(association=link、gustatory=taste)"才是答案，且要**选全**。
+4. **RO 补回指**——首句你已会判，补上"this/these/it + 名词"接回前句（Q8 的 This task→a specific task）。
+
+**阅读目标：42 → 55+。** 补分战场很清楚：FIBD&D 通读查错位（救 5–6 分）、FIB 形近词 + 回读（救 4–6 分）、MCM 守纪律（救 3 分）。**跨 part 提醒**：形近词不分（听力 invest/investors、阅读 persecute/execute）和词性意识（FIBD&D）是你**听力/阅读/写作共用的根**，一起治。
 
 ---
