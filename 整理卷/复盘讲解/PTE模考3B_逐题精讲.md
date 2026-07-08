@@ -3,7 +3,7 @@
 > 对象：考生 Kathy。本套成绩 **总分 53**：听力 55 / 阅读 42 / 口语 42 / 写作 73。共 **65 题**（听 15 · 读 16 · 口 30 · 写 4）。
 > 体例：每题先结论后展开；**对的题讲透"为什么对/通法"，错的题写足"错因 + 防错清单"**，每题给 🧠 记忆点。来源＝四个正文 `.tex`（`build/paper/sec_*_body.tex`）的人工誊录与配色，一切以整理卷为准。
 > 配套交接：方法学抽成 `交接文档/逐题精讲_{听力,阅读,口语,写作}.md`，供下一套卷复用。
-> **📌 本文件按 part 逐步产出——目前已完成「一、听力」（15 题）、「二、阅读」（16 题）。** 口语/写作两部分与最终的「0. 全卷大复盘」将在后续补齐（全卷大复盘需四部分讲完后统一提炼跨 part 病根）。
+> **📌 本文件按 part 逐步产出——目前已完成「一、听力」（15 题）、「二、阅读」（16 题）、「三、口语」（30 题）。** 写作部分与最终的「0. 全卷大复盘」将在后续补齐（全卷大复盘需四部分讲完后统一提炼跨 part 病根）。
 
 ---
 
@@ -764,5 +764,1002 @@
 4. **RO 补回指**——首句你已会判，补上"this/these/it + 名词"接回前句（Q8 的 This task→a specific task）。
 
 **阅读目标：42 → 55+。** 补分战场很清楚：FIBD&D 通读查错位（救 5–6 分）、FIB 形近词 + 回读（救 4–6 分）、MCM 守纪律（救 3 分）。**跨 part 提醒**：形近词不分（听力 invest/investors、阅读 persecute/execute）和词性意识（FIBD&D）是你**听力/阅读/写作共用的根**，一起治。
+
+---
+
+# 三、口语 Speaking（30 题，42/90）
+
+题型：RA 朗读(Q1–7) · RS 复述句子(Q8–18) · DI 描述图(Q19–21) · RTS 情景应答(Q22–24) · ASQ 简短回答(Q25–30)。**口语是全卷最弱的一项，主失分＝发音 + 流利度 + 没模板。** 本组每个可能不认识的词都带了中文翻译（防止"其实那个词我根本不认识"）。
+
+## 0. 口语大复盘（先看这张，和上一套 2B 纵向比）
+
+### 与 2B 的逐题型对比（进步✅ / 退步❌ / 顽固点⚠️）
+
+| 题型 | 2B | 3B | 走向 | 一句话 |
+|---|---|---|---|---|
+| **RA 朗读** | 164（最高 29） | **187（最高 36）** | ✅↑ | 发音/流利度缓慢改善；老毛病"把小词说两遍"+ 长学术词读崩仍在 |
+| **RS 复述** | 440 | **477** | ✅↑ | **发音其实够（57–76）**，失分全在"漏读大段"，尤其句首主谓 |
+| **DI 描述图** | 100（Q19 Fog=10 惨案） | **183（三题 59–63）** | ✅↑↑↑ | **全卷最大进步！背模板生效**，内容 4.3–4.5/5 |
+| **RTS 情景应答** | 136 | **111** | ❌↓ | 退步：仍复述题目指令、没给具体方案、Q24 崩（发音 18） |
+| **ASQ 简短回答** | 1/6 | **0/6** | ❌↓ | 6 题全丢，且多是常见词（carpet/patient/therapy/honeymoon）——最该捡的"免费分" |
+
+> **一句话总账**：口语 **36→42（+6）**，是四个 part 里稳步向上的一块。这 +6 **几乎全靠 DI（背模板从 10 分到 60 分）**，加上 RA/RS 的小幅改善；被 **RTS 退步（−25）和 ASQ 归零** 拖了后腿。**口语提分的方向非常清楚：靠"背模板 + 改流利度习惯"，不靠天赋。**
+
+### 口语四条病根（跨 2B/3B，优先补）
+
+| 病根 | 表现（2B→3B） | 一招通治 |
+|---|---|---|
+| **① 没模板就崩、有模板就稳** 🔥 | 2B DI Q19 无模板=10 → 3B DI 用模板三题 59–63；ASQ 不懂"只说 1 名词"机制→0/6 | **背模板三件套**：DI 6 句 · RTS 4 步 · ASQ 只说 1 名词 + 词库 |
+| **② 发音/流利度普遍偏低** | RA/RTS 主失分；RA 意群乱停、RTS 发音 18–41 | 影子跟读；**意群内不停**（of/a/the 后不停）；**说过的词绝不再说一遍** |
+| **③ 漏读/漏说、开口丢主语** | RS 漏句首主谓（the role of diet…/state agencies…）；ASQ 沉默 16 秒 | RS 开口先顶"主语+动词"；ASQ **5 秒内蹦一个名词**，不会也猜 |
+| **④ 复述题目指令**（RTS 顽固点） | 2B、3B RTS 都在念 prompt 原句（i notice… i realize…） | 顾虑只说一句、**第③步给一个具体方案**（野餐/简单图表/烘焙义卖） |
+
+### 口语防错总表（错因 → 对策）
+
+| 反复出现的错因 | 出现题 | 下次怎么防 |
+|---|---|---|
+| 把小词说两遍（重复口误） | RA Q1/Q2/Q3/Q4/Q7 | 念到 the/a/of/to/and/in 心里默念"只念一遍、错了也往前走" |
+| 长学术词读崩 | RA（peptic ulcer/entrepreneurs/manipulate/collages） | 准备期每句挑 1 个长词按音节默念 + 标重音 |
+| 漏读句首主谓 | RS Q8/Q10/Q12/Q16 | 开口先把"主语+动词"顶出来（守首尾词） |
+| 生词听不出→整句弃 | RS Q12（unemployment/projected） | 背高频词；没听清也把骨架硬说出来，绝不整句放弃 |
+| 复述题目指令 / 无具体方案 | RTS Q22/Q23/Q24 | 顾虑一句话；第③步扔一个能看见的具体方案 |
+| ASQ 沉默/空转 | ASQ 全 6 题 | 只说 1 名词；二选一答案常在问题里；不会也猜一个 |
+
+### 口语提分路线图（性价比从高到低）
+
+1. **背模板三件套（最快、回报最大）**：DI 6 句（已见效，保持）+ RTS 4 步（第③步给具体方案）+ ASQ 只说 1 名词 + 词库 → DI 稳 60、RTS 冲 70、ASQ 从 0 捡回 3–4 分。
+2. **RS 开口先顶主语 + 背高频生词**：发音已够，把句首主谓守住 → RS 多题能 +15。
+3. **RA 改流利度习惯**：意群不停 + 说过不重说（照 Q5 模板）→ 七题都能 30+。
+4. **长期练发音**：影子跟读（跟读音频、模仿重音节奏）。**口语目标 42→55+。**
+
+---
+
+## RA 朗读 Read Aloud · Q1–7（内容几乎全满，失分全在发音/流利度）
+
+> RA 七题**内容维度几乎全满**（除 Q1 是 4.44/5，其余都是 5/5）。这说明一件很重要的事：**Kathy 认字、读懂句子、把词按顺序念出来这一步是没问题的**——她的分全部栽在两处：**发音（\sr 红词，多是长学术词读崩）**和**流利度（意群里乱停 \pse、把词说两遍的重复口误）**。所以这一组的讲法不讲"内容",只死磕"红词怎么读"和"怎么别磕巴"。
+>
+> **本组红词特别多，而且很多 Kathy 可能根本不认识那个词、更别提读准。所以每一个红词我都单独列出：中文意思 + 音节拆分 + 重音位置。先认识它，再谈读准它。**
+
+## RA 三步法（每题都套这个，是习惯题不是天赋题）
+
+1. **准备期（题目出现后、开口前那几秒）扫读全文**：把不认识/没把握的长词圈出来，**在心里按音节默念**（en-tre-pre-neurs / ma-nip-u-late / pre-dom-i-nant-ly），再用竖线划"意群"——**只在标点或长短语之后才允许停**。
+2. **按意群匀速读**：一个意群一口气读完，**意群内部绝不停**——尤其 of / a / the / to 这类小词后面**绝不能停**（Kathy 的老毛病就是 "risk **of** /停/ innovation"、"resources **to** /停/…"）。
+3. **读错不回头、不重复、不加词**：念崩了就往前走，**千万别把词再说一遍**。平台对"重复/自我纠正"扣流利度极狠——Kathy 本组的 "diverse diverse the the / be eating by eating / that that / you you / and and / in in" 就是这么丢分的。
+
+## 和 2B 对比：在缓慢进步，但老毛病没改
+
+| 对比 | 2B | 3B | 说明 |
+|---|---|---|---|
+| RA 七题最高分 | 29（Q2 Mutual Politics） | **36（Q5 Biodiversity）** | 天花板抬高了 7 分 |
+| RA 七题总分 | 164 | **187** | 发音+流利度整体在往上走，**值得表扬** |
+| 老毛病 | 重复口误、长术语读崩 | **还在**（说两遍 + peptic/entrepreneurs/manipulate 崩） | 这是下一步要专门改的 |
+
+🌟 **把 Q5（36 分、流利度 37 是本组最好、全程没有一次重复口误）当成你 3B 的"新及格模板"**：目标是把每一篇都读成 Q5 那样——**长词提前默念好、按意群匀速碾过去、绝不把词说第二遍。**
+
+## 七题总表（红词逐题的完整翻译在下面各小节，这里只汇总毛病）
+
+| 题 | 总分 | 发音/流利度 | 暴露的具体毛病 | 防错动作 |
+|---|---|---|---|---|
+| Q1 Venture Capitals | 20 | 25 / 18 | 红词最多的金融学术文；**重复"diverse diverse the the"**；多处乱停 | 准备期把 6 个长词默念熟；小词后不停 |
+| **Q2 Peptic Ulcer** | **14（本组最低）** | 17 / 11 | 医学词全崩；**重复"be eating by eating"**；整句被停顿切碎 | peptic ulcer 提前念 3 遍；崩了别回头 |
+| **Q3 Topic** | **33（本组次高）** | 34 / 32 | 大部分绿/黄；小重复"in in""to know to" | 已接近模板，把两个重复去掉即可再涨 |
+| Q4 Beauty | 31 | 36 / 24 | 重复"and and"；methods/physics 崩 | quantify **and** help 连读，别停也别重复 |
+| **Q5 Biodiversity** | **36（本组最高）** | 35 / **37（流利度最好）** | **无重复口误**，只有 5 个长词红 | ← **拿它当新及格模板** |
+| Q6 Digital Art | 24 | 24 / 22 | 红词密集（15 个），几乎每句一个长词崩 | 每句挑 1 个长词提前念，其余匀速带过 |
+| Q7 Domestic Cats | 29 | 31 / 26 | 重复"that that""you you" | 句尾 "to you to kill" 一口气，别把 you 说两遍 |
+
+🧠 **一句话记住这张表：RA 不靠练发音天赋，靠"提前默念长词 + 意群不停 + 说过的词绝不再说一遍"三个动作。**
+
+---
+
+## Q1 · RA #771 Venture Capitals —— 20/90（内容 4.44/5 · 发音 25 · 流利度 18）
+
+**原文（朗读对象）**：
+> Venture capitals and public funding authorities need to carefully consider the incentive issues of entrepreneurs when providing support. In allocating resources to potentially competing innovators, there is a trade-off between the risk of innovation failure and rent dissipation: diverse investment lowers the risk of having no successful innovation but also reduces the expected profit from the post-innovation market.
+>
+> **中文**：风险投资机构和公共资助机构在提供支持时，需要认真考虑创业者的激励问题。在向可能相互竞争的创新者分配资源时，存在"创新失败风险"与"租金耗散"之间的权衡：分散投资降低了完全没有成功创新的风险，但也降低了创新后市场的预期利润。
+
+这是本组**红词最多、专业术语最密**的一篇金融学术文，所以分最低之一（20）。内容 4.44 说明你连意思都基本读顺了，纯栽在读不出来 + 磕巴。
+
+**红词逐个认（中文 + 音节 + 重音）**：
+- **Venture**（风险投资、创业投资）= VEN-chur，重音在**前**，读"文-撤"/ˈvɛntʃər/
+- **capitals**（资本；venture capitals 合起来=风险投资机构）= CAP-i-tals，重音在**前**，"凯-p-topsz"/ˈkæpɪtəlz/
+- **funding**（资助、拨款）= FUN-ding，重音在**前**，"放-丁"/ˈfʌndɪŋ/
+- **carefully**（仔细地、认真地）= CARE-ful-ly，重音在**前**，"凯尔-fu-li"/ˈkɛərfəli/
+- **incentive**（激励、动机）= in-CEN-tive，重音在**中**，"因-**森**-tiv"/ɪnˈsɛntɪv/
+- **entrepreneurs**（创业者、企业家）= on-truh-pruh-**NURS**，重音在**最后**，"昂-特惹-普惹-**呢儿**z"/ˌɑːntrəprəˈnɜːrz/ ← 这个词最爱崩，重音一定落在最后一个音节
+- **allocating**（分配）= AL-lo-cat-ing，重音在**前**，"阿-lo-kei-ting"/ˈæləkeɪtɪŋ/
+- **potentially**（可能地）= po-TEN-tial-ly，重音在**第二**，"po-**滕**-shə-li"/pəˈtɛnʃəli/
+- **innovators**（创新者）= IN-no-vat-ors，重音在**前**，"**因**-no-vei-topsz"/ˈɪnəveɪtərz/
+- **failure**（失败）= FAIL-ure，重音在**前**，"费尔-yer"/ˈfeɪljər/
+- **investment**（投资）= in-VEST-ment，重音在**中**，"因-**vest**-mənt"/ɪnˈvɛstmənt/
+- **lowers**（降低，动词）= LOW-ers，"楼-erz"/ˈloʊərz/
+- **having**（这里 having no…=没有…）= HAV-ing，"哈-ving"
+- **successful**（成功的）= suc-CESS-ful，重音在**中**，"sək-**塞**s-ful"/səkˈsɛsfəl/
+- **innovation**（创新）= in-no-VA-tion，重音在**第三**，"因-no-**vei**-shən"/ˌɪnəˈveɪʃən/（注意和 innovators 重音位置不同！）
+- **reduces**（减少）= re-DUC-es，重音在**中**，"ri-**丢**-siz"/rɪˈduːsɪz/
+- **expected**（预期的）= ex-PECT-ed，重音在**中**，"ik-**斯派克**-tid"/ɪkˈspɛktɪd/
+- **profit**（利润）= PROF-it，重音在**前**，"**普拉**-fit"/ˈprɑːfɪt/
+- **from**（从、来自）= 弱读 /frəm/"frəm"（别重读）
+- **market**（市场）= MAR-ket，重音在**前**，"**马**-kit"/ˈmɑːrkɪt/
+
+**你的具体问题**：
+- **重复口误 "diverse diverse the the"**：原文是 "…dissipation: **diverse investment** lowers…"，你把 **diverse** 念了两遍、**the** 也念了两遍（diverse=多样的/分散的，读 dai-VERS /daɪˈvɜːrs/，重音在后）。这是本题最伤流利度的地方。
+- **乱停 \pse**：在 "innovators /停/"、"dissipation /停/"、"successful /停/ innovation"处停顿——其中 "successful innovation" 是一个意群，**中间不该停**。
+- 长金融词一串崩：entrepreneurs / allocating / innovators / innovation 连环红。
+
+**★ 错因归类 + 防错**：属于"长学术词读崩 + 重复口误 + 意群乱停"三合一。
+1. 准备期专门把 **entrepreneurs / allocating / innovators / innovation** 这四个词各在心里念两遍，重音标出来（记住 innov**A**tion 重音在第三音节，innov**A**tors 在第一）。
+2. **"diverse investment" 一口气连读**，念到 diverse 千万别停、别回头再念一遍。
+3. "the risk **of** innovation"、"reduces **the** expected profit"——**of/the 后面不停**。
+
+🧠 **entrepreneurs 重音在最后（on-truh-pruh-NUR），diverse investment 一口气读——这题就是"长词提前默念、说过不重说"。**
+
+---
+
+## Q2 · RA #763 Peptic Ulcer —— 14/90（内容 5 · 发音 17 · 流利度 11）★本组最低
+
+**原文（朗读对象）**：
+> The most common peptic ulcer symptom is burning stomach pain. Stomach acid makes the pain worse, as does having an empty stomach. The pain can often be relieved by eating certain foods that buffer stomach acid or by taking an acid-reducing medication, but then it may come back. The pain may be worse between meals and at night.
+>
+> **中文**：消化性溃疡最常见的症状是胃部灼痛。胃酸会使疼痛加剧，空腹时也是如此。进食某些能中和胃酸的食物、或服用抑酸药物，通常可以缓解疼痛，但疼痛可能会再次出现。疼痛在两餐之间及夜间可能会加重。
+
+**本组最低分（14）**。内容还是满分 5——你把这段医学文的意思读顺了，但发音 17、流利度 11 都是本组垫底：医学专业词几乎全崩，整句被停顿切成碎片。
+
+**红词逐个认（中文 + 音节 + 重音）**：
+- **peptic**（消化性的）= PEP-tic，重音在**前**，"**配**-tik"/ˈpɛptɪk/
+- **ulcer**（溃疡）= UL-cer，重音在**前**，"**阿尔**-ser"/ˈʌlsər/（peptic ulcer 合起来=消化性溃疡）
+- **symptom**（症状）= SYMP-tom，重音在**前**，"**辛**p-təm"/ˈsɪmptəm/
+- **burning**（灼烧的）= BURN-ing，"本-宁"/ˈbɜːrnɪŋ/
+- **stomach**（胃）= STOM-ach，重音在**前**，"**斯达**-mək"/ˈstʌmək/ ← 注意结尾 -ach 读 **k** 不读"奇"
+- **makes**（使得）= /meɪks/"美克斯"
+- **relieved**（被缓解，relieve 的过去分词）= re-LIEVED，重音在**后**，"ri-**利**vd"/rɪˈliːvd/
+- **certain**（某些）= CER-tain，重音在**前**，"**色**-tən"/ˈsɜːrtən/
+- **foods**（食物）= /fuːdz/"fu-dz"
+- **buffer**（缓冲、中和）= BUF-fer，重音在**前**，"**巴**-fer"/ˈbʌfər/
+- **acid**（酸）= AC-id，重音在**前**，"**阿**-sid"/ˈæsɪd/（stomach acid=胃酸）
+- **reducing**（抑制、减少）= re-DUC-ing，重音在**中**，"ri-**丢**-sing"/rɪˈduːsɪŋ/（acid-reducing medication=抑酸药物）
+- **medication**（药物）= med-i-CA-tion，重音在**第三**，"梅-di-**kei**-shən"/ˌmɛdɪˈkeɪʃən/
+- **pain**（疼痛）= /peɪn/"配恩"
+- **by / eating**（by=通过；eating=进食）——这两个词本身简单，红是因为**口误**（见下）
+
+**你的具体问题**：
+- **重复口误 "be eating by eating"**：原文是 "…can often **be relieved by eating** certain foods…"，你先念出 "be eating" 又改成 "by eating"，等于**把 eating 说了两遍**、还把 by 念成了 be。这是本题流利度只有 11 的主凶。
+- **"empty stomach the /停/ The pain"**：句号处你念了 "the" 又停、再念 "The"，等于句子交界处卡了一下、把 the 说两遍。
+- **停顿极多 \pse**：peptic /停/ ulcer、worse /停/、an /停/ empty、stomach /停/、relieved /停/、an /停/ acid、medication /停/、then /停/——一句话被切成十几段，完全没有意群感。
+
+**★ 错因归类 + 防错**：属于"长术语读崩 + 重复口误 + 整句破碎"，是 2B "telecommunication 读崩"老毛病的重演。
+1. **peptic ulcer 是这题命门**：准备期把 "**PEP**-tic **UL**-cer" 单独念 3 遍，念熟了再开口。
+2. **"be relieved by eating" 一整个意群一口气读**，念到 by 别改口、别把 eating 重说。
+3. 句号处（stomach. The pain）**只停一次、只念一个 the**，别 "the /停/ The"。
+
+🧠 **peptic ulcer 先单独念熟三遍；"relieved by eating"一口气不改口——这题崩在术语 + 重说 eating。**
+
+---
+
+## Q3 · RA #762 Topic —— 33/90（内容 5 · 发音 34 · 流利度 32）★本组次高
+
+**原文（朗读对象）**：
+> When you have selected a topic, you will first have to familiarize yourself with the topic in order to clarify it. In this way you will get a clearer idea of all aspects concerning the topic, definitions, facts and theories. You will get to know related terms and concepts, the context and the various possible ways of approaching the topic.
+>
+> **中文**：选定题目之后，你首先需要熟悉这个题目，以便把它弄清楚。这样你就能更清楚地了解与该题目相关的各个方面——定义、事实和理论。你也会由此了解相关的术语和概念、背景，以及探讨这个题目的各种可能方式。
+
+**本组次高分（33）**，发音 34、流利度 32 都不错——ASR 里**大部分是绿色（\sg）和黄色（\sy）**，几乎没有长术语。这题证明：**当句子里没有生僻长词时，你其实能读得挺好。** 差一步就到 Q5 那个模板水平。
+
+**红词逐个认（只有 2 个，都很简单，说明这题几乎全靠"手滑"丢分）**：
+- **to**（不定式/介词的 to）= 弱读 /tə/"tə"——它红不是因为难，是因为你**多念了一个 to**（见下）
+- **context**（语境、背景）= CON-text，重音在**前**，"**康**-tekst"/ˈkɑːntɛkst/
+
+**你的具体问题**：
+- **重复口误 "in in"**：原文 "familiarize yourself with the topic **in** order to…"，你把 **in** 念了两遍（in in order）。
+- **重复口误 "to know to"**：原文 "You will get **to know** related terms…"，你念成 "get to know **to** related"，**多插了一个 to**。
+- 除这两处外几乎全绿——所以**把这两个重复去掉，这题就能奔 Q5 的水平**。
+
+**★ 错因归类 + 防错**：属于"轻微重复口误"，不是发音问题。这题最接近你的目标状态。
+1. 记住你的高发口误就是**"小词说两遍"**（in in / to to / the the / and and）——念到 in / to / the / and 这种小词时**心里默念'只念一遍'**。
+2. 念错了也**往前走**，别停下来纠正（一纠正就更容易重复）。
+
+🧠 **这题差点满血——毛病只有"in in / to know to"两处小词重说。管住小词只念一遍，就是你的模板级朗读。**
+
+---
+
+## Q4 · RA #759 Beauty —— 31/90（内容 5 · 发音 36 · 流利度 24）
+
+**原文（朗读对象）**：
+> Beauty is subjective, and as such it of course cannot be defined in absolute terms. But we all know or feel when something is beautiful to us personally. And in such instances, methods of physics and network science can be used to quantify and help us better understand what it is that evokes that pleasant feeling.
+>
+> **中文**：美是主观的，因此当然无法用绝对的标准来定义。但我们都能知道或感受到某样事物对自己而言是否美。在这种情况下，可以借助物理学和网络科学的方法来量化，并帮助我们更好地理解到底是什么唤起了那种愉悦的感觉。
+
+发音 36 是本组最高（说明大部分词你读得不错），但流利度只有 24——被一个重复口误和几处停顿拖下来。
+
+**红词逐个认（只有 2 个学术词）**：
+- **methods**（方法）= METH-ods，重音在**前**，"**梅**-thədz"/ˈmɛθədz/ ← 注意 th 是咬舌音，不是 s
+- **physics**（物理学）= PHYS-ics，重音在**前**，"**费**-ziks"/ˈfɪzɪks/（不是"phy-sics 费西克斯"，是"费ziks"）
+
+**你的具体问题**：
+- **重复口误 "and and"**：原文 "…can be used to quantify **and help** us…"，你把 **and** 念了两遍（quantify and and help）。又是"小词说两遍"的老毛病。
+- **乱停 \pse**：subjective /停/、instances /停/ methods、science /停/、that /停/ evokes——其中 "science" 和 "methods of physics" 之间、"what it is that evokes" 中间**不该停**。
+- methods / physics 两个学术词读崩。
+
+**★ 错因归类 + 防错**：发音其实到位（36），失分主要是"and and 重复 + 几处乱停"。
+1. **"quantify and help" 三个词连读一口气**，念到 and 别停、别重复。
+2. methods 的 th、physics 的 "费ziks" 准备期各念两遍。
+3. "what it is **that** evokes" 是一个意群，that 后面不停。
+
+🧠 **发音已经不错（36），就差"and and"这一次重说和几处乱停——把 and 当只念一遍的小词。**
+
+---
+
+## Q5 · RA #758 Biodiversity Decline —— 36/90（内容 5 · 发音 35 · 流利度 37）★★本组最高 · 新及格模板
+
+**原文（朗读对象）**：
+> Climate change and biodiversity decline are major challenges of our time. Both are predominantly caused by human activities, with profound consequences for people and the ecosystems on which we depend. Some actions we can undertake are beneficial in both areas, helping to mitigate and adapt to climate change as well as conserve and restore biodiversity.
+>
+> **中文**：气候变化和生物多样性衰退是我们这个时代的重大挑战。两者主要都是由人类活动造成的，给人类以及我们所依赖的生态系统带来深远影响。我们可以采取的一些行动在这两个方面都有益处，既有助于减缓和适应气候变化，也有助于保护和恢复生物多样性。
+
+**★★ 本组最高分（36），流利度 37 全组最好，而且——注意——全程没有一次重复口误！** 这就是它比别的题高的根本原因。**把这一篇当成你 3B 的"新及格模板"**：你完全有能力把每一篇都读成这样。
+
+**红词逐个认（只有 5 个长学术词，其余全绿/黄）**：
+- **challenges**（挑战）= CHAL-len-ges，重音在**前**，"**掐**-lin-jiz"/ˈtʃælɪndʒɪz/
+- **predominantly**（主要地、绝大多数）= pre-DOM-i-nant-ly，重音在**第二**，"pri-**达**-mi-nənt-li"/prɪˈdɑːmɪnəntli/ ← 5 个音节，重音在第二个 DOM
+- **ecosystems**（生态系统）= E-co-sys-tems，重音在**前**，"**伊**-ko-sis-təmz"/ˈiːkoʊsɪstəmz/
+- **helping**（帮助）= HELP-ing，"黑尔-ping"/ˈhɛlpɪŋ/
+- **mitigate**（减缓、缓解）= MIT-i-gate，重音在**前**，"**米**-ti-gei-t"/ˈmɪtɪɡeɪt/（mitigate and adapt=减缓并适应）
+
+**为什么它高分（值得复制的通法）**：
+- **全程零重复**——没有任何 "the the / and and" 这种把词说两遍的动作，这一条直接把流利度顶到 37。
+- 停顿都落在**意群边界**（challenges 后、activities 后、for 后、ecosystems 后），虽然停得略多，但没有停在意群中间。
+- 5 个红词都是"读音不够准"级别，不是"完全读崩"级别——所以发音还有 35。
+
+**★ 通法总结**：这题示范了 RA 三步法执行到位是什么样——**长词提前有数、意群不乱停、说过的词绝不重说**。你要做的是把这个状态迁移到其他六题。
+
+🧠 **Q5 是你的新及格模板：36 分、流利度全组第一、零重复口误。目标——把每一篇都读成 Biodiversity 这样。**
+
+---
+
+## Q6 · RA #752 Digital Art —— 24/90（内容 5 · 发音 24 · 流利度 22）
+
+**原文（朗读对象）**：
+> Digital art can be computer generated, scanned or drawn using a tablet and a mouse. Thanks to improvements in digital technology, it is possible to download video onto computers, allowing artists to manipulate the images they had filmed with a video camera. This gives artists a creative freedom, allowing them to cut and paste within moving images to create visual collages.
+>
+> **中文**：数字艺术可以由计算机生成，也可以通过扫描、或用手写板和鼠标绘制而成。得益于数字技术的进步，如今可以将视频下载到电脑中，使艺术家能够处理他们用摄像机拍摄的画面。这赋予了艺术家一种创作自由，使他们能够在动态影像中进行剪切和粘贴，从而创造出视觉拼贴效果。
+
+**红词密集（15 个）**，几乎每句都有一个长词崩，所以发音 24、流利度 22 双低。内容仍是 5——意思读顺了，纯栽在词太多读不下来。
+
+**红词逐个认（中文 + 音节 + 重音，本题最多，重点记）**：
+- **Digital**（数字的）= DIG-i-tal，重音在**前**，"**迪**-ji-təl"/ˈdɪdʒɪtəl/
+- **drawn**（绘制，draw 的过去分词）= /drɔːn/"综"（一个音节，别读成两个）
+- **tablet**（手写板、平板）= TAB-let，重音在**前**，"**泰b**-lit"/ˈtæblɪt/
+- **technology**（技术）= tech-NOL-o-gy，重音在**第二**，"tek-**那**-lə-ji"/tɛkˈnɑːlədʒi/
+- **possible**（可能的）= POS-si-ble，重音在**前**，"**帕**-si-bəl"/ˈpɑːsɪbəl/
+- **download**（下载）= DOWN-load，重音在**前**，"**当**-楼d"/ˈdaʊnloʊd/
+- **artists**（艺术家，复数）= AR-tists，重音在**前**，"**阿**-tists"/ˈɑːrtɪsts/ ← 结尾 -tists 三个辅音连着，最难，慢慢把 t-s-t-s 都吐出来
+- **manipulate**（处理、操控）= ma-NIP-u-late，重音在**第二**，"mə-**尼**-pyu-leit"/məˈnɪpjuleɪt/ ← 这个词最爱崩，重音在第二音节 NIP
+- **images**（图像、画面，复数）= IM-ag-es，重音在**前**，"**衣**-mi-jiz"/ˈɪmɪdʒɪz/
+- **had**（助动词，had filmed=曾拍摄）= 弱读 /həd/
+- **filmed**（拍摄，film 过去式）= /fɪlmd/"费尔m-d"（结尾 -lmd 三个辅音连着，别吞掉 d）
+- **This**（这，指示代词）= /ðɪs/"贼斯"（th 咬舌，不是"迪斯"）
+- **freedom**（自由）= FREE-dom，重音在**前**，"**夫瑞**-dəm"/ˈfriːdəm/
+- **paste**（粘贴）= /peɪst/"配斯t"（cut and paste=剪切和粘贴）
+- **collages**（拼贴画、拼贴作品）= col-LAG-es，重音在**第二**，"kə-**拉**ʒ-iz"/kəˈlɑːʒɪz/ ← 中间是 /ʒ/（像"日"的软音），不是硬 g
+
+**你的具体问题**：
+- 长词连环崩：Digital → tablet → technology → download → artists → manipulate → filmed → freedom → paste → collages，几乎每个实词都红。
+- **乱停 \pse**：generated /停/、technology /停/、possible download /停/、images /停/、freedom /停/、cut and /停/ paste——其中 "cut and /停/ paste" 是一个意群，中间不该停。
+
+**★ 错因归类 + 防错**：属于典型"长术语密集读崩"。这题词太多，别指望一次全读准，抓重点。
+1. 准备期**每句挑 1 个最难的长词**默念熟：第一句 tablet、第二句 manipulate、第三句 collages——这三个念顺，整篇观感就上来了。
+2. **manipulate 重音在第二音节（ma-NIP-u-late）、collages 中间读软音 ʒ**——这两个是本题最容易崩的。
+3. "cut and paste" 三个词连读一口气，别在 and 后停。
+
+🧠 **Digital Art 词最多：抓住 tablet / manipulate（重音在 NIP）/ collages（中间读"日"音）三个词，别句句都停。**
+
+---
+
+## Q7 · RA #748 Domestic Cats —— 29/90（内容 5 · 发音 31 · 流利度 26）
+
+**原文（朗读对象）**：
+> Domestic cats that are largely indoor hunt less than outdoor cats because they don't have access to mice. In the wild, feral kittens are taught how to kill prey by their mothers. Domestic cats often fail to learn this skill, which is why you will see them "playing" with anything they catch, or they may bring the mouse to you to kill.
+>
+> **中文**：主要生活在室内的家猫比室外的猫捕猎更少，因为它们接触不到老鼠。在野外，野化的小猫会由母猫教导如何猎杀猎物。家猫往往没能学会这项技能，这就是为什么你会看到它们"玩弄"抓到的任何东西，或者把老鼠叼来让你去杀死它。
+
+发音 31、流利度 26——比 Q6 好一些，但两处重复口误把流利度压住了。
+
+**红词逐个认（本题红词少，主要是口误）**：
+- **kittens**（小猫）= KIT-tens，重音在**前**，"**key**-tənz"/ˈkɪtənz/（feral kittens=野化的小猫；feral=FE-ral 野化的/野生的）
+- **Domestic**（家养的、家庭的）= do-MES-tic，重音在**第二**，"də-**梅s**-tik"/dəˈmɛstɪk/ ← 重音在中间 MES，第一次你读成黄、第二次读成红
+- **t**（don't 的结尾 t）= 这是 "don't" 的 't' 被单独标红，说明 **don't** 你没把结尾的 t 音收干净
+
+**你的具体问题**：
+- **重复口误 "that that"**：原文 "Domestic cats **that** are largely indoor…"，你念成 "cats that /停/ that are"——**把 that 说了两遍、中间还停了一下**。
+- **重复口误 "you you"**：句尾原文 "…bring the mouse **to you to kill**"，你念成 "to **you you** to kill"，**把 you 说了两遍**。句尾重复最伤，因为它是全篇最后印象。
+- **双停顿 \pse\pse**："anything they catch /停//停/ or they may…"——连着停了两拍。
+
+**★ 错因归类 + 防错**：发音其实还行（31），失分主要是"两处把词说两遍 + 句尾重复"。和 Q3 一样，是口误型丢分。
+1. **句首 "cats that are" 一口气读**，念到 that 别停、别重复。
+2. **句尾 "to you to kill" 一口气读到底**——这是全篇最后一句，最忌讳把 you 说两遍。
+3. Domestic 重音在中间（do-MES-tic），两次都念一致。
+
+🧠 **Domestic Cats 发音够用，就败在"that that / you you"两次重说——尤其句尾"to you to kill"要一口气收尾，别把 you 说两遍。**
+
+---
+
+### RA 小结（Q1–7）
+
+- **好消息**：内容维度几乎全满（说明认字、理解、顺序都没问题）；RA 总分从 2B 的 164 涨到 187，天花板从 29 抬到 36——**发音和流利度在缓慢改善，要肯定。**
+- **两个反复出现的老毛病**：
+  1. **把小词说两遍**（diverse diverse / the the / be eating by eating / in in / to know to / and and / that that / you you）——这是本组流利度失分的头号原因，而且大多不是难词，是**手滑重说**。对策：念到 the/a/of/to/and/in/that/you 这种小词，心里默念"只念一遍、念错也往前走"。
+  2. **长学术词读崩**（peptic ulcer / entrepreneurs / allocating / manipulate / collages / predominantly）——对策：准备期**每句挑 1 个最难的长词按音节默念 + 标重音**，别指望一次全读准。
+- **模板**：**Q5 Biodiversity（36 分、流利度 37、零重复）是你 3B 的新及格模板**——目标是把每一篇都读成它那样：长词提前有数、意群不乱停、说过的词绝不重说。
+
+🧠 **RA 一句话：提前默念长词 + 意群内不停 + 说过的词绝不再说一遍——照 Q5 那样读，七题都能到 30+。**
+
+## RS 复述句子 Q8–18（11 题）· 总览与核心诊断
+
+**先看结论（这段最重要，务必读懂）：RS 是你本组最能「快速回血」的题型——因为你的发音其实够用，丢分几乎全在「漏读一大段」。**
+
+- **发音不是问题。** 本组 11 题的发音分多在 **57–76**（Q13 高到 76，Q8 有 72，Q10 有 70，Q11 有 71），而且**整组几乎没有一个 `\sr` 红词（发音差的词）**。这说明：只要你把词**说出来了**，你基本都读得对、读得清。
+- **丢分几乎全在「漏读」。** 红删除线 `\smiss` 标出的，就是你**没说出来**的词。你常常只抓住句子的**中段或尾段**、或者零散几个词，把**开头的主语 + 动词整块丢掉**——Q8 / Q10 / Q12 / Q16 最典型（下面逐题看）。
+- **一句话定性：** 你的 RS 不是「读不准」，是「**没把整句听全、记住、一口气说出来**」。所以练 RS 不是练嘴，是练**耳朵抓句 + 短时记忆 + 敢一口气说完**。
+- **和 2B 对比（看到进步、也看到顽固点）：** 2B 的 RS 失分是「拖沓 / 长术语读崩 / 句首句尾漏词」；**3B 发音明显好了（很多 60–76），但「漏读大段」成了主问题**——从「读不准」升级成「没说全」。RS 总分从 **2B 的 440 → 3B 的 477，是实打实的进步**。**把 Q13（68 分）当你自己的范本。**
+- **顽固点：句首漏词。** 2B 你漏的是句首的 will；3B 你漏的是各种**句首主语**（the role of diet… / the unemployment rate… / state agencies…）。句子一开口那 2–4 个词，是你反复丢分的地方。
+
+### RS 通法 · 四步法（每题都按这个做）
+
+1. **听时抓「全句骨架」**：主语 + 动词 + 宾语 + 关键名词，**尤其死死记住句子的第一个词（主语）和那个主要动词**。漏词高发在句首，所以句首要格外用力记。
+2. **听完立刻、一口气、匀速说完**（3–5 秒把一句话说完），别等、别边想边说。
+3. **不重启、不自纠**：说错一个词也往前走，回头重说反而砸流利度。
+4. **没把握也「说得像一句话」**：把记住的骨架用完整语调说出来，宁可说个大概，也别只蹦零散几个词。
+
+> **守住三样：句首第一个词（主语）+ 主要动词 + 句尾最后一个词。** 你的漏读几乎全在句首主谓，所以「开口先把主语+动词顶出来」是你最该改的一个动作。
+
+---
+
+## Q8 · RS #1637 —— 49/90（内容 2/3 · 发音 72 · 流利度 58）
+
+- **原句（复述对象）：** *The role of diet in cancer prevention will be discussed in the next chapter.*
+  **中文：** 饮食在癌症预防中的作用，将在下一章讨论。
+- **你说了什么：** 你只说出了后半句 **will be discussed in the next chapter（将在下一章被讨论）**，把整个句首主语丢了。
+- **你漏读的词（每个都记住意思）：**
+  - **the role of diet** ＝ 饮食的**作用 / 角色**（role 读 rohl，作用；diet 读 DY-ut，饮食）
+  - **cancer** ＝ 癌症（读 KAN-ser）
+  - **prevention** ＝ 预防（读 prih-VEN-shun，重音在中间 VEN）
+  → 也就是说，整句的**主语「饮食在癌症预防中的作用」你一个字没说**，只说了「将在下一章讨论」。
+- **发音证据：** 发音 **72** 很高，全组无红词——**你说出来的那半句读得很好**，问题纯粹是**前半句没说**。
+- **★ 错因归类：** 句首主语（名词短语）整块漏读。**防错清单：**
+  1. 听的时候，**第一个动作是记住主语**：这句主语是「the role of diet」——先把「role / diet / cancer prevention」这三个名词钉住。
+  2. 开口**从句子第一个词开始说**：The role of diet…，别从中间的 will 起头。
+  3. 就算 prevention 没记准，也要把「the role of diet in cancer…」的架子说出来，不要跳过。
+- 🧠 **记忆点：开口先顶主语——这句是「The role of diet…」，不是「will be discussed…」。**
+
+---
+
+## Q9 · RS #1636 —— 50/90（内容 2/3 · 发音 69 · 流利度 63）
+
+- **原句：** *The students have been asked to comment on their peers' work.*
+  **中文：** 学生们被要求对同伴的作业进行点评。
+- **你说了什么：** the students … asked … their … work——骨架的头（the students）和尾（work）都在，但**中间的被动结构和核心动词丢了**。
+- **你漏读的词：**
+  - **have been** ＝（被动完成）「已经被……」（have been asked ＝ 已被要求）
+  - **to comment on** ＝ 对……进行**点评 / 评论**（comment 读 KOM-ent，评论）
+  - **peers** ＝ **同伴 / 同龄人**（读 peerz；peers' work ＝ 同伴的作业）
+- **发音证据：** 发音 69——你说出来的词（students / asked / work）都没问题，漏的是 have been、to comment on、peers 这几块。
+- **★ 错因归类：** 漏掉「被动助动词 + 核心动词短语」（have been asked to comment on）。**防错清单：**
+  1. 抓骨架时**动词短语是重点**：这句真正在说什么？「被要求点评」→ 记住 asked to comment on。
+  2. **功能词 have been 也要带上**——它撑起整句的时态和被动，漏了内容分就掉。
+  3. peers 这种小名词别丢，它是「点评谁的作业」的关键。
+- 🧠 **记忆点：动词短语是句子的心脏——「被要求点评（asked to comment on）」不能漏。**
+
+---
+
+## Q10 · RS #1634 —— 26/90（内容 1.1/3 · 发音 70 · 流利度 62）
+
+- **原句：** *The manager has to check the product quality every now and then.*
+  **中文：** 经理必须不时检查产品质量。
+- **你说了什么：** 你只说出了**首尾两个词**——the manager … then，中间一大段全没了。这是本组「漏读大段」的典型。
+- **你漏读的词（一大段）：**
+  - **has to check** ＝ **必须检查**（has to ＝ 必须；check 读 chek，检查）
+  - **the product quality** ＝ **产品质量**（product 读 PROD-ukt，产品；quality 读 KWOL-ih-tee，质量）
+  - **every now and** ＝（every now and then）**不时地 / 时不时**
+- **发音证据：** 发音仍有 **70**——说明不是读不动，是**中段整块没抓住**。总分只有 26，就是因为一句 12 个词你只说出 the manager 和 then。
+- **★ 错因归类：** 只抓住首尾词，句子主体（动词+宾语「必须检查产品质量」）全漏——**这是你最该改的模式**。**防错清单：**
+  1. 听的时候，**记住的必须是「谁 + 做什么」**：经理（manager）+ 检查（check）+ 产品质量（product quality）。只记住 manager 和 then 没用。
+  2. every now and then 是一个固定短语（不时），**当成一个词记**，别拆散漏掉。
+  3. 说的时候**一口气从 the manager has to check…** 顺下来，别只蹦两头。
+- 🧠 **记忆点：别只抓句子的头和尾——中间的「做什么」（check the product quality）才是主体。**
+
+---
+
+## Q11 · RS #1633 —— 64/90（内容 2.5/3 · 发音 71 · 流利度 69）✅ 本组较好
+
+- **原句：** *Many diet plans have failed because they are too boring.*
+  **中文：** 许多饮食计划都失败了，因为它们太枯燥乏味。
+- **你说了什么：** many … failed because they are too boring——**大部分都说出来了**，只漏了主语中的一小块。
+- **你漏读的词：**
+  - **diet plans** ＝ **饮食计划**（diet 读 DY-ut；plans 读 planz）
+  - **have** ＝（have failed 的助动词）「已经」
+- **为什么这题好：** 你把**因果结构（… failed because … too boring）完整说出来了**，只漏了 diet plans 和 have 两处小词——内容 2.5/3，发音 71、流利度 69 都不错。**这就是「抓住了整句骨架」的样子。**
+- **★ 小瑕疵：** 主语 many **diet plans** 里的核心名词 diet plans 还是漏了——说明句首依然是你最松的地方，但这次只松了一点。**防错：** 说完 many 之后，紧跟着的名词（diet plans）要顶上，别直接跳到 failed。
+- 🧠 **记忆点：这题是「抓住整句」的正面例子——因果句式说全了，分就上来了。**
+
+---
+
+## Q12 · RS #1632 —— 11/90（内容 0.9/3 · 发音 37 · 流利度 33）⚠️ 本组最低
+
+- **原句：** *The unemployment rate has been projected to fall in the future.*
+  **中文：** 预计失业率未来将会下降。
+- **你说了什么：** 你几乎整句都没抓住，只剩下 the … the future，中间**主语+被动+动词一整条全丢了**。
+- **你漏读的词（几乎整句）：**
+  - **unemployment rate** ＝ **失业率**（unemployment 读 un-em-PLOY-ment，失业；rate ＝ 率、比率）
+  - **has been projected** ＝ **被预测 / 预计**（projected 读 pruh-JEK-tid，重音在 JEK，意思是「被预测、被预计」——这个词你很可能不认识，重点记）
+  - **to fall** ＝ **将下降 / 下跌**（fall ＝ 下降）
+  - **in** ＝（in the future 里的）「在……之中」
+- **为什么这题崩了：** 这是**唯一一题发音也低（37）**的 RS——因为你**说出来的东西太少**（只有 the…the future），系统几乎没得可评。**根源还是漏读**：unemployment rate has been projected to fall 这一整条你没抓住，很可能是因为 unemployment、projected 这两个词**你不认识、听不出**，一慌就整句放弃了。
+- **★ 错因归类：** 生词（unemployment、projected）→ 听不出 → 整句崩。**防错清单：**
+  1. **先认词**：把 unemployment（失业）、projected（预测/预计）、rate（率）背下来——认识了才听得出、才敢说。
+  2. 就算没全听清，也**要把骨架说出来**：「The unemployment rate … projected to fall …」，哪怕中间含糊，也比只说 the…the future 强得多。
+  3. **绝不整句放弃**：RS 只要说出像样的一句话，内容分就不会是 0.9 这么惨。
+- 🧠 **记忆点：越是生词多的句子越不能弃——把骨架（失业率将下降）硬说出来，别只剩 the…the future。**
+
+---
+
+## Q13 · RS #1631 —— 68/90（内容 2.5/3 · 发音 76 · 流利度 68）⭐ 本组最高 · 范本
+
+- **原句：** *The newspaper job had me doing the same thing day after day.*
+  **中文：** 那份报社的工作让我日复一日地做着同样的事情。
+- **你说了什么：** the newspaper job … doing the same … day after day——**主语、动词、时间状语几乎全说出来了**，只漏两处小词。
+- **你漏读的词：**
+  - **had me** ＝ **让我 / 使我**（had sb doing ＝ 让某人一直做……）
+  - **thing** ＝ 事情（the same thing ＝ 同样的事情，你说了 same 漏了 thing）
+- **为什么这题最高（学它！）：**
+  1. **句首主语一次抓住**：the newspaper job 完整说出——这正是你其他题最爱漏的地方，这题你守住了。
+  2. **发音 76 全组最高**：newspaper、doing、same、day after day 都读得清。
+  3. 只漏了 had me、thing 两个**小词**，主干意思完全在——所以内容 2.5、流利度 68 都好。
+- **★ 通法印证：** 这题就是**四步法做对的样子**——句首顶住 + 一口气说完 + 不回头。**你完全有能力做到，Q13 证明了。** 把这题的手感复制到 Q8/Q10/Q12。
+- 🧠 **记忆点：Q13 是你的 RS 满分模板——句首（the newspaper job）守住了，整题就稳了。**
+
+---
+
+## Q14 · RS #1630 —— 47/90（内容 2.1/3 · 发音 66 · 流利度 56）
+
+- **原句：** *He has a good job, and yet he never seems to have any money.*
+  **中文：** 他有一份不错的工作，但似乎总是没什么钱。
+- **你说了什么：** he … a good job … he … have … money——**名词都在，但把「转折 + 否定」这层意思漏光了**，结果听起来不像原句的意思。
+- **你漏读的词：**
+  - **has** ＝ 有（he has a good job 的动词，你漏了主动词）
+  - **and yet** ＝ **然而 / 但是**（yet 读 yet；and yet 是转折，全句的关键逻辑）
+  - **never seems to** ＝ **似乎从不**（never ＝ 从不；seems 读 seemz，似乎）
+  - **any** ＝（any money ＝ 一点钱、任何钱）
+- **发音证据：** 发音 66，说出来的词没问题；丢分在**逻辑词漏了**——and yet（转折）、never seems to（否定）一漏，整句从「有工作却没钱」塌成「他有工作有钱」，意思反了。
+- **★ 错因归类：** 漏掉**逻辑/否定词**（and yet、never）→ 句意改变。**防错清单：**
+  1. 抓骨架时**留意转折词和否定词**：and yet、never、no、but 这类词一漏，意思就反，内容分掉得最狠。
+  2. 主动词 has 也别漏——「他**有**好工作」的 has 是主谓的谓语。
+  3. 记一个「反差」框架：**有好工作 BUT 没钱**，说的时候把 but/yet 那口气顶出来。
+- 🧠 **记忆点：转折词和否定词（and yet / never）是意思的开关——漏了整句意思就反。**
+
+---
+
+## Q15 · RS #1623 —— 45/90（内容 1.8/3 · 发音 64 · 流利度 68）
+
+- **原句：** *Services need to be organized more efficiently than they are at present.*
+  **中文：** 比起目前的状况，各项服务需要被更高效地组织起来。
+- **你说了什么：** services … be … more … they … present——**框架的词零散在，但核心的「需要 + 组织 + 更高效」全漏了**。
+- **你漏读的词：**
+  - **need to** ＝ **需要（去）**（need to be ＝ 需要被……）
+  - **organized** ＝ **组织 / 安排**（读 OR-guh-nized，重音在最前 OR）
+  - **efficiently than** ＝ **比……更高效地**（efficiently 读 ih-FISH-unt-lee，高效地——这词你很可能不认识，重点记）
+  - **are at** ＝（than they are at present ＝ 比它们目前的样子）
+- **发音证据：** 发音 64、流利度 68——你说出来的部分流畅；漏的是 organized、efficiently 这两个**较难的词**（很可能不认识 → 没敢说）。
+- **★ 错因归类：** 生词（organized / efficiently）+ 句子主体（need to be organized）漏读。**防错清单：**
+  1. **背词**：organized（组织）、efficiently（高效地）——这两个是这句的意思核心，认识了才说得出。
+  2. 抓骨架：这句在说「服务**需要被更高效地组织**」→ 记住 need / organized / efficiently 三个词。
+  3. 说不准 efficiently 也别停，含糊读过去也比漏掉强。
+- 🧠 **记忆点：句子核心动词（organized）+ 核心副词（efficiently）漏了，剩下的词再多也拼不出意思。**
+
+---
+
+## Q16 · RS #1620 —— 25/90（内容 1.1/3 · 发音 63 · 流利度 59）⚠️ 漏读大段
+
+- **原句：** *State agencies continue to cut budgets and support to a number of organizations.*
+  **中文：** 州政府机构持续削减对多个组织的预算和支持。
+- **你说了什么：** 你只说出了后半的零散词——to … support to a … organizations，**句首主语和主要动词一整块又丢了**。和 Q10 一个毛病。
+- **你漏读的词（一大段）：**
+  - **state agencies** ＝ **州（政府）机构**（agencies 读 AY-jun-seez，机构——这词你很可能不认识，重点记）
+  - **continue** ＝ **持续 / 继续**（读 kun-TIN-yoo）
+  - **cut budgets and** ＝ **削减预算（和）**（budgets 读 BUJ-its，预算）
+  - **number of** ＝（a number of ＝ 一些、若干）
+- **发音证据：** 发音 63——不低；总分只有 25，就是因为**句首主语 state agencies + 动词 continue to cut budgets 这一整条没说出来**，只剩尾巴 support to a … organizations。
+- **★ 错因归类：** 句首主语+动词整块漏（生词 agencies / budgets 拖累）。**防错清单：**
+  1. 又是句首！**第一个动作：记住主语 state agencies + 动词 cut budgets**。
+  2. **背词**：agencies（机构）、budgets（预算）、continue（持续）——认识才抓得住。
+  3. 抓一句话的意思：「机构**持续削减预算和支持**」→ 说的时候从 State agencies continue to cut… 顶起来。
+- 🧠 **记忆点：又是句首主谓丢了（state agencies continue to cut）——开口先把主语顶出来，这是你反复失分的同一个坑。**
+
+---
+
+## Q17 · RS #1617 —— 49/90（内容 2.2/3 · 发音 58 · 流利度 60）
+
+- **原句：** *Scientists are studying photographs of the planet for signs of life.*
+  **中文：** 科学家们正在研究这颗行星的照片，以寻找生命迹象。
+- **你说了什么：** scientists … studying photographs … the … of life——**主语和主动词在了（进步！）**，漏的是几处名词/介词短语。
+- **你漏读的词：**
+  - **are** ＝（are studying ＝ 正在研究，进行时的 are）
+  - **of** ＝（photographs of the planet ＝ 行星的照片）
+  - **planet** ＝ **行星**（读 PLAN-it）
+  - **for signs** ＝ **寻找迹象**（signs 读 sinz，迹象；for signs of life ＝ 为了生命的迹象）
+- **发音证据：** 发音 58（本组偏低但仍及格）——这题你**难得把句首 scientists 和动词 studying 都说出来了**，方向对；漏的是 planet、for signs 这两块「研究什么、找什么」的信息。
+- **★ 错因归类：** 句首抓住了（好），但漏掉宾语细节（of the planet / for signs of life）。**防错清单：**
+  1. 保持这题的好习惯——**句首 scientists + 动词 studying 顶住**，继续这么做。
+  2. 补上「研究什么」：photographs **of the planet**（行星的照片）；「为了什么」：**for signs of** life（寻找生命迹象）。
+  3. planet、signs 都不难，别因为赶而跳过。
+- 🧠 **记忆点：这题句首抓对了（scientists are studying）——接着把「研究什么、找什么」（planet / signs of life）补全就到 60+ 了。**
+
+---
+
+## Q18 · RS #1612 —— 43/90（内容 1.9/3 · 发音 57 · 流利度 63）
+
+- **原句：** *Pictures are scanned into a form of digital information that computers can recognize.*
+  **中文：** 图片被扫描转换成计算机能够识别的数字信息形式。
+- **你说了什么：** scanned into … information that computers can——**中段说出来了，但句首主语（pictures are）和句尾动词（recognize）两头都漏了**，正是你的老毛病「守不住首尾」。
+- **你漏读的词：**
+  - **pictures are** ＝ **图片被……**（句首主语+被动，pictures 读 PIK-cherz）
+  - **a form of digital** ＝ **一种数字……的形式**（form ＝ 形式；digital 读 DIJ-ih-tul，数字的——重点记）
+  - **recognize** ＝ **识别 / 认出**（读 REK-ug-nize，重音在最前 REK——这词你很可能不认识，重点记）
+- **发音证据：** 发音 57——说出来的中段（scanned into… information that computers can…）没大问题；丢分在**句首 pictures are 漏了 + 句尾 recognize 漏了**，一句话缺头少尾。
+- **★ 错因归类：** 句首主语 + 句尾动词双漏（生词 digital / recognize 拖累）。**防错清单：**
+  1. **守首尾**：开口先说 Pictures are…，结尾一定要把最后那个动词 **recognize** 说出来（句尾词是你另一个高发漏点）。
+  2. **背词**：digital（数字的）、recognize（识别）——这句在说「图片被扫成**计算机能识别的数字信息**」，认识这两个词才说得出意思。
+  3. a form of digital information 是一整个名词块（一种数字信息形式），当一口气说。
+- 🧠 **记忆点：一句话要有头有尾——句首（Pictures are）顶住，句尾动词（recognize）收住，别缺两头。**
+
+---
+
+### RS 组小结表（漏读词中文一览 + 防错）
+
+| 题 | 分 | 发音 | 你漏掉的（＝没说出来的意思） | 主毛病 |
+|---|---|---|---|---|
+| Q8 #1637 | 49 | 72 | the role of diet（饮食的作用）· cancer prevention（癌症预防） | 句首主语整块漏 |
+| Q9 #1636 | 50 | 69 | have been（被…）· to comment on（点评）· peers（同伴） | 漏被动+核心动词 |
+| Q10 #1634 | 26 | 70 | has to check（必须检查）· product quality（产品质量）· every now and（不时） | 只抓首尾、主体漏 |
+| **Q11 #1633** | **64** | 71 | diet plans（饮食计划）· have | ✅ 因果句说全，较好 |
+| Q12 #1632 | **11** | 37 | unemployment rate（失业率）· has been projected（被预测）· to fall（下降） | 生词多→整句崩（最低） |
+| **Q13 #1631** | **68** | **76** | had me（让我）· thing（事情） | ⭐ 句首守住＝范本（最高） |
+| Q14 #1630 | 47 | 66 | has · and yet（然而）· never seems to（似乎从不）· any | 漏转折/否定词→意思反 |
+| Q15 #1623 | 45 | 64 | need to（需要）· organized（组织）· efficiently than（更高效地） | 生词+核心动词漏 |
+| Q16 #1620 | **25** | 63 | state agencies（州机构）· continue（持续）· cut budgets and（削减预算）· number of | 句首主谓整块漏 |
+| Q17 #1617 | 49 | 58 | are · of · planet（行星）· for signs（寻找迹象） | 句首抓住、宾语细节漏 |
+| Q18 #1612 | 43 | 57 | pictures are（图片被）· a form of digital（一种数字…形式）· recognize（识别） | 句首+句尾双漏 |
+
+🧠 **RS 一句话总记：你的发音够了（57–76），失分全在「漏读大段、尤其句首主谓」。练法＝①开口先顶主语+动词 ②一口气说完不回头 ③把 projected/efficiently/agencies/recognize/digital 这些生词背下来（不认识就听不出、不敢说）。范本＝Q13（句首守住，68 分）；反面＝Q10/Q12/Q16（只剩零散词）。**
+
+## DI 描述图 Q19–21 · 本套口语最大的亮点 🎉（一定要先表扬）
+
+Kathy，先给你**这套最大的一个掌声**：DI 是你**进步最大**的一块。
+
+- **2B 那套**：DI 里那道 Fog（雾）折线图，你**没有模板、临场乱拼、连主题词 fog 都没说出来**，最低只有 **10 分**（内容 0.6/5）。
+- **这套 3B**：三道 DI 全部 **59–63 分**，内容 **4.3–4.5/5**！区别只有一个——**你这次用了固定结构**：
+  - 开头 `The following graph gives information about…`（下图给出关于……的信息）
+  - 中间报 `the highest / the lowest`（最高的 / 最低的）
+  - 结尾 `in conclusion / all in all`（总之 / 总而言之）
+
+**这直接证明了一件事：对你来说"背模板"的回报最大。** DI 满打满算就 6 句话，背死了就能稳拿 60 分——是你**性价比最高的一块**，一定要保持。下面先把这 6 句模板给你钉死，再逐题看你哪几句套得好、哪里还能补。
+
+### 🔑 DI 6 句模板（背死，每句都带中文）
+
+| # | 英文（背下来） | 中文 | 什么时候用 |
+|---|---|---|---|
+| ① | The following **graph / picture** gives information about ____. | 下图 / 这张图给出关于 ____ 的信息。 | **每题必说**（占位开头） |
+| ② | The **horizontal axis**（横轴）shows ____, and the **vertical axis**（纵轴）shows ____. | 横轴表示 ____，纵轴表示 ____。 | 折线/柱状图 |
+| ②照片版 | In the **foreground**（前景）there is ____; in the **background**（背景）there is ____. | 前景有 ____；背景有 ____。 | 照片题 |
+| ③ | According to this graph, the **highest** is ____, at around ____. | 根据该图，最高的是 ____，大约 ____。 | 报最高点（得分核心） |
+| ④ | On the **contrary**（相反），the **lowest** is ____, around ____. | 相反，最低的是 ____，大约 ____。 | 报最低点（得分核心） |
+| ⑤ | ____ **accounts for**（占）the largest proportion, about ____%. | ____ 占最大比例，约 ____%。 | 饼图专用 |
+| ⑥ | In **conclusion**（总之），if this trend continues, ____ will keep **increasing / decreasing**（持续上升/下降）. | 总之，若此趋势持续，____ 将持续上升/下降。 | **每题必说**（占位结尾） |
+
+> **口诀**：①⑥ 是背死的"两头占位句"，先把开头结尾说出来；③④ 有几个极值报几个，**流畅 > 说全**。你这三题就是靠 ①③④⑥ 稳稳拿到 60 的。
+
+---
+
+## Q19 · DI #696 Trailing Sails —— 61/90（内容 4.5/5 · 发音 71 · 流利度 51）
+
+**图是什么**：一张**折线+柱状组合图**，标题 *Trailing Twelve Months Sales*（过去连续十二个月的销售）。横轴是月份（Jan 2014–Dec 2014）；浅蓝**折线**=# of Sales（销售数量，左轴 2.5–17.5），蓝色**柱子**=Profitability-Sum（盈利总额，右轴 \$0–\$300,000）。真实关键数据：折线 **6 月最高（约 15）**、**3 月最低（约 4）**；柱子 **11 月最高（约 \$165,000）**。
+
+**范文（带中文翻译）**
+> The following graph gives information about trailing twelve months sales. According to this graph, in January, the value of sales is around six. … The highest profitability sum is in November, around eleven. Finally, the lowest one of sales is in March, around four. In conclusion, June has the highest value of sales.
+>
+> 下图给出的是**过去连续十二个月销售额**的信息。根据该图，一月份的销售额数值约为 6……盈利总额的最高点在十一月，约为 11。最后，销售额的最低点在三月，约为 4。总之，六月的销售额数值最高。
+
+**范文里你可能不认识的词（必背）**
+- **trailing**（读 **TRAY-ling**，重音在前）= 追踪的 /（过去）连续的；`trailing twelve months` = 过去连续 12 个月
+- **profitability**（读 **prof-i-tuh-BIL-i-ty**，重音在 BIL）= 盈利能力 / 盈利总额
+- **in conclusion**（读 in kun-KLOO-zhun）= 总之
+- **value**（VAL-yoo）= 数值 / 值
+
+**你说了什么（亮点先说）**：你**套上了模板**！
+- ① ✅ `this graph gives information about training twelve month sale`（下图给出……信息）
+- ② ✅ 你**居然报了坐标轴**：`the ex accesses data … the y axis is number of sale`（横轴是日期、纵轴是销售数量）
+- ③④ ✅ `the lowest one is in july…` + `the largest number of skills is in november…`（报了低点和高点）
+- ⑥ ✅ `from january to december will be increasing`（结尾给了上升趋势）
+- **①②③④⑥ 全套上了 → 所以内容 4.5/5。** 这就是标准答法。
+
+**逐处小瑕疵（都是发音/听感问题，没扣内容分）**
+- **口误 training → trailing**：你把 **trailing**（TRAY-ling，追踪的/过去连续的）读成了 `training`（训练）。词不认识就容易读串，先记住这个词的意思和读音。
+- **口误 ex accesses → x-axis**：你想说 **x-axis**（横轴，读 **EKS-AK-sis**）却读成了 `ex accesses`。
+- 🔴 **twelve**（\sr，读 **twelv**，注意结尾 -lv 的 v 音）= 十二 —— 结尾辅音没读清。
+- 🔴 **axis**（\sr，读 **AK-sis**，重音在前）= 坐标轴 / 轴线 —— 这个词很关键，务必读准；`y axis` 就是"纵轴"。
+- 🔴 **perfect ibility → profitability**：你想说 **profitability**（盈利能力）却断成了 `perfect` + `ibility`。长词读不动就整词略过，别硬拆。
+- 🔴 中间几个 `and / the / it / a`（\sr）是**卡顿含糊/口头填充**（还有一个 `um`），不影响意思，但拉低了流利度（51）。
+
+**通法/模板**：折线图 = **①开头 + ②坐标轴 + ③最高点 + ④最低点 + ⑥趋势结尾**。你这次全踩到了，保持就行。唯一要练的是把 `trailing / axis / profitability` 这几个词提前念熟，别现场卡。
+
+**★ 错因归类 + 防错清单**（都是"生词读串"，不是内容问题）
+1. **准备阶段先默念主题词**：看到图先在心里念 `trailing`（TRAY-ling）、`x-axis / y-axis`（AK-sis），念顺了再开口，就不会串成 training / ex accesses。
+2. **长词（profitability）读不动就整词跳过**，用 `the value / the number` 代替，别拆成 `perfect + ibility`。
+3. **少填 `um / and / the`**：说完一句停半拍再说下一句，比塞填充词更显流利。
+
+🧠 **一句话记忆点**：Q19 证明了——**开头一句 + 报最高最低 + 结尾一句 = 内容 4.5。你已经会了，把 trailing / axis 读准就更稳。**
+
+---
+
+## Q20 · DI #692 Vehicle Sales —— 63/90（内容 4.5/5 · 发音 72 · 流利度 56）　⭐本组最高分
+
+**图是什么**：一张**分组堆叠柱状图**，标题 *Vehicle Sales by Region*（各地区车辆销量）。四个季度（1st–4th Quarter），每组里按地区排：U.S. / Canada / Europe / Mexico / Asia / Africa，每根柱子分 Cars（车）+ Trucks（卡车）。纵轴 = Thousands of vehicles（千辆，0–350）。真实关键：**Africa（非洲）永远最矮**（约 40–77 千辆）；**Asia（亚洲）在第 4 季度最高**（约 313 千辆）。
+
+**范文（带中文翻译）**
+> The following graph gives information about vehicle sales by region. In the first quarter, the value of US is around two hundred and sixty, and that of Canada is lower, around one hundred and forty. The highest number of Asia is in the fourth quarter, which is three hundred and twenty. Finally, the highest one of Europe is in the third quarter. In conclusion, Africa has the lowest sales.
+>
+> 下图给出的是**各地区车辆销量**的信息。第一季度，美国的数值约为 260，而加拿大较低，约为 140。亚洲的最高数值出现在**第四季度**，为 320。最后，欧洲的最高值在第三季度。总之，**非洲的销量最低**。
+
+**范文里你可能不认识的词（必背）**
+- **region**（读 **REE-jun**）= 地区（注意：**religion** ri-LIJ-un 是"宗教"，别搞混！）
+- **quarter**（读 **KWOR-ter**）= 季度
+- **vehicle**（读 **VEE-i-kul**，第一个音节重）= 车辆
+- **sales**（读 **SAYLZ**）= 销量 / 销售额
+
+**你说了什么（亮点）**：又是**满套模板**！
+- ① ✅ `the following graph gives information about vehicles skill by religions`
+- ② ✅ 报了坐标轴：`the axis accesses is religions and the y accesses sound of vehicles`（横轴=地区、纵轴=车辆数）
+- ③④ ✅ **极值对比**：`africa is always the smallest one … asia is always the biggest one`（非洲最小、亚洲最大）—— **这句非洲最矮说得完全正确！**
+- ⑥ ✅ `all in all it's a vehicle skill by regions in this graph`（总而言之，收尾）
+- **①②③④⑥ 全套上 + 极值对比准 → 内容 4.5/5，本组最高 63。**
+
+**逐处小瑕疵（发音/听感，没扣内容）**
+- **口误 skill → sales**：你把 **sales**（SAYLZ，销量）读成了 `skill`（技能）。两个词发音差很多，是 sales 这个词没读到位。
+- **口误 religions → regions**：全程把 **regions**（REE-jun，地区）说成了 `religions`（宗教）。**这两个词长得像但意思天差地别**，务必分清：re-GION=地区 / re-LI-gion=宗教。
+- **口误 accesses → axis**：又是 `axis`（AK-sis，坐标轴）读成了 `accesses`。和 Q19 同一个毛病。
+- 🔴 **sound**（\sr）= 声音 —— 你想说 `y axis is thousands of vehicles`，冒出了个 `sound`，属临场乱蹦的词。
+- 🔴 **nicole**（\sr）= （人名"妮可"）—— `the max nicole` 是一串糊掉的音，你大概想说 `the maximum number`，长词一崩就蹦出个不相干的音。
+- 🔴 结尾 `all / in / it's`（\sr）= 收尾句 `all in all it's…`（总而言之）说得太赶、含糊。
+
+**通法/模板**：柱状图 = **①开头 + ②坐标轴 + ③最高柱 + ④最低柱（两组对比）+ ⑥结尾**。你把"非洲最小、亚洲最大"这个**对比**说出来了，这正是柱状图的得分点。
+
+**★ 错因归类 + 防错清单**
+1. **region ≠ religion**：这是你最该纠的一对。记："**region 地区**（少一个 li），**religion 宗教**（多个 li = **li**ttle god）。" 描述图里永远是 region。
+2. **sales 读 SAYLZ**：结尾要有 z 音，别读成 skill。看到销量图先默念一遍。
+3. **收尾句 `all in all` 放慢半拍**：这是背好的固定句，慢慢说清比赶着糊过去更得分。
+
+🧠 **一句话记忆点**：本组最高分 = **模板全套 + 一句准确的极值对比（Africa smallest / Asia biggest）。把 region/religion 分清就无懈可击。**
+
+---
+
+## Q21 · DI #690 Man at Desk —— 59/90（内容 4.3/5 · 发音 68 · 流利度 58）　照片类
+
+**图是什么**：一张**照片**——一个穿灰色 T 恤的年轻男子坐在灰色椅子上，在木桌前用电脑办公。桌上有**多台电脑**（左上一台打开的笔记本 laptop、右侧背景一台大屏台式机 desktop、右下角还有一台笔记本），两个键盘 keyboard，中间摊着一本带彩色图（像科研插图）的打开的书。左侧窗户透进自然光。
+
+**范文（带中文翻译）**
+> The following graph gives information about a man sitting at a desk. In the central area, there is a desk with an open book on it; the color of the book is white. In the right area, it is a laptop with a black keyboard; the color of it is silver. The background has a big screen of a desktop, with a black frame. The weather is sunny. The man is sitting in the chair at the desk. To sum up, the graph tells about a man at the desk.
+>
+> 下图给出的是**一名男子坐在桌前**的信息。在**中间区域**，桌上放着一本打开的书，书是白色的。在**右侧区域**，是一台带黑色键盘的笔记本电脑，机身是银色的。**背景**中有一个大型台式电脑屏幕，边框是黑色的。天气晴朗，男子正坐在桌边椅子上。**总而言之**，该图讲的是一名男子在书桌前。
+
+**范文里你可能不认识的词（必背）**
+- **foreground**（读 **FOR-ground**）= 前景　/　**background**（读 **BAK-ground**）= 背景
+- **frame**（读 **FRAYM**）= 边框 / 框架
+- **laptop**（LAP-top）= 笔记本电脑　/　**desktop**（DESK-top）= 台式电脑
+- **keyboard**（KEY-bord）= 键盘　/　**silver**（SIL-ver）= 银色
+- **central**（SEN-trul）= 中央的　/　**to sum up** = 总而言之
+
+**你说了什么（亮点）**：照片题你**也套了结构**——用了"位置词"来分区描述！
+- ① ✅ `the following graph gives information about a man who is using his computer and watching his book`（开头 + 主体：一个男人在用电脑、看书）
+- 位置描述 ✅ `on the central of the graph is a book`（中间是书）+ `on the left … we can see three computers`（左边有三台电脑）—— 用了 `central / left` 分区，等于照片版的"前景/背景"
+- 细节 ✅ `the man is wearing a t-shirt`（男子穿着 T 恤——图里其实是灰色，但你没说出颜色）
+- ⑥ ✅ `all in all it's a photo about a man who is watching his books and watching his computer`（收尾）
+- **①+位置+细节+⑥ → 内容 4.3/5。** 照片题也能套模板，你做到了。
+
+**为什么比前两题略低（4.3 vs 4.5）**：照片题需要更多**具体细节**（颜色 color、天气 weather、前景/背景 foreground/background），你抓到的细节偏少，加上中间糊音更多，所以内容略降、发音 68 也是三题最低。
+
+**逐处小瑕疵（发音/听感）**
+- **口误 "where a two to a t-shirt" → wearing a … t-shirt**：你想说 **wearing**（读 **WAIR-ing**，穿着）一件 T 恤，结果糊成了 `where a two to`。记住 `wearing` = 穿着。
+- **口误 "on the left are you off the graph" → on the left of the graph**：`are you off` 是把 `of` 糊掉了。
+- 🔴 一串 `a / to / on / you / i'm / all / in / it's`（\sr）都是**功能词糊音+填充**（还有 `i'm` 这种口误起头），说明你在照片题上**边想边说、卡顿多**，把流利度和发音都拖低了。
+
+**通法/模板**：照片题 = **①开头（a man / a woman doing…）+ ②前景/背景 或 位置分区（In the foreground… / In the central… / On the left…）+ 细节（颜色 color / 物体 object / 天气 weather）+ ⑥结尾**。你已经会用位置词了，下一步是**多说 2 个具体细节**（颜色 + 天气）。
+
+**★ 错因归类 + 防错清单**
+1. **照片题固定加两句细节**：`The color of ____ is ____.`（……的颜色是……）+ `The weather is sunny / cloudy.`（天气……）—— 背死这两句，照片题内容就能冲到 4.5。
+2. **wearing 读 WAIR-ing**：描述人物必用词，先念顺，别糊成 `where a`。
+3. **别边想边说**：照片先在心里定"主体 + 左/中/右 + 一个颜色 + 结尾"四点，再开口，减少 `um / i'm / are you off` 这类糊音。
+
+🧠 **一句话记忆点**：照片题也是 6 句模板——**开头 + 前景/背景（或左中右）+ 颜色/天气两句 + 结尾。多背"color + weather"两句，59 就能变 63。**
+
+---
+
+### DI 组小结（给 Kathy）
+
+- **三题全部 59–63、内容 4.3–4.5**，比 2B 的 Fog（10 分）判若两人，**唯一变量就是你用了固定结构**。请把这当成"背模板有效"的铁证。
+- **发音 68–72 其实不错**，别担心；三题的失分**几乎全在流利度（51/56/58）**，而流利度低的根源是**口误 + 卡顿填充词**（training/skill/religions/wearing 读串、um/i'm/and 乱塞）。
+- **下一步只做两件事**：① 提前默念 6 个高频词——**trailing, axis, region（≠religion）, sales, profitability, wearing**；② 照片题固定加 **color + weather** 两句。做到这两点，DI 稳上 63+。
+- 🧠 **总记忆点：DI 背 6 句模板就能稳拿 60，是你全套口语性价比最高的一块——继续背，别丢。**
+
+## RTS 情景应答 Q22–24（本组是退步项，最该按模板改）
+
+**这组是本次口语最该"背模板拿分"的地方，却退步了。** 2B 三题总分 136（38 / 44 / 54），3B 只剩 **111（40 / 46 / 25）**——不进反退。三题都犯同一个顽固病：**照着题目指令复述**（i notice… i realize… some options might not be suitable），到了最该给"具体方案"的那一步却只会说 let's have a good time / let's go / okay okay。Q24 更是发音崩到 18、结尾离题胡说。**好消息**：RTS 的评分大头是"恰当性"，而恰当性靠的是**说人话 + 给一个具体点子**，不靠发音好——只要你改掉这两个毛病，恰当性能从 56/62 直接冲到 70+。
+
+**RTS 四步模板（背死，每步一句中文对照）：**
+1. **打招呼 + 回应对方**：Hey team, thanks for the idea! / I love your suggestion about…（嘿团队，谢谢你的点子！/ 我很喜欢你关于……的建议）
+2. **说明情况 / 顾虑**：However, I'm a bit worried that…（不过我有点担心……）
+3. **提具体请求 / 建议 ← 全组的命门**：How about we…? / Would it be possible to…?（不如我们……？）——**这一步必须落到一个能听得见、看得见的具体方案！**
+4. **礼貌收尾**：Thanks for understanding! / Let's make it great together!（谢谢理解！/ 我们一起把它做好！）
+
+**两条铁律（你三题正好全违反）：**
+- **铁律① 绝不复述题目指令。** prompt 里那句 "you need to gently guide the discussion…"（你需要温和地引导讨论……）是给你的**舞台提示**，是叫你**演出来、对着人说**，不是叫你照着念。你 Q22/Q23/Q24 都在改写 prompt 原话（i notice…/ i realize…/ might require more resources），这就是恰当性上不去的**头号原因**。
+- **铁律② 第③步必须给一个具体方案 / 例子。** 范文给的都是能落地的东西：Q22=picnic in the park / game night（公园野餐 / 游戏之夜）、Q23=straightforward charts and diagrams（简单明了的图表）、Q24=bake sale or raffle（烘焙义卖或抽奖）。你给的是 let's have a good time / let's go / okay okay——**这是空话，不是方案。**
+
+---
+
+## Q22 · RTS 情景应答 #29 Birthday Activity —— 40/90（恰当性 56 · 发音 32 · 流利度 40）
+
+**情景 Situation（带中文）：** 你在组织团队出游给同事 Dave 庆生，大家七嘴八舌提各种活动；但你意识到每个人的偏好和身体条件不同，有些方案不合适，你要**温和地把讨论引向"人人都能参与的包容性活动"**。你会对同事说什么？
+
+**范文 Model Answer（带中文，★标出"具体方案"）：**
+> Hey team, I'm thrilled about planning our outing for Dave's birthday! Let's consider activities that everyone can participate in comfortably. **★ How about we go for a picnic in the park or have a game night at someone's place?** These options cater to various interests and physical abilities, ensuring everyone has a great time. Let's focus on creating inclusive and enjoyable memories together!
+>
+> 嘿团队，我很期待为 Dave 的生日筹划这次出游！我们考虑那些人人都能舒适参与的活动吧。**★不如我们去公园野餐，或者在谁家搞个游戏之夜？** 这些选择能兼顾各种兴趣和身体条件，确保每个人都玩得开心。让我们一起创造包容又愉快的回忆吧！
+
+**范文里你可能不认识的词（务必记）：**
+- **thrilled**（非常兴奋 / 激动）— 读 **θrɪld / "斯里欧德"**，单音节，别读成两节。
+- **cater to**（兼顾 / 迎合）— 读 **KAY-ter**，重音在前。范文的高级说法：cater to various interests and physical abilities = 兼顾各种兴趣和身体条件。
+- **picnic in the park**（在公园野餐）— 这就是范文的"具体方案 A"。
+- **game night**（游戏之夜）— 具体方案 B。
+- **inclusive**（包容的 / 人人能参与的）— 读 **in-KLOO-siv**，重音在中间。
+- **physical abilities**（身体条件 / 体能）— physical 读 **FIZ-i-kul**。
+
+**你说了什么 + 逐处问题：**
+> hi everyone welcome to this celebrating's and **i notice that everyone suggest different activities** but **i realize that some options might not be suitable due to very(→varying) preference and cycle(→physical) abilities** so i think that's a can join the a a discussion is of their interest and limitations **let's have a good time**
+
+- **复述题目指令（头号病）：** "i notice that everyone suggest different activities" 几乎照抄 prompt 的 everyone's suggesting different activities；"some options might not be suitable due to… preference and… abilities" 更是把 prompt 原句 might not be suitable due to varying preferences and physical abilities 一字不差搬过来。**这不是在对同事说话，是在复读题目。**
+- **口误（把关键词读错）：** **very** 其实想说 **varying**（各不相同的，读 **VAIR-ee-ing**）；**cycle**（自行车 / 循环，读 SY-kul）想说 **physical**（身体的）。读错的正好是意思词，直接拖垮内容。
+- **红词（发音崩碎 \sr）：** that's / a / a / a / is——注意，这些不是生词，而是句子**说崩后剩下的碎片音**（"that's a can join the discussion a a discussion is…"整句语法散架）。发音只有 32，主因就是这段后半句彻底破碎。
+- **完全没给具体方案：** 从头到尾没有一个像"野餐 / 游戏之夜"的活动。结尾 **let's have a good time**（我们玩得开心点吧）是纯空话。
+
+**按模板给你一版能上 70 的改写（照着念熟）：**
+> Hey team, I'm so excited to plan Dave's birthday outing! (①招呼+兴奋) However, I'm a bit worried that some activities may not suit everyone's fitness. (②顾虑，一句带过，别复读题目) **How about a picnic in the park, or a game night at someone's place?** Everyone can join in comfortably. (③具体方案！) Let's make it fun for all of us! (④收尾)
+
+**★ 错因归类 + 防错清单：**
+1. **复述指令**（恰当性主因）→ 第②步顾虑**最多一句**，句式换成"I'm worried that…"，绝不搬 prompt 原话。
+2. **第③步空心**→ 每套 RTS 记两个万能落地方案（活动类：**picnic / game night / potluck 聚餐**），到第③步直接扔一个。
+3. **口误拖内容**→ varying、physical 这类关键词准备的 25 秒里先默念音节，别临场瞎读。
+
+🧠 **记忆点：题目让你"引向包容活动"——就当场提一个野餐 / 游戏之夜，而不是把"引向包容活动"这句话念出来。**
+
+---
+
+## Q23 · RTS 情景应答 #30 Group Presentation —— 46/90（恰当性 62 · 发音 41 · 流利度 43）
+
+**情景 Situation（带中文）：** 你在准备小组演示，队友想往幻灯片里加复杂图表；你觉得这会让听众困惑、分散注意力，要**温和地把讨论引向更简单清晰的视觉**。你会对队友说什么？
+
+**范文 Model Answer（带中文，★标出"具体方案"）：**
+> Hey guys, I appreciate the suggestion for the presentation slides. However, let's aim for simpler visuals to ensure our audience grasps the main points easily. **★ How about we use straightforward charts and diagrams that highlight key information without overwhelming them?** This way, we can enhance understanding and keep everyone engaged throughout the presentation. Let's prioritize clarity and effectiveness in our visuals.
+>
+> 嘿大家，谢谢你们对幻灯片的建议。不过我们力求更简洁的视觉，确保听众能轻松抓住要点。**★不如我们用简单明了的图表和示意图，突出关键信息又不让人应接不暇？** 这样就能增进理解、让大家全程保持专注。我们把清晰和效果放在视觉的首位吧。
+
+**范文里你可能不认识的词：**
+- **straightforward**（简单明了的 / 直截了当的）— 读 **strayt-FOR-werd**，三节，重音在中间。这就是范文的"具体方案"。
+- **diagrams**（示意图 / 图解）— 读 **DY-uh-gramz**，重音在前。
+- **highlight**（突出 / 强调）— 读 **HY-lyte**。
+- **overwhelming**（让人应接不暇的 / 压得喘不过气的）— 读 **oh-ver-WELM-ing**，重音在 WELM。without overwhelming them = 又不让人眼花缭乱。
+- **grasp**（抓住 / 理解）— 读 **grasp / "格拉斯普"**。
+- **engaged**（专注 / 投入）— 读 **in-GAYJD**。
+
+**你说了什么 + 逐处问题：**
+> hey guys welcome to this group presentation and i have notice **you are suggesting incorporating complex charts and graphs into the slides** however **i notice that this visual might confuse a audience and distract from the main points** i think it's make this discussions over the simpler and clear visual than in-house(→enhance?) understanding **let's go**
+
+- **恰当性 62 是本组最高——原因值得表扬：** 你最后落到了 **simpler and clear visual**（更简单清晰的视觉），**方向对了**，所以恰当性达标。这证明你**知道该往哪引**，只差"别复读 + 给例子"。
+- **复述题目指令（仍在犯）：** "you are suggesting incorporating complex charts and graphs into the slides" 逐字照搬 prompt；"this visual might confuse the audience and distract from the main points" 又是 prompt 原句搬运。这段占了你一半时间，全是在复读题目。
+- **红词（发音差 \sr）：** **charts**（图表，读 **CHARTS**，单音节，别读成 char-ts）——唯一红词，把它读清脆。
+- **中段语法散架：** "it's make this discussions over the simpler and clear visual than in-house understanding" 语法乱、in-house（内部的）像是想说 enhance（增进）的口误，意思没说清。
+- **弱结尾：** **let's go**（走吧）——太随意，不像收尾。而且你**没给具体方案**：范文给的是 straightforward charts and diagrams，你只说了"更简单清晰"这个形容词，没落到"用什么图"。
+
+**按模板给你一版改写：**
+> Hey guys, thanks for the ideas on the slides! (①) However, I'm worried the complex charts may confuse our audience. (②一句顾虑) **How about we use a few straightforward charts and simple diagrams that highlight only the key points?** (③具体方案！) That'll keep everyone focused. Thanks, team! (④)
+
+**★ 错因归类 + 防错清单：**
+1. **复述指令**→ 把 "you are suggesting incorporating complex charts…" 这种整句搬运彻底删掉，只留一句"I'm worried the complex charts may confuse the audience"。
+2. **有方向、没例子**→ 你已经会说"simpler / clearer"，下一步就补一个名词方案：**straightforward charts / simple diagrams / bullet points（要点式）**。
+3. **弱结尾**→ 把 let's go 换成固定收尾句 **Thanks, team! / Let's keep it clear!**
+
+🧠 **记忆点：Q23 你方向对了（simpler）→ 恰当性 62；只要把"更简单"具体成"straightforward charts and diagrams"，再删掉复读，就是 70+。**
+
+---
+
+## Q24 · RTS 情景应答 #31 A Charity Event —— 25/90（恰当性 41 · 发音 18 · 流利度 24）★本组最低、口语全卷最崩之一
+
+**情景 Situation（带中文）：** 你在为公司统筹一场慈善活动，队友提议办**无声拍卖（silent auction）**筹款；你意识到办拍卖要花的资源和时间比预想多，要**温和地把讨论引向更简单的筹款方案**。你会对团队说什么？
+
+**范文 Model Answer（带中文，★标出"具体方案"）：**
+> Hey team, I love the idea of a silent auction for our charity event, but let's consider simpler alternatives that are equally effective. **★ How about organizing a bake sale or a raffle instead?** These options require less time and resources to set up but still have the potential to raise significant funds for our cause. Let's brainstorm some creative ideas that align with our goals and resources.
+>
+> 嘿团队，我很喜欢为慈善活动办无声拍卖的想法，不过我们考虑一些同样有效但更简单的替代方案吧。**★不如我们改办一场烘焙义卖或抽奖？** 这些方案花的时间和资源更少，却仍能为我们的事业筹到可观善款。我们一起头脑风暴一些契合目标和资源的点子吧。
+
+**范文 + 情景里你可能不认识的词（这题词汇是命门）：**
+- **silent auction**（无声拍卖 / 竞价拍卖）— auction 读 **AWK-shun**，重音在前。就是把物品标价、大家在纸上出价、价高者得。**你把它读成了 active（活跃的），意思全丢。**
+- **bake sale**（烘焙义卖 / 卖蛋糕点心筹款）— 具体方案 A，读 **BAYK sale**。
+- **raffle**（抽奖 / 摸彩）— 具体方案 B，读 **RAF-ul**，重音在前，两节。买张票、抽中拿奖那种。
+- **fundraising / fundraise**（筹款）— 读 **FUND-ray-zing**，重音在 FUND。
+- **brainstorm**（头脑风暴 / 一起想点子）— 读 **BRAYN-storm**。
+- **alternatives**（替代方案）— 读 **awl-TER-nuh-tivz**，重音在 TER。
+- **align with**（契合 / 对齐）— 读 **uh-LYNE**。align with our goals = 契合我们的目标。
+- **cause**（此处指"公益事业 / 目标"，**不是"原因"**！这是易踩的假朋友词）— raise significant funds for our cause = 为我们的公益事业筹到可观善款。significant = 可观的 / 大量的。
+
+**你说了什么 + 逐处问题（这题基本崩了）：**
+> hey guys thank you to help me to call coordinate or clarity events of our company but i have realized that **the organizing and the active(→auction) might require more resources and the time than anticipated** so **let's make the discussion towards simpler fundraise ideas** i think that we can make our company a good **i'm more and more healthy**(离题胡说) um so **let's go okay okay**(卡壳收尾)
+
+- **发音崩到 18（全卷最低档）：** 前半句 "thank you to help me to call coordinate or clarity events" 语法散架、词全错位（clarity 清晰度，想说 clarify/coordinate 统筹）。
+- **口误丢关键词：** **active**（活跃的）想说的是 **auction**（拍卖）——整题的核心名词读错，听者根本不知道你在说拍卖。
+- **复述题目指令（又犯）：** "the organizing and the active might require more resources and the time than anticipated" 逐字搬 prompt 的 organizing the auction might require more resources and time than anticipated；"let's make the discussion towards simpler fundraise ideas" 又是照抄 prompt 的 guide the discussion towards simpler fundraising ideas。
+- **红词（发音差 \sr）：** **than**（比，读 **ðæn**）、**towards**（朝向 / 引向，读 **tuh-WORDZ**，重音在后）、**i'm**、**okay**、**okay**——后三个是说崩后的碎音。
+- **结尾离题 + 卡壳（致命）：** "i think that we can make our company a good **i'm more and more healthy** um so let's go **okay okay**"——**i'm more and more healthy（我越来越健康了）跟慈善筹款毫无关系，是离题胡说**；结尾 okay okay 是彻底卡住、不知道说什么了。
+- **完全没给具体方案：** 范文要的是 bake sale / raffle，你一个都没提。
+
+**按模板给你一版改写（这题尤其要背熟）：**
+> Hey team, I love the idea of a silent auction! (①先肯定对方) However, I'm worried it needs too much time and money to set up. (②一句顾虑) **How about a bake sale or a raffle instead? They're much simpler but still raise good funds.** (③具体方案！) Let's brainstorm together! (④收尾)
+
+**★ 错因归类 + 防错清单：**
+1. **崩溃从"没词可说"开始**→ 一旦想不出具体方案，就会离题（i'm more healthy）+ 卡壳（okay okay）。**根治法：进考场前把第③步的"筹款万能方案"背死——bake sale / raffle / car wash（洗车筹款）**，任何筹款题直接扔一个。
+2. **核心名词读错=内容归零**→ auction、raffle、fundraising 这三个词准备期先念准（AWK-shun / RAF-ul / FUND-ray-zing）。
+3. **复述指令 + 弱结尾**→ 顾虑一句话；结尾固定 **Let's brainstorm together! / Let's make it work!**，绝不用 okay okay。
+
+🧠 **记忆点：Q24 之所以从头崩到尾，是因为第③步没方案就"没词可说"→离题+卡壳。记住"拍卖太麻烦，不如 bake sale 或 raffle"这一句，这题就从 25 救回 55+。**
+
+---
+
+### RTS 小结（对比 2B，点名退步）
+
+| 项 | 2B | 3B | 变化 |
+|---|---|---|---|
+| 三题总分 | 38 + 44 + **54** = **136** | 40 + 46 + **25** = **111** | **退 25 分** |
+| 最高题 | Q24 Food 54（落到 simpler dishes，方向对） | Q23 Group Presentation 46（落到 simpler visual，方向对） | — |
+| 最低题 | Q22 Slides 38 | **Q24 Charity 25**（发音 18、离题+卡壳） | 崩得更狠 |
+
+**顽固点（2B、3B 都犯，必须这次改掉）：**
+1. **复述题目指令**——三题全在把 prompt 原句念出来（i notice… i realize… might not be suitable / might require more resources）。这是恰当性天花板。
+2. **请求空泛、无具体方案**——2B 是 "let's have a talk"，3B 变成 "let's have a good time / let's go / okay okay"，一模一样的病。
+3. **弱结尾**——let's go / okay okay。
+4. **Q24 额外：发音崩 + 离题胡说**（i'm more and more healthy）。
+
+**一句话行动令：** RTS 是你**性价比最高**的提分点——评分看恰当性，不看发音好坏。**只要做到两件事：①第②步顾虑只说一句、绝不复读题目；②第③步扔一个具体活动（野餐 / straightforward charts / bake sale）**——恰当性就能从 56/62 稳上 70，这组总分从 111 拉回 150+ 完全够得着。
+
+🧠 **全组记忆点：题目里的"引向……"是让你"演出来"，不是让你"念出来"；把"更简单"翻译成一个能看见的东西（野餐 / 简单图表 / 烘焙义卖），RTS 就活了。**
+
+## ASQ 简短回答 Q25–30（单题 0/1，本次 0/6 —— 全丢）
+
+> ⚠️ **这一组是本卷口语最扎心、也最该马上补的地方**：6 题全 0，全部丢光。但请先看清一件事——
+
+### 一个必须先说的扎心观察
+
+把这 6 个答案词摆出来看：**Carpet（地毯）、Basement（地下室）、Patient（病人）、Rudder（舵）、Therapy（心理治疗）、Honeymoon（蜜月）**。
+
+- 其中 **Carpet、Basement、Patient、Therapy、Honeymoon 都不是生僻词**，是日常高频词——地毯、地下室、病人、心理治疗、蜜月，中文一看就懂。
+- 更关键的是 **Q29 的答案 therapy 直接印在问题里**：`surgery or therapy`（外科手术 还是 心理治疗），这是**二选一**，答案就在你眼前，选一个念出来就有分。
+- 真正偏一点的只有 **Q28 rudder（舵）** 一个词。
+
+**所以 6 题全 0，不能全甩锅给"词汇量"。** 更像是三件事叠加：
+1. **没听懂英文口语问题**（题目是听的/读的一句话，What do we call…？没抓住它在问什么东西）；
+2. **不清楚 ASQ 的答题机制**——ASQ 只要**说 1 个名词**就行，不需要说整句；很可能你在想"怎么组织一句话"，结果 16–19 秒过去，一个词都没蹦出来；
+3. **紧张 / 没反应过来**——用时 16–19 秒（题目通常几秒就该答），说明是卡住了、空转，而不是答错。
+
+**结论：ASQ 是 Kathy 全卷"性价比最高的免费分"。** 哪怕完全不会，也要**猜一个名词说出去**——因为**不答必 0，猜了还有机会对**。把这 6 分捞回来，比练发音见效快得多。
+
+---
+
+### ASQ 通法（记死这三条）
+
+**① 只说 1 个名词，不要说整句。** 不用 "I think it is a carpet."，直接说 **"Carpet."** 一个词。说整句反而容易卡、容易超时。
+
+**② 先判断是哪一类题——两类：**
+- **(a) 二选一 / 常识题**：题目里给了选项，答案常常**就在问题里**。→ 例：Q29 `surgery or therapy?` 心理学家(psychologist)做的是 **therapy（心理治疗）**，不是 surgery（外科手术，那是外科医生 surgeon 干的）。**直接从两个词里挑一个念出来。**
+- **(b) 定义 → 名词题**：句式多是 **"What do we call a person / a thing / a room that …？"**（我们把"做某事的人/东西/房间"叫做什么？）→ 抓住定义里的关键线索（floor 地板、below the ground 地下、medical treatment 医疗、control ships 控制船），套**"角色/物体/研究者公式"**，报那个名词。**靠的是背下面的高频定义词库。**
+
+**③ 不会也要猜一个名词。** 单题 0/1，**不答一定是 0，蒙一个还有 1 分的可能**。宁可蒙错，绝不沉默。16 秒够你蒙 5 个词了。
+
+---
+
+### 6 题逐题速查表（英文问题 · 中文 · 答案 · 属哪类 · 线索在哪）
+
+| 题 | 英文问题 | 中文 | 答案（英+中） | 属哪类 · 线索 |
+|---|---|---|---|---|
+| **Q25** #1391 | What do we call the fabric that covers the floor of an apartment? | 覆盖公寓地板的**织物**叫什么？ | **Carpet / carpets**（地毯）❌ | (b)物体·线索 floor(地板)+fabric(织物)→铺地板的布=地毯 |
+| **Q26** #1390 | What do we call the room that is below the level of the ground? | 低于地面的**房间**叫什么？ | **Basement / cellar**（地下室/地窖）❌ | (b)建筑部位·线索 below the ground(在地面下) |
+| **Q27** #1385 | What do we usually call a person who is receiving medical treatment in a hospital? | 在医院接受**治疗的人**叫什么？ | **Patient / patients**（病人）❌ | (b)人物角色·线索 medical treatment(医疗) |
+| **Q28** #1384 | Which piece of equipment is used to control the direction of ships? | 控制**船只方向**的设备是什么？ | **Rudder / rudders**（舵）❌ | (b)工具·线索 control direction of ships(控船方向) |
+| **Q29** #1382 | Which one is a psychologist good at, surgery or therapy? | 心理学家擅长哪个，外科手术还是心理治疗？ | **Therapy**（心理治疗）❌ | (a)二选一·**答案就在问题里**，选 therapy |
+| **Q30** #1381 | What do we call the vacation taken by a couple who have just got married? | 新婚夫妇度的**假**叫什么？ | **Honeymoon**（蜜月）❌ | (b)活动·线索 just got married(新婚)+vacation(假期) |
+
+---
+
+### 6 个答案词 —— 逐个翻译 + 发音 + 记忆法（这些其实都不难）
+
+- **Q25 Carpet（地毯）** —— 读 **KAR-pit**，重音在前。记忆法：**car（车）+ pet（宠物）** → "车里给宠物垫的那块布" = 地毯。线索里 fabric = 织物/布料，floor = 地板，"铺在地板上的布"就是地毯。
+- **Q26 Basement（地下室）** —— 读 **BAYS-mnt**，重音在前。记忆法：**base（底部/地基）+ ment** → 房子最底下那层 = 地下室。备选 **cellar**（读 SEL-er，地窖，常用来存酒/存货）。听到 below the ground（在地面以下）就报 basement。
+- **Q27 Patient（病人）** —— 读 **PAY-shnt**，重音在前。记忆法：patient 还有"**有耐心的**"意思——"看病要排队，**病人**得有**耐心**"，一词双义帮你记。线索 medical treatment（医疗）+ in a hospital（在医院）→ 接受治疗的人 = 病人。
+- **Q28 Rudder（舵）** —— 读 **RUH-der**，重音在前。这是 6 题里唯一偏门的词。记忆法：船尾水下那块能左右摆的板，转动它船就改变方向 → 舵。（顺带记：**anchor** 锚 是停船的，**steering wheel** 方向盘 是车/船上手握的轮，rudder 才是真正"控制方向"的水下部件。）
+- **Q29 Therapy（心理治疗）** —— 读 **THER-uh-pee**，重音在前。**答案直接印在问题里**：surgery（外科手术）or therapy（心理治疗）。**psychologist（心理学家）做 therapy，不动刀**；动刀做 surgery 的是 **surgeon（外科医生）**。所以选 **therapy**。这题不该丢——不用背词，从问题里挑一个念出来即可。
+- **Q30 Honeymoon（蜜月）** —— 读 **HUN-ee-moon**，重音在前。记忆法：**honey（蜂蜜/亲爱的）+ moon（月）** → 甜蜜的一个月 = 蜜月。线索 a couple who have just got married（刚结婚的夫妇）+ vacation（假期）→ 新婚旅行 = 蜜月。
+
+---
+
+### ⭐ 错因归类 + 防错清单
+
+**错因：** 不是"答错"，是**"没答/空转"**（用时 16–19 秒说明卡住了）。三层——① 没听懂英文问题在问什么东西；② 不知道 ASQ 只说 1 个名词的机制，卡在"怎么造句"；③ 答案词汇（尤其 rudder）没积累，加上紧张。
+
+**防错清单（3 条，马上能用）：**
+1. **听问题只抓两样：问的是"人 / 东西 / 房间 / 地方"（which noun），和后面的定义线索**（floor、below ground、medical、ships…）。抓到线索直接映射词库里的词，报**一个名词**就交卷，别造句。
+2. **看到 "A or B？" 的二选一，答案八成就在这两个词里**——从题目里挑一个念出来（Q29 直接说 therapy）。这类题**零门槛，必拿**。
+3. **规定自己：任何 ASQ 都在 5 秒内说出一个名词**，哪怕蒙。不答必 0，蒙了有机会。把"沉默 16 秒"这个坏习惯彻底戒掉。
+
+---
+
+### 📚 ASQ 高频定义词库（每个带中文——先认识词，才答得出）
+
+> 背法：**中文→英文**都要能反应（听到定义线索能蹦出英文词）。按组记，考场上按"问的是哪一类"直接调取。
+
+**🏠 建筑部位**（问"房间/房子某处"）：ceiling（天花板）· floor（地板）· wall（墙）· roof（屋顶）· stairs（楼梯）· **basement（地下室）** · attic（阁楼）· corridor（走廊）· **carpet（地毯）**
+
+**🧑 人物角色**（问"某种身份/处境的人"）：**patient（病人）** · peer / contemporary（同龄人）· vegetarian（素食者）· audience（观众）· pedestrian（行人）· tenant（房客）· landlord（房东）· widow（寡妇）· orphan（孤儿）· optimist（乐观者）· pessimist（悲观者）· mystic（神秘主义者）
+
+**🔬 研究者**（问"研究 X 的人"，词尾多 -er/-ist/-logist）：astronomer（天文学家）· archaeologist（考古学家）· meteorologist（气象学家）· zoologist（动物学家）· biologist（生物学家）· geologist（地质学家）· linguist（语言学家）· psychologist（心理学家）
+
+**👷 职业**（问"干某活的人"）：surgeon（外科医生）· dentist（牙医）· pilot（飞行员）· plumber（水管工）· tailor（裁缝）· librarian（图书管理员）
+
+**🚢 交通/工具**（问"某种设备/部件"）：**rudder（舵）** · anchor（锚）· steering wheel（方向盘）
+
+**📐 图形**（问"图上某部分"）：section / cross-section（剖面图）· diameter（直径）· radius（半径）· perimeter（周长）· angle（角）· diagram（图表）
+
+**🎉 活动**（问"某种场合/活动"）：parade（游行）· festival（节日）· ceremony（典礼）· rehearsal（排练）· graduation（毕业）· **honeymoon（蜜月）**
+
+**🌦 自然**（问"某种天气/现象/时段/器具"）：drought（干旱）· flood（洪水）· hurricane（飓风）· thermometer（温度计）· horizon（地平线）· dawn（黎明）· dusk（黄昏）· decade（十年）
+
+> 加粗的 5 个（basement / carpet / patient / rudder / honeymoon）正是本卷考的——**这几组词库里，考的都是最常见那几个**，把整组背下来，下次同类题命中率极高。
+
+---
+
+🧠 **一句话记忆点：ASQ 只说 1 个名词；二选一的答案常在问题里（Q29 therapy）；不会也猜一个——这是 Kathy 全卷最该、也最容易捡回的免费 6 分，不答必 0。**
+
+---
+
+### 口语小结（30 题讲完）
+
+**这套的账**：口语 **36→42（+6）**，稳步向上。归三堆：
+
+- **✅ 进步（要保持）**：
+  - **DI 是全卷最大亮点**：2B 因没模板最低 10 分（Fog），3B 三题全 59–63、内容 4.3–4.5——**唯一变量就是你用了固定结构（开头一句 + 报最高最低 + 结尾一句）**。这是"背模板有效"的铁证，DI 是你性价比最高的一块。
+  - **RS 发音其实够用（57–76）**：Q13（68 分）证明你句首守住就能拿高分。
+  - **RA 天花板抬高**（29→36），发音/流利度在缓慢改善。
+
+- **❌ 退步（重点纠）**：
+  - **RTS（136→111，−25）**：三题都在**复述题目指令**、第③步没给具体方案（let's have a good time / let's go / okay okay）；Q24 发音崩到 18、结尾离题（i'm more and more healthy）。
+  - **ASQ（1/6→0/6）**：6 题全丢，而 carpet/patient/therapy/honeymoon 都是常见词、Q29 答案就印在问题里——**问题是没听懂问题 + 不懂"只说 1 名词"机制 + 紧张沉默 16 秒**。
+
+- **⚠️ 顽固点（2B 就犯，又犯，必须点名）**：
+  - **RA 把小词说两遍**（diverse diverse / be eating by eating / that that / you you）——跨两套的流利度杀手。
+  - **RTS 复述题目指令 + 请求空泛**（2B "let's have a talk" → 3B "let's go / okay okay"）。
+  - **长学术词读崩**（2B telecommunication → 3B peptic ulcer / entrepreneurs / manipulate）。
+
+**四条针对性建议（按性价比，全是"背"的活，不靠天赋）**：
+1. **DI 6 句模板背死 + 照片题加"color + weather"两句**——已见效，继续保持；提前默念 trailing/axis/region(≠religion)/sales/wearing 几个高频词。
+2. **RTS 按 4 步说话、第③步扔一个具体方案**——记两组万能落地方案：活动类（picnic/game night）、筹款类（bake sale/raffle/car wash）、汇报类（straightforward charts/bullet points）。顾虑只说一句、绝不复读题目、结尾用固定句（Let's make it work!）。**这组不靠发音，纯靠"说人话+给例子"，最容易回血。**
+3. **ASQ 只说 1 名词、5 秒内蹦一个、不会也猜**——把 8 组高频定义词库背下来（建筑/人物/研究者/职业/工具/图形/活动/自然）；二选一题答案常在问题里。这是最该捡的免费分。
+4. **RS 开口先顶主语+动词、背高频生词（projected/efficiently/agencies/recognize）**；**RA 照 Q5 模板**——意群不停、说过不重说。
+
+**口语目标：42 → 55+。** 补分战场很清楚：**背模板三件套（DI 保持 + RTS/ASQ 各救 10+ 分）> RS 守句首（+15）> RA 改流利度习惯 > 长期影子跟读练发音**。口语提分几乎全是"背"的活，对你反而是好消息——**可控、见效快**。
 
 ---
