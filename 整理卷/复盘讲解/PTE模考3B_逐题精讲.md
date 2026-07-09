@@ -3,7 +3,44 @@
 > 对象：考生 Kathy。本套成绩 **总分 53**：听力 55 / 阅读 42 / 口语 42 / 写作 73。共 **65 题**（听 15 · 读 16 · 口 30 · 写 4）。
 > 体例：每题先结论后展开；**对的题讲透"为什么对/通法"，错的题写足"错因 + 防错清单"**，每题给 🧠 记忆点。来源＝四个正文 `.tex`（`build/paper/sec_*_body.tex`）的人工誊录与配色，一切以整理卷为准。
 > 配套交接：方法学抽成 `交接文档/逐题精讲_{听力,阅读,口语,写作}.md`，供下一套卷复用。
-> **📌 本文件按 part 逐步产出——目前已完成「一、听力」（15 题）、「二、阅读」（16 题）、「三、口语」（30 题）。** 写作部分与最终的「0. 全卷大复盘」将在后续补齐（全卷大复盘需四部分讲完后统一提炼跨 part 病根）。
+> **📌 全卷已完成**：「0. 全卷大复盘」（跨 part 病根 + 提分路线图）+「一、听力」（15 题）+「二、阅读」（16 题）+「三、口语」（30 题）+「四、写作」（4 题）。**建议先读 §0 大复盘看全局，再按 part 逐题看。**
+
+# 0. 全卷大复盘（四部分讲完，先看这张，按"最该先补"排序）
+
+> 四部分（听/读/口/写）都讲完了，这里把它们**串起来**看：哪几条毛病是**跨 part 反复出现的病根**（补一条提多块）、哪些是进步、下一步按什么顺序补最划算。
+
+### 本套 vs 上套（2B）总览
+
+| 部分 | 2B | 3B | 走向 | 一句话 |
+|---|---|---|---|---|
+| 🎧 听力 | 47 | **55** | ✅ +8 | 进步最大：FIB-L 会判词性了、HIW Q10 满分、WFD 框架稳 |
+| 📖 阅读 | 46 | **42** | ❌ −4 | **唯一退步**：FIB 下拉崩了（形近词/搭配）、FIBD&D 还在错位 |
+| 🗣️ 口语 | 36 | **42** | ✅ +6 | DI 背模板从 10→60 是最大亮点；RTS 退步、ASQ 归零拖后腿 |
+| ✍️ 写作 | 71 | **73** | ✅ +2 | 全卷最强：SWT 双满分、WE 语法从重灾大幅好转 |
+| **总分** | **50** | **53** | ✅ +3 | 三升一降，稳步向上 |
+
+### 四条跨 part 病根（补一条，提多块）🔥
+
+| 病根 | 在各 part 的表现 | 一招通治 |
+|---|---|---|
+| **① 词形/词性不跟语法** 🔥（全卷头号共病） | 听力 invest→**investors**（该名词填了动词）；阅读 FIBD&D 词性错/拖错格；写作 to **explaining**→to explain（该原形）；口语 RS 生词说不出 | 任何填空/写句先问"这里要什么**词形**"；**to/can/will 后一律动词原形**；主语单数动词加 s |
+| **② 形近/易混词不分** | 阅读 persecute/**execute**、release/**relief**、undertake/**undermine**；口语 region/**religion**（读串）；听力音近误听 | 遇形近词**先在脑子里翻成中文**再选/读，别靠"长得像/眼熟" |
+| **③ 没模板就崩、有模板就稳** | 口语 DI 无模板=10→有模板=60；RTS 没模板就复述题目；ASQ 不懂"只说1名词"=0/6；写作 SWT/WE 有模板就高分 | **背模板/公式**：DI 6 句 · RTS 4 步 · ASQ 1 名词 · SWT 一句话 · WE 邮件框架 |
+| **④ 漏读/漏说/失焦、开口丢主语** | 听力 WFD 漏词、HIW 漏点、RS（听力概念）；口语 RS 漏读句首主谓；阅读 FIBD&D 漏填 | 守"首词+尾词+主动词"；开口先顶主语；HIW 大胆多点 |
+
+> **最该记住的一条：① 词形/词性** —— 它同时出现在听、读、写、说四个 part，是你**丢分最集中、也最好治**的根。好消息是它**正在改善**（写作 WE 基本治好了），把这个势头推到听力和阅读上。
+
+### 全卷提分路线图（性价比从高到低，按"离分最近"排）
+
+1. **口语背模板三件套（最快、回报最大）**：DI 保持 + RTS 第③步给具体方案 + ASQ 只说 1 名词+背词库 → **口语 42→55**。全是"背"的活，可控、见效快。
+2. **阅读把退步补回来**：FIBD&D **填完通读查错位**（词大多选对、就差这步）+ FIB 形近词先翻中文 + 选完回读 → **阅读 42→55**。
+3. **听力守纪律 + 补漏词**：WFD/FIB-L 每空只写一个词、补漏的主干词；MCM 至少勾 2–3 个、SMW 先定主旨；HIW 大胆多点 → **听力 55→65**。
+4. **写作冲高**：SWT 守一句话 + WE 扫 to/can 原形和空格 + 喂高级词 → **写作 73→80**。
+5. **贯穿全程的地基**：每天 **20 词拼写默写 + 形近词对照本 + 5 句 WFD 精听**——同时喂养听力拼写、阅读形近词、写作词形，一条线治三个 part 的根。
+
+### 一句话给 Kathy
+
+这套 **50→53**，三个 part 在涨、只有阅读小退。你的分**不是靠"更聪明"涨的，是靠"背模板 + 改习惯 + 治词形"涨的**——这三样全都可控。下一套只要：**口语背熟模板、阅读补上"通读查错位"、听力守住纪律、写作扫好语法**，冲 **60+** 完全够得着。**词形/词性那一条根治好了，四个 part 会一起往上走。**
 
 ---
 
@@ -1763,3 +1800,364 @@ Kathy，先给你**这套最大的一个掌声**：DI 是你**进步最大**的�
 **口语目标：42 → 55+。** 补分战场很清楚：**背模板三件套（DI 保持 + RTS/ASQ 各救 10+ 分）> RS 守句首（+15）> RA 改流利度习惯 > 长期影子跟读练发音**。口语提分几乎全是"背"的活，对你反而是好消息——**可控、见效快**。
 
 ---
+
+# 四、写作 Writing（4 题，73 / 90，全卷最强，且在进步：2B 71 → 3B 73）✅
+
+> Kathy，写作是你**全卷分数最高的一项**，而且还在往上走。这一部分我先讲 SWT（概括写作）两题——**两题都是满分 8/8、零批改**。所以这两题我们不"找错"，而是把你"凭什么拿满分"讲透，**把公式固化下来**，让它继续当你的稳定提分项。
+
+---
+
+## SWT 满分公式（你已经精通，这里帮你"固化"）
+
+在看两道题之前，先把 SWT（Summarize Written Text 概括写作）的满分三条铁律摆出来，你会发现你**每一条都踩中了**：
+
+1. **只能写"一个句子"（5–75 词）**——这是 SWT 的第一红线。SWT 的 Form（格式）分只认"一个句子"，你只要写成**两句**（出现两个句号），Form 直接从 2 掉到 0，且会拖累全局。破解办法：用 **and / while / which / because** 这类连词，把 2–3 段的主旨**串成一整句**。
+2. **抓每段的"主旨句"**（通常在段首），把它们浓缩、连起来。
+3. **零语法、零拼写错**——因为就一句话，篇幅极短，必须做到完美；短就是优势，越短越不容易出错。
+
+🧠 一句话记住：**SWT = 一个句子 + and 串起各段主旨 + 零错。**
+
+下面看你是怎么把这三条全部做到的。
+
+---
+
+## Q1 · SWT #61 Psychotherapy —— 8/8 ✅（Content 2/2 · Form 2/2 · Grammar 2/2 · Vocabulary 2/2，用时 05:18，满分无批改）
+
+### 原文 Source Text（带中文，看你要从哪几段抓主旨）
+
+原文共两段。为方便你看清"主旨在哪"，我把关键句挑出来一句一译：
+
+**第 1 段（定义 + 目标）：**
+- **Psychotherapy … is a treatment that involves a talking relationship between a therapist and patient.**
+  心理治疗……是一种通过治疗师与患者之间的对话关系进行的治疗方式。→ **这是"是什么"的定义句（段首主旨）。**
+- The goal of psychotherapy is to eliminate or control disabling or troubling symptoms so the patient can function better.
+  心理治疗的目标是消除或控制致人失能（disabling）或困扰（troubling）的症状，使患者能更好地正常生活。→ **这是"目标"句。**
+- （其余："可用于治疗多种精神障碍""治疗时长可长可短""可个人/夫妻/家庭/小组进行"——都是**细节/铺陈**，不是主旨。）
+
+**第 2 段（形式 + 举例）：**
+- **There are many forms of psychotherapy.**
+  心理治疗有多种形式。→ **段首主旨句。**
+- Psychoanalysis is an intensive form of individual psychotherapy which requires frequent sessions over several years.
+  精神分析（psychoanalysis）是一种高强度的个体心理治疗形式，需在数年间持续频繁的疗程。→ 这是段末的**具体例子**。
+
+难词：therapist 治疗师 / disabling 致人失能的 / troubling 令人困扰的 / psychoanalysis 精神分析 / intensive 高强度的。
+
+### 你的作答（满分，无批改）——按 and 拆成 4 个分句，逐句翻译
+
+你写的是**一整句话**，用 3 个 and 把 4 个分句串成一句。我们把它拆开看你是怎么"浓缩"的：
+
+1. **Psychotherapy is a treatment that involves a talking relationship between a therapist and patient,**
+   心理治疗是一种通过治疗师与患者之间的对话关系进行的治疗方式，
+   → 抓了**第 1 段的定义句（是什么）**。用了 `a treatment that involves…` 定语从句，句式干净。
+2. **and the goal of psychotherapy is to eliminate or control disabling or troubling symptoms,**
+   而心理治疗的目标是消除或控制致人失能或困扰的症状，
+   → 抓了**第 1 段的目标句**。
+3. **and there are many forms of psychotherapy,**
+   而心理治疗有多种形式，
+   → 抓了**第 2 段的段首主旨句**。
+4. **and psychoanalysis is an intensive form of individual psychotherapy.**
+   而精神分析是一种高强度的个体心理治疗形式。
+   → 抓了**第 2 段的具体例子**收尾。
+
+**为什么满分**：① 全文**只有一个句号**，从头到尾就是一句话 → Form 2/2 稳拿。② 覆盖了原文两段的核心（定义 + 目标 + 有多种形式 + 举一个例子）→ Content 2/2。③ `a treatment that involves…`、`the goal of … is to eliminate or control…` 句式与搭配都准确 → Grammar 2/2、Vocabulary 2/2。④ 一个拼写错都没有。这就是教科书级的 SWT 满分答案。
+
+### 通法 / 模板（SWT 一句话铁律）
+
+- **公式**：`[段1主旨], and [段1核心补充], and [段2主旨], and [段2补充].`
+- 你这题正是"**主句 + and + and + and**"的最朴素串法——朴素但极其安全，因为它天然只有一个句子。想更华丽可以把某个 and 换成 `which / while / because`，但**没必要为了花哨冒语法风险**，你现在这种写法就是最优解。
+
+### ★ 满分复盘 + 精益求精提示
+
+- **做对了什么（要保持）**：一个句子、抓段首主旨、零错。三条全中。
+- **唯一可"再优化"的小点（不影响得分，只是让你更稳）**：第 4 个分句选了 "psychoanalysis is an intensive form…"，这其实是原文的**举例细节**，不算段落主旨。如果追求极致，可以换成更"主旨"的内容——比如第 2 段里"有的疗法帮人改变行为、有的探究过往经历影响"的**分类概括**。原则是：**选分句时，"是什么 + 核心观点" 优先于 "背景/举例"。** 不过你这次即便选了例子也满分了，说明只要句子结构对、覆盖到位，选例子也不会扣分——这条只是给你"锦上添花"用。
+
+🧠 **记忆点：一句话，四个分句用 and 串——定义 + 目标 + 有多种形式 + 一个例子，句号只准有一个。**
+
+---
+
+## Q2 · SWT #57 Metaverse —— 8/8 ✅（Content 2/2 · Form 2/2 · Grammar 2/2 · Vocabulary 2/2，用时 05:29，满分无批改）
+
+### 原文 Source Text（带中文，标出你抓的主旨句）
+
+原文两段，同样把关键句挑出来一句一译：
+
+**第 1 段（概念走红 + 本质定义）：**
+- **The concept of the metaverse is rapidly gaining traction in the world of technology…**
+  元宇宙（metaverse）这一概念正在科技界迅速走红……→ **段首主旨句（现象/背景）。**
+- **In essence, the metaverse is a virtual, interconnected universe where users can engage in various activities, interact with others, and create their own digital presence.**
+  本质上，元宇宙是一个虚拟的、互联互通的宇宙，用户可在其中参与各种活动、与他人互动、塑造自己的数字身份。→ **"本质定义"句（是什么），最该抓。**
+
+**第 2 段（潜力/影响）：**
+- **One of the most exciting aspects of the metaverse is its potential to transform the way we work, socialize, learn, and entertain ourselves.**
+  元宇宙最令人兴奋的一点，是它有潜力改变我们工作、社交、学习和娱乐的方式。→ **段首主旨句（核心观点）。**
+- （其余："想象在逼真会议室开虚拟会议……""企业已在探索虚拟展厅、员工培训"——都是**举例细节**。）
+
+难词：gaining traction 走红 / 获得关注 / in essence 本质上 / interconnected 互联互通的 / digital presence 数字身份 / potential 潜力 / transform 彻底改变。
+
+### 你的作答（满分，无批改）——按 and 拆成 3 个分句，逐句翻译
+
+你同样写成**一整句话**，用 2 个 and 串起 3 个分句：
+
+1. **The concept of the metaverse is rapidly gaining traction in the world of technology,**
+   元宇宙这一概念正在科技界迅速走红，
+   → 抓了**第 1 段的段首主旨句**。几乎照搬原句，SWT 允许适度借用原文措辞，安全又准确。
+2. **and the metaverse is a virtual and interconnected universe,**
+   而元宇宙是一个虚拟且互联互通的宇宙，
+   → 抓了**第 1 段的"本质定义"句**（原文 "In essence, the metaverse is a virtual, interconnected universe…"），你把它精简成一句核心定义，删掉了后面的举例，非常干净。
+3. **and one of the most exciting aspects of the metaverse is its potential to transform the way we work, learn, and entertain ourselves.**
+   而元宇宙最令人兴奋的一点，是它有潜力改变我们工作、学习和娱乐的方式。
+   → 抓了**第 2 段的段首主旨句**。
+
+**为什么满分**：① 全程一个句号 → Form 2/2。② 精准命中"现象（走红）+ 本质（是什么）+ 潜力（影响）"三层核心 → Content 2/2。③ `gaining traction`、`interconnected universe`、`its potential to transform the way we…` 都是原文里的高级搭配，你搬运得当、没搬错 → Vocabulary 2/2、Grammar 2/2。④ 零拼写错。
+
+**这题比 Q1 还漂亮的地方**：你三个分句选的**全是段首主旨句/本质定义句**，没有选举例细节——这正是我在 Q1 里提的"主旨优先于举例"，你在这题做到了。可以对照两题体会一下：**Metaverse 这题的选句质量，就是 SWT 的满分范本。**
+
+### 通法 / 模板（SWT 一句话铁律）
+
+- **公式**：`[段1现象/背景], and [段1本质是什么], and [段2核心观点/影响].`
+- 你这题的分句选择顺序（现象 → 本质 → 影响）几乎是 SWT 的"黄金三段式"——**下次遇到"某新概念/新技术"类文章，就照这个抓：它火了 → 它是什么 → 它有什么用/影响。**
+
+### ★ 满分复盘 + 记忆点
+
+- **做对了什么（要保持）**：一个句子；三个分句全抓段首主旨/本质句（不抓例子）；借用原文高级搭配但不写错；零错。
+- 这题几乎无可挑剔，是你"选句能力"进步的证据。
+
+🧠 **记忆点：新概念类 SWT，一句话串三段主旨——"它火了 + 它是什么 + 它有啥用"，别去抓"想象一下…"那种举例句。**
+
+---
+
+## SWT 两题小结（与 2B 对比：跨两套卷都满分的稳定强项）✅
+
+- **3B**：SWT #61 Psychotherapy **8/8**、SWT #57 Metaverse **8/8** → **双满分**。
+- **2B**：SWT #60 Elizabeth Blackwell **8/8**、SWT #69 Beta Testing **8/8** → 同样**双满分**。
+
+也就是说，**SWT 是你连续两套模考、四道题全部满分的稳定强项。** "一句话 + and 串各段主旨"这个公式，你已经**真正精通、并且能内化到临场**——这不是运气，是能力。请务必保持这个手感，考试时**唯一要提醒自己的一件事就是：别手贱写成两句**（别让句子中间冒出第二个句号）。只要守住"一个句号"，这 8 分基本就是你的囊中之物。
+
+- **精益求精（可选）**：选分句时记住"**主旨/本质 > 背景 > 举例**"。你 Metaverse 那题选得比 Psychotherapy 更贴主旨（没选例子），把这个习惯固定下来，SWT 就更稳、更抗"难文章"。
+
+🧠 **总记忆点：SWT 是我的满分自留地——一句话、一个句号、串段首主旨，考场上只提醒自己"别写成两句"。**
+
+## Q3 · WE #12 Not to Miss This Year's Local Food Festival —— 13.7/15（Content 3/3 · Form 2/2 · Email 2/2 · Org 2/2 · Vocabulary 1.5/2 · **Grammar 1.2/2** · Spelling 2/2，用时 09:00）
+
+**题干 Task Prompt（带中文）**
+> You are the organizer of a local food festival and want to attract more attendees this year. Write an email to your subscriber list, explaining three reasons why they should not miss this year's event. You should write between 80 and 120 words.
+> 你是一场地方美食节的组织者，希望今年吸引更多参与者。请给你的订阅用户列表写一封邮件，说明他们不应错过今年活动的三个理由。字数应在 80 至 120 之间。
+> 三个必须涵盖的主题：**Variety of Food（食物种类多样）／Interactive Cooking Demonstrations（互动烹饪演示）／Exclusive Discounts（专属折扣）**。三个主题都要写到，并给出支撑例子。
+
+---
+
+### 范文 Model Answer 逐句翻译（Peter Pan · 平台参考）
+
+> **Dear Food Enthusiasts,**
+> 亲爱的美食爱好者们：（enthusiast＝爱好者、狂热者；用它称呼订阅用户比 "Dear Subscriber" 更热情、更贴场景）
+
+> **Exciting flavors await at this year's local food festival! Here's why you should join us:**
+> 今年的地方美食节上，令人兴奋的美味佳肴正等着大家！以下是您应该加入我们的理由：（**flavors await**＝美味在等着你，await 是"等候"的正式说法，比 "there will be" 高级；**Here's why…** 是一句漂亮的引出句）
+
+> **Firstly, the festival will showcase a variety of food, offering dishes from around the globe to delight every palate.**
+> 第一，本次美食节将展示种类繁多的美食，提供来自世界各地的菜肴，满足每一位食客的味蕾。（**showcase**＝展示〔比 have/prepare 高级〕；**a variety of food**＝种类繁多的食物；**dishes from around the globe**＝来自世界各地的菜肴；**delight every palate**＝取悦每一位食客的味蕾，palate 原指"味觉/上颚"，这里代指食客的口味——这是很地道的美食搭配）
+
+> **Secondly, our interactive cooking demonstrations will not only entertain but also educate, as renowned chefs demonstrate their culinary skills and share kitchen secrets.**
+> 第二，我们的互动烹饪演示不仅具有娱乐性，还兼具教育意义，知名大厨将现场展示烹饪技艺、分享厨房秘诀。（**not only … but also …**＝不仅……而且……，一个提升句式档次的黄金结构；**renowned chefs**＝知名大厨〔renowned＝著名的〕；**culinary skills**＝烹饪技艺〔culinary＝烹饪的〕；**as** 在这里＝因为/由于，引出理由）
+
+> **Finally, enjoy exclusive discounts on meals and products, making this gourmet experience both memorable and affordable.**
+> 最后，尽享餐食与商品的专属折扣，让这场美食盛宴既难忘又实惠。（**exclusive discounts**＝专属折扣；**gourmet**＝美食的、精致的；**both memorable and affordable**＝既难忘又实惠——用 both…and… 把两个卖点一句串起来，很省字又漂亮）
+
+> **Mark your calendars for a day of delicious discovery!**
+> 快在日历上标记这个满是美味发现的日子吧！（**Mark your calendars**＝把日子记进日历，标准的活动号召语）
+
+> **Warmest regards, Peter Pan**
+> 最诚挚的问候，Peter Pan
+
+**范文教给你的 3 件事**：① 用动词升级——**showcase / await / delight** 代替 have / there is / make；② 用 **not only…but also… / both…and…** 把两个信息压进一句，既省字又高级；③ 每个卖点后面跟一个具体好处（dishes from around the globe、share kitchen secrets、memorable and affordable），这就是题干要的 "supporting examples"。
+
+---
+
+### 你的作答 + 逐处批改（Kathy）
+
+> **Dear Subscriber List,**
+> 亲爱的订阅用户：（✅ 称呼首字母大写、格式没问题，Email Conventions 满分。想更热情可学范文改成 "Dear Food Lovers," / "Dear Food Enthusiasts,"）
+
+> I hope this email finds you well. ~~I'mwriting~~ → **I'm writing（缺空格）** to ~~explaining~~ → **explain** three reasons why you should not miss this year's event.
+> 我希望这封邮件送达时你一切安好。我写这封邮件是为了说明你不应错过今年活动的三个理由。
+> - **①「I'mwriting → I'm writing」**：`I'm` 和 `writing` 之间漏了一个空格。属**格式/打字错**（缺空格）。不影响意思，但平台会当成拼写/格式问题标红——写完扫一眼就能救回来。
+> - **②「to explaining → to explain」**：`to` 后面必须跟**动词原形** explain，不能用 -ing 的 explaining。属**动词形式错（不定式后要原形）**。⚠️ 这正是 2B 那个"贯穿全卷的词形病根"的**漏网之鱼**——2B 你写过 `to suggesting`，这次同一个坑。（正确：I'm writing **to explain** three reasons…）
+
+> Firstly, the food ~~festival prepare~~ → **festival prepares a** variety of food so that you can eat delicious food.
+> 第一，美食节准备了种类繁多的食物，让你能吃到美味佳肴。
+> - **③「festival prepare → festival prepares a」**：这里两处错叠在一起。(a) 主语 the food festival 是**第三人称单数**，动词要加 s → **prepares**；属**主谓一致错（第三人称单数动词加 s）**。(b) prepare 后面缺冠词 → **a** variety of food（"a variety of" 是固定搭配，前面要 a）；属**缺冠词**。
+
+> Secondly, the food festival has interactive cooking demonstrations so that you can cook dinner with your best friends,
+> 第二，美食节设有互动烹饪演示，让你能和最好的朋友一起做晚餐，（✅ 这段无高亮。小提醒：句末应是句号 `.` 而不是逗号 `,`）
+
+> Lastly, the food festival has exclusive discounts so that you can have a good time during this festival with your family.
+> 最后，美食节提供专属折扣，让你能和家人在活动期间度过愉快时光。（✅ 无高亮。exclusive discounts 用对了，很好）
+
+> Welcome to the food festival! Looking forward to your reply.
+> 欢迎来到美食节！期待你的回复。（✅ 结尾得体）
+
+> Best regards, Kathy
+> 此致敬礼，Kathy（✅ 落款规范）
+
+**三处红标全在语法/格式**，所以 Grammar 被扣到 1.2/2；Content/Form/Email/Org 全满分——**结构和内容你已经完全拿捏住了**。
+
+---
+
+### 通法/模板（WE 邮件——你已掌握，重点是"扫雷"）
+
+```
+Dear [Name],（首字母大写）
+I hope this email finds you well. I'm writing to suggest three ways/strategies to ____.
+Firstly, …（建议 + 一句理由/例子）
+Secondly, …
+Lastly, …
+I would appreciate it if you could consider my suggestions. Looking forward to your reply.
+Best regards, [名]
+```
+80–120 词、题干三个主题全覆盖、每点配一个具体例子。你这套 Form/Email/Org 全满分，模板已成肌肉记忆——现在**只差写完那一遍"语法扫雷"**。
+
+---
+
+### ★ 错因归类 + 防错清单
+
+**错因归类（3 处全是语法/格式类）**
+1. **动词形式错（不定式后要原形）**：to explaining → to explain。← 2B 病根残留，本题唯一"知识点"错。
+2. **主谓一致 + 缺冠词**：festival prepare → festival prepares a。
+3. **缺空格（打字/格式）**：I'mwriting → I'm writing。
+
+**防错清单（写完 30 秒扫雷，性价比最高）**
+- ☑️ **专扫 to / can / will / should 后面的动词**——一律**原形**：是 to **explain**，不是 to explaining。（靠这一招，你的 Grammar 从 2B 的 0.4 一路提到现在，别在最后一题松手）
+- ☑️ **扫一眼 "I'm writing" 有没有空格**（还有所有 I'm / I've / it's）。
+- ☑️ **单数主语的动词记得加 s**：the festival **prepares** / **has** / **offers**。
+- ☑️ **"a variety of" 前补 a**；名词别裸奔。
+- ☑️ 想把 Vocabulary 从 1.5 提到 2：把 have / make / good 换成范文的 **showcase / offer / delicious / memorable / exclusive**。
+
+🧠 **记忆点：to 后面永远是原形（to explain），主语单数动词加 s（festival prepares），"I'm writing" 中间有个空格——写完就扫这三样，Grammar 直接满。**
+
+---
+
+## Q4 · WE #13 Engaging Children in Reading —— 14.5/15（Content 3/3 · Form 2/2 · Email 2/2 · Org 2/2 · Vocabulary 1.5/2 · **Grammar 2/2 满分** · Spelling 2/2，用时 08:22）
+
+**题干 Task Prompt（带中文）**
+> The local community library is looking to promote literacy and a love of reading among the youth in your area. You are a volunteer at the library… Write an email to Ms. Reed, the librarian in charge, offering three suggestions for initiatives that could make reading more exciting and accessible for the children in your area. You should write between 80 and 120 words.
+> 当地社区图书馆希望在你所在地区的青少年中推广读写能力和阅读热情。你是图书馆的一名志愿者……请给负责此事的图书管理员 Reed 女士写一封邮件，就如何让孩子们觉得阅读更有趣、更易接触，提出三条建议。字数 80–120。
+> 三个必须涵盖的主题：**A reading marathon event（阅读马拉松活动）／Collaborations with local authors（与本地作家合作）／Weekend reading clubs（周末读书俱乐部）**。三个主题都要写到，并给支撑想法。
+
+---
+
+### 范文 Model Answer 逐句翻译（Peter Pan · 平台参考）
+
+> **Dear Ms. Reed,**
+> 亲爱的 Reed 女士：（写给具体收件人，称呼精确，比 "Dear Subscriber" 更正式得体）
+
+> **I hope you're well. I'd like to suggest a few initiatives to foster a love of reading among our local youth.**
+> 您好。我想提出几项举措，以培养本地青少年对阅读的热爱。（**initiatives**＝举措、倡议〔比 ideas/ways 高级〕；**foster a love of reading**＝培养对阅读的热爱〔foster＝培养、促进〕；**youth**＝青少年〔集合名词〕——这一句直接点题，把"目的+对象"一句说清）
+
+> **Firstly, hosting a reading marathon event could excite children about reading, with challenges and rewards for milestones reached.**
+> 第一，举办一场阅读马拉松活动，能激发孩子们对阅读的兴趣，并为达成的里程碑设置挑战和奖励。（**hosting…**＝用动名词做主语，很地道；**excite children about reading**＝让孩子对阅读兴奋；**milestones reached**＝达成的里程碑〔milestone＝里程碑，reached 后置修饰〕）
+
+> **Secondly, collaborating with local authors for readings and Q&A sessions can inspire children by connecting them with the creators of their favorite stories.**
+> 第二，与本地作家合作举办朗读会和问答环节，能通过让孩子们与自己最喜爱故事的创作者建立联系，从而启发他们。（**collaborating with…**＝与……合作；**inspire**＝启发、激励；**by connecting them with…**＝通过把他们与……联系起来〔by + doing 表方式〕）
+
+> **Lastly, establishing weekend reading clubs would offer a regular, fun way for kids to explore new books and share their thoughts in a group setting.**
+> 最后，设立周末读书俱乐部，能为孩子们提供一种定期、有趣的方式，去探索新书并在小组环境中分享想法。（**establishing**＝设立〔比 hold 更正式〕；**a regular, fun way for kids to…**＝一种让孩子们……的定期而有趣的方式；**in a group setting**＝在小组情境中）
+
+> **These initiatives could significantly enhance our library's engagement with young readers.**
+> 这些举措将大大提升我们图书馆与青少年读者之间的互动。（**significantly enhance**＝显著提升〔enhance＝增强，比 improve 更书面〕；**engagement**＝参与度、互动——这句收尾把三条建议的共同效果一句总结，很有力）
+
+> **Best, Peter Pan**
+> 此致，Peter Pan
+
+**范文教给你的 3 件事**：① 三段主体都用**动名词开头**（hosting / collaborating / establishing），句式整齐、正式；② 词汇全程升级——**foster / initiatives / inspire / establish / enhance / engagement**，这正是你 Vocabulary 想补的那 0.5 分；③ 结尾一句 **These initiatives could significantly enhance…** 做总收束，比直接 "Looking forward to your reply" 更有分量（可两句都留）。
+
+---
+
+### 你的作答 + 逐处批改（Kathy）——全文仅 1 处红标！
+
+> **Dear Ms. Reed,**
+> 亲爱的 Reed 女士：（✅ 称呼精确又正式，满分开局）
+
+> I hope this email finds you well. ~~I'mwriting~~ → **I'm writing（缺空格）** to share my three suggestions for initiatives that could make reading more exciting and accessible for the children in our area.
+> 我希望这封邮件送达时您一切安好。我写这封邮件是想分享我关于举措的三条建议，让我们地区的孩子们觉得阅读更有趣、更易接触。
+> - **唯一批改「I'mwriting → I'm writing」**：又是 `I'm` 和 `writing` 之间**漏了空格**。属**格式/打字错（缺空格）**——和 Q3 同款，两题都栽在这个小坑；2B 的 Q3 也犯过同样的"I'm writing 漏空格"，说明这是个反复出现的老坑，得盯住。**除此之外全文零高亮。** 而且注意：这句里 `to share`、`could make` 全用对了原形——**词形病根这题一个都没犯，太棒了！**
+
+> Firstly, we can hold a reading marathon event so that we can attract more children to come here.
+> 第一，我们可以举办一场阅读马拉松活动，这样就能吸引更多孩子过来。（✅ 无高亮。`can hold`、`can attract`、`to come` 全是原形，完全正确）
+
+> Secondly, we can make collaborations with local authors so that we can make reading more exciting and interesting.
+> 第二，我们可以与本地作家合作，这样就能让阅读更精彩、更有趣。（✅ 无高亮。`can make` 原形正确。小升级：`make collaborations with` 可换成范文的 `collaborate with`（动词更简洁））
+
+> Lastly, we can hold weekend reading clubs, so we can make reading more accessible for everyone who loves books.
+> 最后，我们可以开办周末读书俱乐部，这样就能让所有爱书的人更容易接触到阅读。（✅ 无高亮。`accessible` 用词准确漂亮）
+
+> I would appreciate it if you could consider my suggestions. Looking forward to your reply.
+> 如果您能考虑我的建议，我将不胜感激。期待您的回复。（✅ 标准礼貌结尾，`could consider` 原形正确）
+
+> Best regards, Kathy
+> 此致敬礼，Kathy（✅ 落款规范）
+
+**这封邮件 Grammar 满分 2/2**——从头到尾 `can + 原形`、`to + 原形` 一个都没错。对比 2B 的 WE Q4 Grammar **0/2**（那封全是 can improves / adopting / scheduling），这是**肉眼可见的巨大进步**。剩下没拿满的只有：那个缺空格（不进 Grammar，进拼写/格式判定）和 Vocabulary 的 0.5（用词丰富度隐性扣分，全文无高亮词，是"够用但不够出彩"）。
+
+---
+
+### 通法/模板（同 Q3，这里重点是"再往上提"）
+
+模板你已经完全内化（Form/Email/Org 全满分、Grammar 这题满分）。往 14.5 → 15 冲，只剩**词汇丰富度**这一步：把 `can hold / can make / make reading more exciting` 这类"够用词"，替换成范文那批**动词升级词**——`host / establish / collaborate / foster / inspire / enhance`。
+
+---
+
+### ★ 错因归类 + 防错清单
+
+**错因归类（全题仅 1 处）**
+1. **缺空格（打字/格式）**：I'mwriting → I'm writing。← 和 Q3 同款，唯一失分动作。
+2. **Vocabulary 隐性 0.5**：无高亮词，属"用词恰当但不够丰富"的整体性扣分（不是硬错，是提分空间）。
+
+**防错清单**
+- ☑️ **写完扫 "I'm writing" 的空格**——你两题都栽这，把它列进固定检查项，30 秒解决。
+- ☑️ **词汇升级（想拿满就练这个）**：背一组"高级替换"，写的时候有意识替换——
+  - have / hold → **host / establish**（举办/设立）
+  - make (a collaboration) → **collaborate with**（合作）
+  - good / nice → **memorable / rewarding / engaging**（难忘/有收获/吸引人）
+  - improve → **enhance / foster**（提升/培养）
+  - idea / way → **initiative**（举措）
+- ☑️ Grammar 保持现状即可——这题的 `can/to + 原形` 你已经全对，**继续这样扫雷就稳在 2/2**。
+
+🧠 **记忆点：Grammar 你这题已经满分了（2B 的 can improves / to suggesting 病根基本治好）——现在把 have/make/good 换成 host/collaborate/enhance，Vocabulary 那 0.5 也能补回来，14.5 就冲到 15。别忘了 "I'm writing" 的那个空格。**
+
+---
+
+### 与 2B 对比 · 写作语法大进步（表扬 + 点名残留）
+
+| 维度 | 2B WE | 3B WE | 变化 |
+|---|---|---|---|
+| Q3 Grammar | **0.4/2**（缺冠词/双重比较级/look forwards 等） | **1.2/2** | ↑ 大幅好转，词形病根只剩 1 处 to explaining |
+| Q4 Grammar | **0/2**（can improves / adopting / scheduling 全错） | **2/2 满分** | ↑↑ 病根基本治好 |
+
+- **最该表扬**：2B 那个"can/will/to 后误用 -ing/-s"的词形病根——它当时是**贯穿全卷**的头号共病——这次 WE 里**基本改掉了**，Q4 直接满分。这是你这套写作最亮眼的进步。
+- **仍有残留（点名）**：Q3 的 `to explaining → to explain`，是同款"to 后要原形"的**漏网之鱼**——不是不会了，是最后没扫到。写完那一遍"to/can/will 扫雷"要坚持到最后一个句子。
+- **两个反复出现的小顽固点（2B 就有，3B 两题又都犯）**：① **"I'mwriting" 缺空格**（2B Q3、3B Q3/Q4 都栽）——打字小错，扫一眼即消；② **Vocabulary 一直 1.5/2**（2B、3B 四封邮件全是 1.5）——用词够准但不够丰富，靠背高级替换词（showcase / foster / initiatives / enhance）来补。
+
+**一句话总结**：写作是你全卷最强项（73/90，还在从 2B 71 往上走），WE 的语法窟窿这套基本补上了——现在离满分就差"缺空格 + 词汇丰富度"这点皮毛。稳住 SWT 的一句话，扫好 to/can 原形和空格，再喂一批高级词，写作就能从 73 稳稳推到 80+。
+
+---
+
+### 写作小结（4 题讲完）
+
+**这套的账**：写作 **71→73（+2）**，**是全卷最强、也是四项里最稳的一块**。归两堆：
+
+- **✅ 稳定强项 / 进步（保持）**：
+  - **SWT 双满分**（跨 2B/3B 四题全 8/8）——"一句话 + and 串段首主旨 + 一个句号"的公式已经**真正精通**。这是能力，不是运气。
+  - **WE 语法大进步**：2B 是重灾区（Q3 Grammar 0.4/2、Q4 Grammar 0/2，全是"can/will/to 后误用 -ing/-s"），**3B 好转到 Q3 1.2 + Q4 满分 2/2**——2B 那个"贯穿全卷的词形病根"在 WE 里基本改掉了，是本套写作最亮眼的进步。
+- **⚠️ 剩下的皮毛（离满分就差这些）**：
+  - **词形病根的漏网之鱼**：Q3 的 `to explaining → to explain`（同款"to 后要原形"）——不是不会了，是最后没扫到。
+  - **"I'mwriting" 缺空格**：Q3、Q4 两题都犯（2B Q3 也犯过）——反复出现的打字小坑，写完扫一眼即消。
+  - **Vocabulary 一直 1.5/2**：2B、3B 四封邮件全是 1.5——用词够准但不够丰富，靠背高级替换词补（showcase / foster / initiatives / enhance / collaborate）。
+
+**三条针对性建议（按性价比）**：
+1. **SWT 保持"一句话"**——考场唯一提醒自己："别写成两句"（别冒出第二个句号）。这 16 分（两题）稳拿。
+2. **WE 写完 30 秒"语法扫雷"**——专扫 to / can / will / should 后面是不是**原形**（to explain 不是 to explaining）+ 检查 "I'm writing" 的空格 + 单数主语动词加 s。靠这一步，WE 的 Grammar 稳在满分。
+3. **词汇升级（冲满分）**——把 have/make/good/hold 换成 showcase/host/collaborate/foster/enhance/memorable，把两题 Vocabulary 的 0.5 补回来。
+
+**写作目标：73 → 80+。** 补分战场很清楚：**SWT 守住一句话（0 风险）+ WE 扫 to/can 原形和空格（Grammar 满分）+ 喂一批高级词（Vocab 补 0.5×2）**。写作是你**最接近高分、最可控**的一项——稳住它，它就是你总分的压舱石。
+
+🧠 **写作总记忆点：SWT 一句话别写成两句；WE 写完扫三样（to 后原形 / I'm 的空格 / 单数动词加 s）+ 换一批高级词——73 冲 80 就靠这几下。**
